@@ -1,0 +1,1019 @@
+{
+  "protocol": "Weighted distance trio ((7,3,d))_3, d=2,3,4:\nevery arm trained on the NOISE-WEIGHTED objective over ITS OWN detection set\n(d=4 uses the weight-3 channel weights, so the d=4 arm no longer has to run\nunweighted as in r2_campaign/t1a_queue.py).\n\nProtocol (pre-registered):\n- run_race (standard recipe): weighted corrected-Meth KL, importance@0.2,\n  num_seeds=1, 3000 steps, a2a MS, n=7, K=3. Arm detection sets:\n  d=2 weight-1 set; d=3 weight-2 hw closure; d=4 weight-3 hw closure\n  (2661 ops), ALL with channel weights at eta=0.9296.\n- L ascent {2,4,6,8}, 4 seeds {100..103}; minimal L per d = first L with\n  4/4 seeds weight-(d-1)-probe-perfect (k=0); fallback = smallest L with\n  >=1 perfect seed, flagged probe_selection_mandatory.\n- Budget-matched variant: if the three minimal Ls differ, the arms below\n  the max are ALSO reported at L_budget = max_d L_min(d) (units exist from\n  the ascent when swept; otherwise trained on demand). At n=7 a2a the MS\n  budget is 42L, so equal L = equal budget.\n- Selection per arm at L_min: lexicographic (k_w(d-1), k_wd, seed), the\n  r2_campaign/t1b_panel.py convention (d=4 uses (k_w3, k_w4, seed)).\n- Evaluation of the three selected codes:\n  (i) conditioned probes w=1..4 (200k/100k/100k/100k, seeds 1001..1004);\n  (ii) channel-WEIGHTED iid benchmark (meth-spectator + dephasing-exact\n       arms), p in {0.05, 0.08, 0.12}, shots 3e5 escalated x2 until\n       >=30 errors, cap 5M;\n  (iii) correlated-channel weighted-MAP LER (map_channel_ler instrument),\n       eta in {0.90, 0.92, 0.93}, shots escalated x2 until >=100 errors,\n       cap 640k.\nQuestion: what does trained distance buy under each benchmark level?\n\nWrites t2c_results.json (incremental, resume anchor). Feeds the weighted\ndistance trio of the paper.\nLaunch: nohup nice -n 19 python3 t2c_queue.py >> t2c.log 2>&1 &\n",
+  "units": {
+    "d2_L2_s100": {
+      "dist": 2,
+      "L": 2,
+      "seed": 100,
+      "npz": "results/campaigns/r3_campaign/t2c_codes/d2_L2_s100.npz",
+      "ms_budget": 84,
+      "train_loss_weighted": 4.761709955134261e-09,
+      "race_op_evs": 24029,
+      "train_wall_s": 146.9,
+      "ler_w1": {
+        "k": 0,
+        "n": 200000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          1.92076310598226e-05
+        ]
+      },
+      "ler_w2": {
+        "k": 0,
+        "n": 100000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          3.8414524267635735e-05
+        ]
+      },
+      "ler_w3": {
+        "k": 1,
+        "n": 100000,
+        "ler": 1e-05,
+        "wilson95": [
+          1.765202323777592e-06,
+          5.664855365337279e-05
+        ]
+      },
+      "ler_w4": {
+        "k": 22277,
+        "n": 100000,
+        "ler": 0.22277,
+        "wilson95": [
+          0.22020163053517597,
+          0.22535966878194943
+        ]
+      },
+      "wall_s": 240.9
+    },
+    "d2_L2_s101": {
+      "dist": 2,
+      "L": 2,
+      "seed": 101,
+      "npz": "results/campaigns/r3_campaign/t2c_codes/d2_L2_s101.npz",
+      "ms_budget": 84,
+      "train_loss_weighted": 5.755968126382603e-08,
+      "race_op_evs": 24029,
+      "train_wall_s": 145.2,
+      "ler_w1": {
+        "k": 0,
+        "n": 200000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          1.92076310598226e-05
+        ]
+      },
+      "ler_w2": {
+        "k": 0,
+        "n": 100000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          3.8414524267635735e-05
+        ]
+      },
+      "ler_w3": {
+        "k": 0,
+        "n": 100000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          3.8414524267635735e-05
+        ]
+      },
+      "ler_w4": {
+        "k": 21023,
+        "n": 100000,
+        "ler": 0.21023,
+        "wilson95": [
+          0.20771561836961175,
+          0.21276664438378232
+        ]
+      },
+      "wall_s": 238.9
+    },
+    "d2_L2_s102": {
+      "dist": 2,
+      "L": 2,
+      "seed": 102,
+      "npz": "results/campaigns/r3_campaign/t2c_codes/d2_L2_s102.npz",
+      "ms_budget": 84,
+      "train_loss_weighted": 3.5626653689765025e-08,
+      "race_op_evs": 24029,
+      "train_wall_s": 146.4,
+      "ler_w1": {
+        "k": 0,
+        "n": 200000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          1.92076310598226e-05
+        ]
+      },
+      "ler_w2": {
+        "k": 0,
+        "n": 100000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          3.8414524267635735e-05
+        ]
+      },
+      "ler_w3": {
+        "k": 3,
+        "n": 100000,
+        "ler": 3e-05,
+        "wilson95": [
+          1.0202573900776641e-05,
+          8.820964549540304e-05
+        ]
+      },
+      "ler_w4": {
+        "k": 22343,
+        "n": 100000,
+        "ler": 0.22343,
+        "wilson95": [
+          0.2208588845978491,
+          0.22602236401210427
+        ]
+      },
+      "wall_s": 239.4
+    },
+    "d2_L2_s103": {
+      "dist": 2,
+      "L": 2,
+      "seed": 103,
+      "npz": "results/campaigns/r3_campaign/t2c_codes/d2_L2_s103.npz",
+      "ms_budget": 84,
+      "train_loss_weighted": 2.6901672400433313e-08,
+      "race_op_evs": 24029,
+      "train_wall_s": 147.6,
+      "ler_w1": {
+        "k": 0,
+        "n": 200000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          1.92076310598226e-05
+        ]
+      },
+      "ler_w2": {
+        "k": 0,
+        "n": 100000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          3.8414524267635735e-05
+        ]
+      },
+      "ler_w3": {
+        "k": 1,
+        "n": 100000,
+        "ler": 1e-05,
+        "wilson95": [
+          1.765202323777592e-06,
+          5.664855365337279e-05
+        ]
+      },
+      "ler_w4": {
+        "k": 22188,
+        "n": 100000,
+        "ler": 0.22188,
+        "wilson95": [
+          0.21931534822901588,
+          0.22446601946596273
+        ]
+      },
+      "wall_s": 240.5
+    },
+    "d3_L2_s100": {
+      "dist": 3,
+      "L": 2,
+      "seed": 100,
+      "npz": "results/campaigns/r3_campaign/t2c_codes/d3_L2_s100.npz",
+      "ms_budget": 84,
+      "train_loss_weighted": 0.0004034691527283162,
+      "race_op_evs": 212893,
+      "train_wall_s": 284.6,
+      "ler_w1": {
+        "k": 0,
+        "n": 200000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          1.92076310598226e-05
+        ]
+      },
+      "ler_w2": {
+        "k": 0,
+        "n": 100000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          3.8414524267635735e-05
+        ]
+      },
+      "ler_w3": {
+        "k": 0,
+        "n": 100000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          3.8414524267635735e-05
+        ]
+      },
+      "ler_w4": {
+        "k": 21606,
+        "n": 100000,
+        "ler": 0.21606,
+        "wilson95": [
+          0.21352008457276425,
+          0.21862173026727685
+        ]
+      },
+      "wall_s": 377.2
+    },
+    "d3_L2_s101": {
+      "dist": 3,
+      "L": 2,
+      "seed": 101,
+      "npz": "results/campaigns/r3_campaign/t2c_codes/d3_L2_s101.npz",
+      "ms_budget": 84,
+      "train_loss_weighted": 0.0004101617497366554,
+      "race_op_evs": 212767,
+      "train_wall_s": 282.8,
+      "ler_w1": {
+        "k": 0,
+        "n": 200000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          1.92076310598226e-05
+        ]
+      },
+      "ler_w2": {
+        "k": 0,
+        "n": 100000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          3.8414524267635735e-05
+        ]
+      },
+      "ler_w3": {
+        "k": 0,
+        "n": 100000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          3.8414524267635735e-05
+        ]
+      },
+      "ler_w4": {
+        "k": 21058,
+        "n": 100000,
+        "ler": 0.21058,
+        "wilson95": [
+          0.20806406373596956,
+          0.2131181721272575
+        ]
+      },
+      "wall_s": 380.9
+    },
+    "d3_L2_s102": {
+      "dist": 3,
+      "L": 2,
+      "seed": 102,
+      "npz": "results/campaigns/r3_campaign/t2c_codes/d3_L2_s102.npz",
+      "ms_budget": 84,
+      "train_loss_weighted": 0.0004184358200851778,
+      "race_op_evs": 213098,
+      "train_wall_s": 283.4,
+      "ler_w1": {
+        "k": 0,
+        "n": 200000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          1.92076310598226e-05
+        ]
+      },
+      "ler_w2": {
+        "k": 0,
+        "n": 100000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          3.8414524267635735e-05
+        ]
+      },
+      "ler_w3": {
+        "k": 0,
+        "n": 100000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          3.8414524267635735e-05
+        ]
+      },
+      "ler_w4": {
+        "k": 20796,
+        "n": 100000,
+        "ler": 0.20796,
+        "wilson95": [
+          0.20545576961148077,
+          0.21048666754385348
+        ]
+      },
+      "wall_s": 380.4
+    },
+    "d3_L2_s103": {
+      "dist": 3,
+      "L": 2,
+      "seed": 103,
+      "npz": "results/campaigns/r3_campaign/t2c_codes/d3_L2_s103.npz",
+      "ms_budget": 84,
+      "train_loss_weighted": 0.00040396655652020943,
+      "race_op_evs": 212899,
+      "train_wall_s": 285.0,
+      "ler_w1": {
+        "k": 0,
+        "n": 200000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          1.92076310598226e-05
+        ]
+      },
+      "ler_w2": {
+        "k": 0,
+        "n": 100000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          3.8414524267635735e-05
+        ]
+      },
+      "ler_w3": {
+        "k": 0,
+        "n": 100000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          3.8414524267635735e-05
+        ]
+      },
+      "ler_w4": {
+        "k": 21222,
+        "n": 100000,
+        "ler": 0.21222,
+        "wilson95": [
+          0.20969681638603224,
+          0.2147652934775552
+        ]
+      },
+      "wall_s": 381.9
+    },
+    "d4_L2_s100": {
+      "dist": 4,
+      "L": 2,
+      "seed": 100,
+      "npz": "results/campaigns/r3_campaign/t2c_codes/d4_L2_s100.npz",
+      "ms_budget": 84,
+      "train_loss_weighted": 0.0007776410635080967,
+      "race_op_evs": 1123349,
+      "train_wall_s": 1538.3,
+      "ler_w1": {
+        "k": 0,
+        "n": 200000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          1.92076310598226e-05
+        ]
+      },
+      "ler_w2": {
+        "k": 0,
+        "n": 100000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          3.8414524267635735e-05
+        ]
+      },
+      "ler_w3": {
+        "k": 0,
+        "n": 100000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          3.8414524267635735e-05
+        ]
+      },
+      "ler_w4": {
+        "k": 22263,
+        "n": 100000,
+        "ler": 0.22263,
+        "wilson95": [
+          0.22006221421004032,
+          0.2252190958631519
+        ]
+      },
+      "wall_s": 1637.4
+    },
+    "d4_L2_s101": {
+      "dist": 4,
+      "L": 2,
+      "seed": 101,
+      "npz": "results/campaigns/r3_campaign/t2c_codes/d4_L2_s101.npz",
+      "ms_budget": 84,
+      "train_loss_weighted": 0.0007920554895941026,
+      "race_op_evs": 1124103,
+      "train_wall_s": 1549.3,
+      "ler_w1": {
+        "k": 0,
+        "n": 200000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          1.92076310598226e-05
+        ]
+      },
+      "ler_w2": {
+        "k": 0,
+        "n": 100000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          3.8414524267635735e-05
+        ]
+      },
+      "ler_w3": {
+        "k": 0,
+        "n": 100000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          3.8414524267635735e-05
+        ]
+      },
+      "ler_w4": {
+        "k": 22106,
+        "n": 100000,
+        "ler": 0.22106,
+        "wilson95": [
+          0.21849878866064434,
+          0.2236426420341541
+        ]
+      },
+      "wall_s": 1649.3
+    },
+    "d4_L2_s102": {
+      "dist": 4,
+      "L": 2,
+      "seed": 102,
+      "npz": "results/campaigns/r3_campaign/t2c_codes/d4_L2_s102.npz",
+      "ms_budget": 84,
+      "train_loss_weighted": 0.0007721405895611936,
+      "race_op_evs": 1124703,
+      "train_wall_s": 1557.0,
+      "ler_w1": {
+        "k": 0,
+        "n": 200000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          1.92076310598226e-05
+        ]
+      },
+      "ler_w2": {
+        "k": 0,
+        "n": 100000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          3.8414524267635735e-05
+        ]
+      },
+      "ler_w3": {
+        "k": 0,
+        "n": 100000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          3.8414524267635735e-05
+        ]
+      },
+      "ler_w4": {
+        "k": 21302,
+        "n": 100000,
+        "ler": 0.21302,
+        "wilson95": [
+          0.21049330324745505,
+          0.21556874515289356
+        ]
+      },
+      "wall_s": 1656.2
+    },
+    "d4_L2_s103": {
+      "dist": 4,
+      "L": 2,
+      "seed": 103,
+      "npz": "results/campaigns/r3_campaign/t2c_codes/d4_L2_s103.npz",
+      "ms_budget": 84,
+      "train_loss_weighted": 0.0007774956155184811,
+      "race_op_evs": 1123972,
+      "train_wall_s": 1569.4,
+      "ler_w1": {
+        "k": 0,
+        "n": 200000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          1.92076310598226e-05
+        ]
+      },
+      "ler_w2": {
+        "k": 0,
+        "n": 100000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          3.8414524267635735e-05
+        ]
+      },
+      "ler_w3": {
+        "k": 0,
+        "n": 100000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          3.8414524267635735e-05
+        ]
+      },
+      "ler_w4": {
+        "k": 22138,
+        "n": 100000,
+        "ler": 0.22138,
+        "wilson95": [
+          0.21881744432165806,
+          0.22396396178784483
+        ]
+      },
+      "wall_s": 1662.6
+    }
+  },
+  "minimal_L": {
+    "d2": {
+      "L_min": 2,
+      "probe_selection_mandatory": false,
+      "selected_seed": 100,
+      "selected_npz": "results/campaigns/r3_campaign/t2c_codes/d2_L2_s100.npz",
+      "ms_budget": 84,
+      "selection": "(k_w(d-1), k_wd, seed) lexicographic"
+    },
+    "d3": {
+      "L_min": 2,
+      "probe_selection_mandatory": false,
+      "selected_seed": 100,
+      "selected_npz": "results/campaigns/r3_campaign/t2c_codes/d3_L2_s100.npz",
+      "ms_budget": 84,
+      "selection": "(k_w(d-1), k_wd, seed) lexicographic"
+    },
+    "d4": {
+      "L_min": 2,
+      "probe_selection_mandatory": false,
+      "selected_seed": 102,
+      "selected_npz": "results/campaigns/r3_campaign/t2c_codes/d4_L2_s102.npz",
+      "ms_budget": 84,
+      "selection": "(k_w(d-1), k_wd, seed) lexicographic"
+    }
+  },
+  "eval": {
+    "wb_d2_meth_p0.05": {
+      "dist": 2,
+      "arm": "meth",
+      "p": 0.05,
+      "k": 50,
+      "shots": 1200000,
+      "ler": 4.1666666666666665e-05,
+      "wilson95": [
+        3.160766676898031e-05,
+        5.4926722872260317e-05
+      ],
+      "resolved": true,
+      "wall_s": 243.8
+    },
+    "wb_d2_meth_p0.08": {
+      "dist": 2,
+      "arm": "meth",
+      "p": 0.08,
+      "k": 85,
+      "shots": 300000,
+      "ler": 0.00028333333333333335,
+      "wilson95": [
+        0.00022916786143775637,
+        0.00035029671832514497
+      ],
+      "resolved": true,
+      "wall_s": 37.0
+    },
+    "wb_d2_meth_p0.12": {
+      "dist": 2,
+      "arm": "meth",
+      "p": 0.12,
+      "k": 398,
+      "shots": 300000,
+      "ler": 0.0013266666666666667,
+      "wilson95": [
+        0.0012026435612796315,
+        0.0014634609650298748
+      ],
+      "resolved": true,
+      "wall_s": 39.4
+    },
+    "wb_d2_deph_p0.05": {
+      "dist": 2,
+      "arm": "deph",
+      "p": 0.05,
+      "k": 50,
+      "shots": 1200000,
+      "ler": 4.1666666666666665e-05,
+      "wilson95": [
+        3.160766676898031e-05,
+        5.4926722872260317e-05
+      ],
+      "resolved": true,
+      "wall_s": 242.9
+    },
+    "wb_d2_deph_p0.08": {
+      "dist": 2,
+      "arm": "deph",
+      "p": 0.08,
+      "k": 76,
+      "shots": 300000,
+      "ler": 0.00025333333333333333,
+      "wilson95": [
+        0.0002024255541324321,
+        0.00031703979394063077
+      ],
+      "resolved": true,
+      "wall_s": 36.8
+    },
+    "wb_d2_deph_p0.12": {
+      "dist": 2,
+      "arm": "deph",
+      "p": 0.12,
+      "k": 350,
+      "shots": 300000,
+      "ler": 0.0011666666666666668,
+      "wilson95": [
+        0.0010507320449721393,
+        0.0012953765789915617
+      ],
+      "resolved": true,
+      "wall_s": 39.2
+    },
+    "map_d2@0.9": {
+      "dist": 2,
+      "eta": 0.9,
+      "k": 145,
+      "shots": 20000,
+      "ler": 0.00725,
+      "wilson95": [
+        0.006165149276741203,
+        0.008524109210488573
+      ],
+      "bootstrap_ci": [
+        0.0062,
+        0.00845
+      ],
+      "resolved": true,
+      "wall_s": 321.2
+    },
+    "map_d2@0.92": {
+      "dist": 2,
+      "eta": 0.92,
+      "k": 182,
+      "shots": 160000,
+      "ler": 0.0011375,
+      "wilson95": [
+        0.0009838781514650134,
+        0.0013150766506301887
+      ],
+      "bootstrap_ci": [
+        0.000975,
+        0.0013
+      ],
+      "resolved": true,
+      "wall_s": 3042.9
+    },
+    "map_d2@0.93": {
+      "dist": 2,
+      "eta": 0.93,
+      "k": 214,
+      "shots": 640000,
+      "ler": 0.000334375,
+      "wilson95": [
+        0.00029248103918358984,
+        0.0003822674106388401
+      ],
+      "bootstrap_ci": [
+        0.0002890234375,
+        0.0003796875
+      ],
+      "resolved": true,
+      "wall_s": 13811.2
+    },
+    "wb_d3_meth_p0.05": {
+      "dist": 3,
+      "arm": "meth",
+      "p": 0.05,
+      "k": 57,
+      "shots": 1200000,
+      "ler": 4.75e-05,
+      "wilson95": [
+        3.666599082630162e-05,
+        6.153502813283635e-05
+      ],
+      "resolved": true,
+      "wall_s": 244.2
+    },
+    "wb_d3_meth_p0.08": {
+      "dist": 3,
+      "arm": "meth",
+      "p": 0.08,
+      "k": 75,
+      "shots": 300000,
+      "ler": 0.00025,
+      "wilson95": [
+        0.00019946570157774928,
+        0.0003133330651964427
+      ],
+      "resolved": true,
+      "wall_s": 38.1
+    },
+    "wb_d3_meth_p0.12": {
+      "dist": 3,
+      "arm": "meth",
+      "p": 0.12,
+      "k": 403,
+      "shots": 300000,
+      "ler": 0.0013433333333333333,
+      "wilson95": [
+        0.0012184964756862024,
+        0.0014809409571176584
+      ],
+      "resolved": true,
+      "wall_s": 38.1
+    },
+    "wb_d3_deph_p0.05": {
+      "dist": 3,
+      "arm": "deph",
+      "p": 0.05,
+      "k": 53,
+      "shots": 1200000,
+      "ler": 4.4166666666666665e-05,
+      "wilson95": [
+        3.376938745536691e-05,
+        5.776498617925829e-05
+      ],
+      "resolved": true,
+      "wall_s": 253.3
+    },
+    "wb_d3_deph_p0.08": {
+      "dist": 3,
+      "arm": "deph",
+      "p": 0.08,
+      "k": 79,
+      "shots": 300000,
+      "ler": 0.00026333333333333336,
+      "wilson95": [
+        0.00021131944911116225,
+        0.00032814564285851345
+      ],
+      "resolved": true,
+      "wall_s": 39.0
+    },
+    "wb_d3_deph_p0.12": {
+      "dist": 3,
+      "arm": "deph",
+      "p": 0.12,
+      "k": 375,
+      "shots": 300000,
+      "ler": 0.00125,
+      "wilson95": [
+        0.0011297878341370903,
+        0.0013829853222983844
+      ],
+      "resolved": true,
+      "wall_s": 45.0
+    },
+    "map_d3@0.9": {
+      "dist": 3,
+      "eta": 0.9,
+      "k": 126,
+      "shots": 20000,
+      "ler": 0.0063,
+      "wilson95": [
+        0.005294248795744577,
+        0.007495374573398679
+      ],
+      "bootstrap_ci": [
+        0.0052,
+        0.007401249999999999
+      ],
+      "resolved": true,
+      "wall_s": 335.9
+    },
+    "map_d3@0.92": {
+      "dist": 3,
+      "eta": 0.92,
+      "k": 118,
+      "shots": 160000,
+      "ler": 0.0007375,
+      "wilson95": [
+        0.0006159296041793179,
+        0.0008830444054547109
+      ],
+      "bootstrap_ci": [
+        0.00060625,
+        0.0008626562499999998
+      ],
+      "resolved": true,
+      "wall_s": 3662.3
+    },
+    "map_d3@0.93": {
+      "dist": 3,
+      "eta": 0.93,
+      "k": 129,
+      "shots": 640000,
+      "ler": 0.0002015625,
+      "wilson95": [
+        0.0001696536706295828,
+        0.0002394713735973393
+      ],
+      "bootstrap_ci": [
+        0.0001671875,
+        0.0002359375
+      ],
+      "resolved": true,
+      "wall_s": 14348.4
+    },
+    "wb_d4_meth_p0.05": {
+      "dist": 4,
+      "arm": "meth",
+      "p": 0.05,
+      "k": 35,
+      "shots": 1200000,
+      "ler": 2.9166666666666666e-05,
+      "wilson95": [
+        2.0972796699715696e-05,
+        4.056167297460205e-05
+      ],
+      "resolved": true,
+      "wall_s": 266.1
+    },
+    "wb_d4_meth_p0.08": {
+      "dist": 4,
+      "arm": "meth",
+      "p": 0.08,
+      "k": 87,
+      "shots": 300000,
+      "ler": 0.00029,
+      "wilson95": [
+        0.00023513413620405692,
+        0.0003576636061565862
+      ],
+      "resolved": true,
+      "wall_s": 40.5
+    },
+    "wb_d4_meth_p0.12": {
+      "dist": 4,
+      "arm": "meth",
+      "p": 0.12,
+      "k": 377,
+      "shots": 300000,
+      "ler": 0.0012566666666666666,
+      "wilson95": [
+        0.0011361185514717328,
+        0.0013899877675614834
+      ],
+      "resolved": true,
+      "wall_s": 45.6
+    },
+    "wb_d4_deph_p0.05": {
+      "dist": 4,
+      "arm": "deph",
+      "p": 0.05,
+      "k": 49,
+      "shots": 1200000,
+      "ler": 4.0833333333333334e-05,
+      "wilson95": [
+        3.08892960046112e-05,
+        5.397843230550124e-05
+      ],
+      "resolved": true,
+      "wall_s": 252.3
+    },
+    "wb_d4_deph_p0.08": {
+      "dist": 4,
+      "arm": "deph",
+      "p": 0.08,
+      "k": 72,
+      "shots": 300000,
+      "ler": 0.00024,
+      "wilson95": [
+        0.00019060115290532334,
+        0.00030219786997225573
+      ],
+      "resolved": true,
+      "wall_s": 37.8
+    },
+    "wb_d4_deph_p0.12": {
+      "dist": 4,
+      "arm": "deph",
+      "p": 0.12,
+      "k": 428,
+      "shots": 300000,
+      "ler": 0.0014266666666666666,
+      "wilson95": [
+        0.0012978348429998699,
+        0.001568267122275764
+      ],
+      "resolved": true,
+      "wall_s": 45.1
+    },
+    "map_d4@0.9": {
+      "dist": 4,
+      "eta": 0.9,
+      "k": 122,
+      "shots": 20000,
+      "ler": 0.0061,
+      "wilson95": [
+        0.005111654080757839,
+        0.007278046105630363
+      ],
+      "bootstrap_ci": [
+        0.00505,
+        0.00725
+      ],
+      "resolved": true,
+      "wall_s": 424.2
+    },
+    "map_d4@0.92": {
+      "dist": 4,
+      "eta": 0.92,
+      "k": 160,
+      "shots": 160000,
+      "ler": 0.001,
+      "wilson95": [
+        0.0008566457373842303,
+        0.0011673156673024435
+      ],
+      "bootstrap_ci": [
+        0.00085625,
+        0.0011625
+      ],
+      "resolved": true,
+      "wall_s": 7922.0
+    },
+    "map_d4@0.93": {
+      "dist": 4,
+      "eta": 0.93,
+      "k": 185,
+      "shots": 640000,
+      "ler": 0.0002890625,
+      "wilson95": [
+        0.0002503057677293502,
+        0.00033381822606637704
+      ],
+      "bootstrap_ci": [
+        0.0002484375,
+        0.0003328125
+      ],
+      "resolved": true,
+      "wall_s": 13539.3
+    }
+  },
+  "budget_matched": {
+    "L_budget": 2,
+    "arms": {
+      "d2": {
+        "selected_seed": 100,
+        "selected_npz": "results/campaigns/r3_campaign/t2c_codes/d2_L2_s100.npz"
+      },
+      "d3": {
+        "selected_seed": 100,
+        "selected_npz": "results/campaigns/r3_campaign/t2c_codes/d3_L2_s100.npz"
+      },
+      "d4": {
+        "selected_seed": 102,
+        "selected_npz": "results/campaigns/r3_campaign/t2c_codes/d4_L2_s102.npz"
+      }
+    }
+  }
+}

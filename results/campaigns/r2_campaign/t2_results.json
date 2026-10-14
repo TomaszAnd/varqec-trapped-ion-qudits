@@ -1,0 +1,360 @@
+{
+  "protocol": "K study: K panel minimal-L K-explicit weighted; q5 escalation descending-p with monotonicity shortcut.",
+  "units": {
+    "K1_n5": {
+      "part": "Ka",
+      "n": 5,
+      "K": 1,
+      "L": 2,
+      "npz": "results/campaigns/r2_campaign/t2_codes/K1_n5.npz",
+      "ms_budget": 40,
+      "kl_loss_at_3_random_thetas": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "kl_degenerate": true,
+      "protocol": "untrained seed-100 init state (any state satisfies the K=1 KL conditions)",
+      "ler_w1": {
+        "k": 0,
+        "n": 200000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          1.92076310598226e-05
+        ]
+      },
+      "ler_w2": {
+        "k": 0,
+        "n": 100000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          3.8414524267635735e-05
+        ]
+      },
+      "ler_w3": {
+        "k": 0,
+        "n": 100000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          3.8414524267635735e-05
+        ]
+      },
+      "ler_iid_p05": {
+        "k": 0,
+        "n": 1000000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          3.841585242166133e-06
+        ]
+      },
+      "wall_s": 58.3
+    },
+    "K2_n5_L2_s100": {
+      "part": "Ka",
+      "n": 5,
+      "K": 2,
+      "L": 2,
+      "seed": 100,
+      "npz": "results/campaigns/r2_campaign/t2_codes/K2_n5_L2_s100.npz",
+      "ms_budget": 40,
+      "weighted_loss": 0.00040721249420734725,
+      "op_evs_full_batch": 663000,
+      "ler_w1": {
+        "k": 0,
+        "n": 200000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          1.92076310598226e-05
+        ]
+      },
+      "ler_w2": {
+        "k": 0,
+        "n": 100000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          3.8414524267635735e-05
+        ]
+      },
+      "ler_w3": {
+        "k": 17678,
+        "n": 100000,
+        "ler": 0.17678,
+        "wilson95": [
+          0.17442797666288434,
+          0.17915685602218323
+        ]
+      },
+      "ler_iid_p05": {
+        "k": 216,
+        "n": 1000000,
+        "ler": 0.000216,
+        "wilson95": [
+          0.00018905320970277574,
+          0.0002467867159745657
+        ]
+      },
+      "wall_s": 83.3
+    },
+    "K2_n5_L2_s101": {
+      "part": "Ka",
+      "n": 5,
+      "K": 2,
+      "L": 2,
+      "seed": 101,
+      "npz": "results/campaigns/r2_campaign/t2_codes/K2_n5_L2_s101.npz",
+      "ms_budget": 40,
+      "weighted_loss": 0.00037504632679743056,
+      "op_evs_full_batch": 663000,
+      "ler_w1": {
+        "k": 0,
+        "n": 200000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          1.92076310598226e-05
+        ]
+      },
+      "ler_w2": {
+        "k": 0,
+        "n": 100000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          3.8414524267635735e-05
+        ]
+      },
+      "ler_w3": {
+        "k": 12242,
+        "n": 100000,
+        "ler": 0.12242,
+        "wilson95": [
+          0.12040295067615192,
+          0.12446605843599404
+        ]
+      },
+      "ler_iid_p05": {
+        "k": 162,
+        "n": 1000000,
+        "ler": 0.000162,
+        "wilson95": [
+          0.00013890171620356721,
+          0.00018893862436498047
+        ]
+      },
+      "wall_s": 79.6
+    },
+    "K1_n7": {
+      "part": "Ka",
+      "n": 7,
+      "K": 1,
+      "L": 2,
+      "npz": "results/campaigns/r2_campaign/t2_codes/K1_n7.npz",
+      "ms_budget": 84,
+      "kl_loss_at_3_random_thetas": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "kl_degenerate": true,
+      "protocol": "untrained seed-100 init state (any state satisfies the K=1 KL conditions)",
+      "ler_w1": {
+        "k": 0,
+        "n": 200000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          1.92076310598226e-05
+        ]
+      },
+      "ler_w2": {
+        "k": 0,
+        "n": 100000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          3.8414524267635735e-05
+        ]
+      },
+      "ler_w3": {
+        "k": 0,
+        "n": 100000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          3.8414524267635735e-05
+        ]
+      },
+      "ler_iid_p05": {
+        "k": 0,
+        "n": 1000000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          3.841585242166133e-06
+        ]
+      },
+      "wall_s": 171.9
+    },
+    "K2_n7_L2_s100": {
+      "part": "Ka",
+      "n": 7,
+      "K": 2,
+      "L": 2,
+      "seed": 100,
+      "npz": "results/campaigns/r2_campaign/t2_codes/K2_n7_L2_s100.npz",
+      "ms_budget": 84,
+      "weighted_loss": 4.4905272155419536e-05,
+      "op_evs_full_batch": 1263000,
+      "ler_w1": {
+        "k": 0,
+        "n": 200000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          1.92076310598226e-05
+        ]
+      },
+      "ler_w2": {
+        "k": 0,
+        "n": 100000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          3.8414524267635735e-05
+        ]
+      },
+      "ler_w3": {
+        "k": 0,
+        "n": 100000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          3.8414524267635735e-05
+        ]
+      },
+      "ler_iid_p05": {
+        "k": 26,
+        "n": 1000000,
+        "ler": 2.6e-05,
+        "wilson95": [
+          1.7743872018950402e-05,
+          3.8097513460783126e-05
+        ]
+      },
+      "wall_s": 347.8
+    },
+    "K2_n7_L2_s101": {
+      "part": "Ka",
+      "n": 7,
+      "K": 2,
+      "L": 2,
+      "seed": 101,
+      "npz": "results/campaigns/r2_campaign/t2_codes/K2_n7_L2_s101.npz",
+      "ms_budget": 84,
+      "weighted_loss": 4.6341988500085926e-05,
+      "op_evs_full_batch": 1263000,
+      "ler_w1": {
+        "k": 0,
+        "n": 200000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          1.92076310598226e-05
+        ]
+      },
+      "ler_w2": {
+        "k": 0,
+        "n": 100000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          3.8414524267635735e-05
+        ]
+      },
+      "ler_w3": {
+        "k": 0,
+        "n": 100000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          3.8414524267635735e-05
+        ]
+      },
+      "ler_iid_p05": {
+        "k": 21,
+        "n": 1000000,
+        "ler": 2.1e-05,
+        "wilson95": [
+          1.373590218749899e-05,
+          3.210552170808696e-05
+        ]
+      },
+      "wall_s": 359.0
+    }
+  },
+  "K3_pointers": {
+    "n5": {
+      "npz": "results/campaigns/r1_campaign/t1_codes/A_L2_s100.npz",
+      "source": "central code A_L2_s100, r1_campaign (same recipe, importance@0.2)"
+    },
+    "n7": {
+      "npz": "results/campaigns/r2_campaign/t1a_codes/d3_L2_s100.npz",
+      "source": "t1a d3 L=2 best-by-probe"
+    }
+  },
+  "q5_shot_cost": {
+    "s_per_shot": 0.00014761314392089844,
+    "projected_cap_cell_h": 0.41003651089138454
+  },
+  "q5_cells": {
+    "0.15": {
+      "p": 0.15,
+      "shots": 10000000,
+      "k": 0,
+      "ler": 0.0,
+      "wilson95": [
+        0.0,
+        3.8415985242115104e-07
+      ],
+      "resolved": false,
+      "below_detection": true,
+      "wall_s": 1658.5
+    },
+    "0.12": {
+      "p": 0.12,
+      "inherited_from_p": 0.15,
+      "wilson95_ub": 3.8415985242115104e-07,
+      "note": "k=0 at cap at a HIGHER p; bound inherited by LER monotonicity in p (stated assumption)"
+    },
+    "0.08": {
+      "p": 0.08,
+      "inherited_from_p": 0.15,
+      "wilson95_ub": 3.8415985242115104e-07,
+      "note": "k=0 at cap at a HIGHER p; bound inherited by LER monotonicity in p (stated assumption)"
+    },
+    "0.05": {
+      "p": 0.05,
+      "inherited_from_p": 0.15,
+      "wilson95_ub": 3.8415985242115104e-07,
+      "note": "k=0 at cap at a HIGHER p; bound inherited by LER monotonicity in p (stated assumption)"
+    },
+    "0.03": {
+      "p": 0.03,
+      "inherited_from_p": 0.15,
+      "wilson95_ub": 3.8415985242115104e-07,
+      "note": "k=0 at cap at a HIGHER p; bound inherited by LER monotonicity in p (stated assumption)"
+    },
+    "0.02": {
+      "p": 0.02,
+      "inherited_from_p": 0.15,
+      "wilson95_ub": 3.8415985242115104e-07,
+      "note": "k=0 at cap at a HIGHER p; bound inherited by LER monotonicity in p (stated assumption)"
+    }
+  }
+}

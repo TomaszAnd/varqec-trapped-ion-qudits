@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "d": 3,
+    "n": 7,
+    "sigma_a2": 0.0,
+    "gate_steps": 21,
+    "codes": {
+      "d2": "results/campaigns/r3_campaign/t2c_codes/d2_L2_s100.npz",
+      "d3": "results/campaigns/r3_campaign/t2c_codes/d3_L2_s100.npz",
+      "d4": "results/campaigns/r3_campaign/t2c_codes/d4_L2_s102.npz"
+    },
+    "metric": "rate = 1 - F_avg (channel infidelity)"
+  },
+  "cells": {
+    "d2@eta0.93": {
+      "arm": "d2",
+      "eta": 0.93,
+      "projective_rate": 0.5906341260368484,
+      "petz_rate": 0.24651570500250697,
+      "projective_F_e": 0.21248783195086884,
+      "petz_F_e": 0.6713123933299907,
+      "petz_leak_max": 1.4432899320127035e-15,
+      "n_sectors": 393,
+      "wall_s": 112.4
+    },
+    "d3@eta0.93": {
+      "arm": "d3",
+      "eta": 0.93,
+      "projective_rate": 0.5895501985713514,
+      "petz_rate": 0.24425316049474577,
+      "projective_F_e": 0.21393306857153144,
+      "petz_F_e": 0.674329119340339,
+      "petz_leak_max": -1.3322676295501878e-15,
+      "n_sectors": 393,
+      "wall_s": 157.0
+    },
+    "d4@eta0.93": {
+      "arm": "d4",
+      "eta": 0.93,
+      "projective_rate": 0.5887749661450096,
+      "petz_rate": 0.24241800081978893,
+      "projective_F_e": 0.21496671180665394,
+      "petz_F_e": 0.6767759989069481,
+      "petz_leak_max": 3.3306690738754696e-15,
+      "n_sectors": 393,
+      "wall_s": 112.9
+    },
+    "d2@eta0.92": {
+      "arm": "d2",
+      "eta": 0.92,
+      "projective_rate": 0.6158001379055302,
+      "petz_rate": 0.28995567124581356,
+      "projective_F_e": 0.17893314945929298,
+      "petz_F_e": 0.6133924383389153,
+      "petz_leak_max": 0.0,
+      "n_sectors": 393,
+      "wall_s": 109.3
+    },
+    "d3@eta0.92": {
+      "arm": "d3",
+      "eta": 0.92,
+      "projective_rate": 0.6149068393354101,
+      "petz_rate": 0.287949582368797,
+      "projective_F_e": 0.18012421421945313,
+      "petz_F_e": 0.6160672235082707,
+      "petz_leak_max": 1.5543122344752192e-15,
+      "n_sectors": 393,
+      "wall_s": 97.9
+    },
+    "d4@eta0.92": {
+      "arm": "d4",
+      "eta": 0.92,
+      "projective_rate": 0.6142770829259792,
+      "petz_rate": 0.28626413877627743,
+      "projective_F_e": 0.18096388943202787,
+      "petz_F_e": 0.6183144816316302,
+      "petz_leak_max": 1.887379141862766e-15,
+      "n_sectors": 393,
+      "wall_s": 201.3
+    }
+  }
+}

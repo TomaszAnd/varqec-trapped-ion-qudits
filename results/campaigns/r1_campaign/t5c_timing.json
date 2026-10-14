@@ -1,0 +1,13 @@
+{
+  "arm": "unweighted_hw_fullbatch",
+  "fallback_error": "weighted arm failed: ValueError('cannot reshape array of size 729 into shape (3,3,3,3)') -- falling back to unweighted hw",
+  "steps": 500,
+  "wall_s": 363.3,
+  "s_per_step_incl_build": 0.727,
+  "projected_3000step_hours": 0.61,
+  "go_full_train_le_6h": true,
+  "loss_at_500": 0.7842563929821217,
+  "race_op_evs": 1333161,
+  "npz": "results/campaigns/r1_campaign/t1_codes/t5c_n7_d4_timing.npz",
+  "note": "shared box (nice -19); s/step includes one-time build+compile amortized over 500 steps"
+}

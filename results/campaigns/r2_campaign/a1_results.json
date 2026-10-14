@@ -1,0 +1,291 @@
+{
+  "protocol": "Distance-panel verification: fresh-seed w1/w2/w3 probes (200k each, seeds 5001-5003) + correlated-channel weighted-MAP LER at eta {0.90,0.92,0.93}, >=100 errors or 640k cap, for the three t1b panel codes.",
+  "codes": {
+    "d2": "results/campaigns/r2_campaign/t1a_codes/d2_L2_s100.npz",
+    "d3": "results/campaigns/r2_campaign/t1a_codes/d3_L2_s100.npz",
+    "d4": "results/campaigns/r2_campaign/t1a_codes/d4_L2_s103.npz"
+  },
+  "probes": {
+    "probe_d2_w1": {
+      "arm": "d2",
+      "w": 1,
+      "seed": 5001,
+      "shots": 200000,
+      "k": 0,
+      "ler": 0.0,
+      "wilson95": [
+        0.0,
+        1.92076310598226e-05
+      ],
+      "wall_s": 29.9
+    },
+    "probe_d2_w2": {
+      "arm": "d2",
+      "w": 2,
+      "seed": 5002,
+      "shots": 200000,
+      "k": 0,
+      "ler": 0.0,
+      "wilson95": [
+        0.0,
+        1.92076310598226e-05
+      ],
+      "wall_s": 35.0
+    },
+    "probe_d2_w3": {
+      "arm": "d2",
+      "w": 3,
+      "seed": 5003,
+      "shots": 200000,
+      "k": 0,
+      "ler": 0.0,
+      "wilson95": [
+        0.0,
+        1.92076310598226e-05
+      ],
+      "wall_s": 41.2
+    },
+    "probe_d3_w1": {
+      "arm": "d3",
+      "w": 1,
+      "seed": 5001,
+      "shots": 200000,
+      "k": 0,
+      "ler": 0.0,
+      "wilson95": [
+        0.0,
+        1.92076310598226e-05
+      ],
+      "wall_s": 33.9
+    },
+    "probe_d3_w2": {
+      "arm": "d3",
+      "w": 2,
+      "seed": 5002,
+      "shots": 200000,
+      "k": 0,
+      "ler": 0.0,
+      "wilson95": [
+        0.0,
+        1.92076310598226e-05
+      ],
+      "wall_s": 36.1
+    },
+    "probe_d3_w3": {
+      "arm": "d3",
+      "w": 3,
+      "seed": 5003,
+      "shots": 200000,
+      "k": 0,
+      "ler": 0.0,
+      "wilson95": [
+        0.0,
+        1.92076310598226e-05
+      ],
+      "wall_s": 41.6
+    },
+    "probe_d4_w1": {
+      "arm": "d4",
+      "w": 1,
+      "seed": 5001,
+      "shots": 200000,
+      "k": 0,
+      "ler": 0.0,
+      "wilson95": [
+        0.0,
+        1.92076310598226e-05
+      ],
+      "wall_s": 29.0
+    },
+    "probe_d4_w2": {
+      "arm": "d4",
+      "w": 2,
+      "seed": 5002,
+      "shots": 200000,
+      "k": 0,
+      "ler": 0.0,
+      "wilson95": [
+        0.0,
+        1.92076310598226e-05
+      ],
+      "wall_s": 35.9
+    },
+    "probe_d4_w3": {
+      "arm": "d4",
+      "w": 3,
+      "seed": 5003,
+      "shots": 200000,
+      "k": 0,
+      "ler": 0.0,
+      "wilson95": [
+        0.0,
+        1.92076310598226e-05
+      ],
+      "wall_s": 42.6
+    }
+  },
+  "map": {
+    "map_d2@0.9": {
+      "arm": "d2",
+      "eta": 0.9,
+      "shots": 20000,
+      "k": 145,
+      "ler": 0.00725,
+      "wilson95": [
+        0.006165149276741203,
+        0.008524109210488573
+      ],
+      "bootstrap_ci": [
+        0.0062,
+        0.00845
+      ],
+      "resolved": true,
+      "below_detection": false,
+      "wall_s": 352.9
+    },
+    "map_d2@0.92": {
+      "arm": "d2",
+      "eta": 0.92,
+      "shots": 160000,
+      "k": 182,
+      "ler": 0.0011375,
+      "wilson95": [
+        0.0009838781514650134,
+        0.0013150766506301887
+      ],
+      "bootstrap_ci": [
+        0.000975,
+        0.0013
+      ],
+      "resolved": true,
+      "below_detection": false,
+      "wall_s": 3686.1
+    },
+    "map_d2@0.93": {
+      "arm": "d2",
+      "eta": 0.93,
+      "shots": 640000,
+      "k": 214,
+      "ler": 0.000334375,
+      "wilson95": [
+        0.00029248103918358984,
+        0.0003822674106388401
+      ],
+      "bootstrap_ci": [
+        0.0002890234375,
+        0.0003796875
+      ],
+      "resolved": true,
+      "below_detection": false,
+      "wall_s": 13686.6
+    },
+    "map_d3@0.9": {
+      "arm": "d3",
+      "eta": 0.9,
+      "shots": 20000,
+      "k": 126,
+      "ler": 0.0063,
+      "wilson95": [
+        0.005294248795744577,
+        0.007495374573398679
+      ],
+      "bootstrap_ci": [
+        0.0052,
+        0.007401249999999999
+      ],
+      "resolved": true,
+      "below_detection": false,
+      "wall_s": 345.7
+    },
+    "map_d3@0.92": {
+      "arm": "d3",
+      "eta": 0.92,
+      "shots": 160000,
+      "k": 118,
+      "ler": 0.0007375,
+      "wilson95": [
+        0.0006159296041793179,
+        0.0008830444054547109
+      ],
+      "bootstrap_ci": [
+        0.00060625,
+        0.0008626562499999998
+      ],
+      "resolved": true,
+      "below_detection": false,
+      "wall_s": 2842.5
+    },
+    "map_d3@0.93": {
+      "arm": "d3",
+      "eta": 0.93,
+      "shots": 640000,
+      "k": 129,
+      "ler": 0.0002015625,
+      "wilson95": [
+        0.0001696536706295828,
+        0.0002394713735973393
+      ],
+      "bootstrap_ci": [
+        0.0001671875,
+        0.0002359375
+      ],
+      "resolved": true,
+      "below_detection": false,
+      "wall_s": 12478.0
+    },
+    "map_d4@0.9": {
+      "arm": "d4",
+      "eta": 0.9,
+      "shots": 20000,
+      "k": 128,
+      "ler": 0.0064,
+      "wilson95": [
+        0.005385650718568428,
+        0.007603934241952356
+      ],
+      "bootstrap_ci": [
+        0.0053,
+        0.00745
+      ],
+      "resolved": true,
+      "below_detection": false,
+      "wall_s": 301.8
+    },
+    "map_d4@0.92": {
+      "arm": "d4",
+      "eta": 0.92,
+      "shots": 160000,
+      "k": 163,
+      "ler": 0.00101875,
+      "wilson95": [
+        0.0008739558650709028,
+        0.0011875046392623883
+      ],
+      "bootstrap_ci": [
+        0.00085,
+        0.0011875
+      ],
+      "resolved": true,
+      "below_detection": false,
+      "wall_s": 2715.0
+    },
+    "map_d4@0.93": {
+      "arm": "d4",
+      "eta": 0.93,
+      "shots": 640000,
+      "k": 180,
+      "ler": 0.00028125,
+      "wilson95": [
+        0.00024305833780948304,
+        0.0003254407497747437
+      ],
+      "bootstrap_ci": [
+        0.0002421875,
+        0.0003203125
+      ],
+      "resolved": true,
+      "below_detection": false,
+      "wall_s": 18379.4
+    }
+  }
+}

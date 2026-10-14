@@ -1,0 +1,160 @@
+{
+  "code": "results/campaigns/fig6_panels/d3_n5_dist2_16L.npz",
+  "committed_B1_minus_A1": 0.031601941144243195,
+  "bare_hw_basis": {
+    "n_ops": 4,
+    "B1_minus_A1": 0.031601941144242786,
+    "offdiag_part": 0.0,
+    "diag_spread_part": 0.031601941144242786,
+    "per_op": [
+      {
+        "op": 0,
+        "offdiag": 0.0,
+        "diag_spread": 0.013652866444206851
+      },
+      {
+        "op": 1,
+        "offdiag": 0.0,
+        "diag_spread": 0.004963445615544052
+      },
+      {
+        "op": 2,
+        "offdiag": 0.0,
+        "diag_spread": 0.006050132457677086
+      },
+      {
+        "op": 3,
+        "offdiag": 0.0,
+        "diag_spread": 0.006935496626814794
+      }
+    ]
+  },
+  "closure_augmented_hw": {
+    "n_ops": 12,
+    "B1_minus_A1": 0.1867266742538882,
+    "offdiag_part": 0.030611761841828608,
+    "diag_spread_part": 0.15611491241205958,
+    "per_op": [
+      {
+        "op": 0,
+        "offdiag": 0.0,
+        "diag_spread": 0.013652866444206851
+      },
+      {
+        "op": 1,
+        "offdiag": 0.0,
+        "diag_spread": 0.004963445615544052
+      },
+      {
+        "op": 2,
+        "offdiag": 0.0,
+        "diag_spread": 0.006050132457677086
+      },
+      {
+        "op": 3,
+        "offdiag": 0.0,
+        "diag_spread": 0.006935496626814794
+      },
+      {
+        "op": 4,
+        "offdiag": 0.0,
+        "diag_spread": 0.011806124953660012
+      },
+      {
+        "op": 5,
+        "offdiag": 0.0,
+        "diag_spread": 0.016171878663629412
+      },
+      {
+        "op": 6,
+        "offdiag": 0.0,
+        "diag_spread": 0.01435296617116974
+      },
+      {
+        "op": 7,
+        "offdiag": 0.0,
+        "diag_spread": 0.009844959527648639
+      },
+      {
+        "op": 8,
+        "offdiag": 0.0,
+        "diag_spread": 0.01435296617116974
+      },
+      {
+        "op": 9,
+        "offdiag": 0.0,
+        "diag_spread": 0.016171878663629412
+      },
+      {
+        "op": 10,
+        "offdiag": 0.01530588092091431,
+        "diag_spread": 0.020906098558454916
+      },
+      {
+        "op": 11,
+        "offdiag": 0.015305880920914299,
+        "diag_spread": 0.020906098558454916
+      }
+    ]
+  },
+  "full_training_basis": {
+    "n_ops": 10,
+    "B1_minus_A1": 0.0850907033149954,
+    "offdiag_part": 0.0,
+    "diag_spread_part": 0.0850907033149954,
+    "per_op": [
+      {
+        "op": 0,
+        "offdiag": 0.0,
+        "diag_spread": 0.013652866444206851
+      },
+      {
+        "op": 1,
+        "offdiag": 0.0,
+        "diag_spread": 0.004963445615544052
+      },
+      {
+        "op": 2,
+        "offdiag": 0.0,
+        "diag_spread": 0.006050132457677086
+      },
+      {
+        "op": 3,
+        "offdiag": 0.0,
+        "diag_spread": 0.006935496626814794
+      },
+      {
+        "op": 4,
+        "offdiag": 0.0,
+        "diag_spread": 0.019784603761362225
+      },
+      {
+        "op": 5,
+        "offdiag": 0.0,
+        "diag_spread": 0.012806926046242208
+      },
+      {
+        "op": 6,
+        "offdiag": 0.0,
+        "diag_spread": 0.00540942546213006
+      },
+      {
+        "op": 7,
+        "offdiag": 0.0,
+        "diag_spread": 0.00503919071944402
+      },
+      {
+        "op": 8,
+        "offdiag": 0.0,
+        "diag_spread": 0.00540942546213006
+      },
+      {
+        "op": 9,
+        "offdiag": 0.0,
+        "diag_spread": 0.00503919071944402
+      }
+    ]
+  },
+  "trained_loss_offdiag_only": 3.519114207519976e-30,
+  "hypothetical_loss_with_diag_term": 0.05598156535006599
+}

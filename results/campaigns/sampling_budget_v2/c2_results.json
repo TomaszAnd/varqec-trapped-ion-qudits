@@ -1,0 +1,360 @@
+{
+  "protocol": "Sec IX weighted line, num_seeds=1: n=5 L=16 a2a MS, 3000 steps, weighted corrected-Meth KL + importance@0.2, target 1e-9; probes: LER|w1 & LER|w2 @100k conditioned (seeds 1001/1002), iid LER p=0.05 @300k (seed 2000). Same seeds + instruments as t1g (full-batch unweighted hw/full arms) for direct comparison.",
+  "units": {
+    "wimp02_s100": {
+      "objective": "weighted_importance_0.2",
+      "seed": 100,
+      "npz": "results/campaigns/sampling_budget_v2/c2/wimp02_s100.npz",
+      "train_loss_weighted": 0.0002119591238646722,
+      "hw_basis_loss": 0.07090007377470797,
+      "full_basis_loss": 2.8874612125032084,
+      "race_op_evs": 113586,
+      "n_trigger_attempts": 0,
+      "n_false_triggers": 0,
+      "train_wall_s": 107.1,
+      "ler_w1": {
+        "ler": 0.0,
+        "k": 0,
+        "n": 100000,
+        "wilson95": [
+          0.0,
+          3.8414524267635735e-05
+        ]
+      },
+      "ler_w2": {
+        "ler": 0.0,
+        "k": 0,
+        "n": 100000,
+        "wilson95": [
+          0.0,
+          3.8414524267635735e-05
+        ]
+      },
+      "ler_iid_p05": {
+        "ler": 0.0005266666666666667,
+        "k": 158,
+        "n": 300000,
+        "wilson95": [
+          0.0004507131856767611,
+          0.0006154118289037192
+        ]
+      },
+      "wall_s": 129.0
+    },
+    "wimp02_s101": {
+      "objective": "weighted_importance_0.2",
+      "seed": 101,
+      "npz": "results/campaigns/sampling_budget_v2/c2/wimp02_s101.npz",
+      "train_loss_weighted": 0.00020993281484764023,
+      "hw_basis_loss": 0.06830291942346797,
+      "full_basis_loss": 2.9071463732556544,
+      "race_op_evs": 113665,
+      "n_trigger_attempts": 0,
+      "n_false_triggers": 0,
+      "train_wall_s": 115.9,
+      "ler_w1": {
+        "ler": 0.0,
+        "k": 0,
+        "n": 100000,
+        "wilson95": [
+          0.0,
+          3.8414524267635735e-05
+        ]
+      },
+      "ler_w2": {
+        "ler": 0.0,
+        "k": 0,
+        "n": 100000,
+        "wilson95": [
+          0.0,
+          3.8414524267635735e-05
+        ]
+      },
+      "ler_iid_p05": {
+        "ler": 0.0004733333333333333,
+        "k": 142,
+        "n": 300000,
+        "wilson95": [
+          0.00040163273734158966,
+          0.0005578269764569553
+        ]
+      },
+      "wall_s": 146.0
+    },
+    "wimp02_s102": {
+      "objective": "weighted_importance_0.2",
+      "seed": 102,
+      "npz": "results/campaigns/sampling_budget_v2/c2/wimp02_s102.npz",
+      "train_loss_weighted": 0.00023496248202787567,
+      "hw_basis_loss": 0.07810554199155458,
+      "full_basis_loss": 2.8343090604262775,
+      "race_op_evs": 113477,
+      "n_trigger_attempts": 0,
+      "n_false_triggers": 0,
+      "train_wall_s": 173.6,
+      "ler_w1": {
+        "ler": 0.0,
+        "k": 0,
+        "n": 100000,
+        "wilson95": [
+          0.0,
+          3.8414524267635735e-05
+        ]
+      },
+      "ler_w2": {
+        "ler": 0.0,
+        "k": 0,
+        "n": 100000,
+        "wilson95": [
+          0.0,
+          3.8414524267635735e-05
+        ]
+      },
+      "ler_iid_p05": {
+        "ler": 0.00044666666666666666,
+        "k": 134,
+        "n": 300000,
+        "wilson95": [
+          0.0003771819962530245,
+          0.0005289450671545529
+        ]
+      },
+      "wall_s": 197.7
+    },
+    "wimp02_s103": {
+      "objective": "weighted_importance_0.2",
+      "seed": 103,
+      "npz": "results/campaigns/sampling_budget_v2/c2/wimp02_s103.npz",
+      "train_loss_weighted": 0.00021911807871910488,
+      "hw_basis_loss": 0.07306255352533055,
+      "full_basis_loss": 2.8028241493952364,
+      "race_op_evs": 113566,
+      "n_trigger_attempts": 0,
+      "n_false_triggers": 0,
+      "train_wall_s": 107.2,
+      "ler_w1": {
+        "ler": 0.0,
+        "k": 0,
+        "n": 100000,
+        "wilson95": [
+          0.0,
+          3.8414524267635735e-05
+        ]
+      },
+      "ler_w2": {
+        "ler": 0.0,
+        "k": 0,
+        "n": 100000,
+        "wilson95": [
+          0.0,
+          3.8414524267635735e-05
+        ]
+      },
+      "ler_iid_p05": {
+        "ler": 0.00048666666666666666,
+        "k": 146,
+        "n": 300000,
+        "wilson95": [
+          0.00041388139546535204,
+          0.0005722446435286766
+        ]
+      },
+      "wall_s": 130.3
+    },
+    "wimp02_s104": {
+      "objective": "weighted_importance_0.2",
+      "seed": 104,
+      "npz": "results/campaigns/sampling_budget_v2/c2/wimp02_s104.npz",
+      "train_loss_weighted": 0.00022552628471339556,
+      "hw_basis_loss": 0.07342005287836877,
+      "full_basis_loss": 2.760500470481149,
+      "race_op_evs": 113659,
+      "n_trigger_attempts": 0,
+      "n_false_triggers": 0,
+      "train_wall_s": 107.3,
+      "ler_w1": {
+        "ler": 0.0,
+        "k": 0,
+        "n": 100000,
+        "wilson95": [
+          0.0,
+          3.8414524267635735e-05
+        ]
+      },
+      "ler_w2": {
+        "ler": 0.0,
+        "k": 0,
+        "n": 100000,
+        "wilson95": [
+          0.0,
+          3.8414524267635735e-05
+        ]
+      },
+      "ler_iid_p05": {
+        "ler": 0.00044,
+        "k": 132,
+        "n": 300000,
+        "wilson95": [
+          0.00037107951277193355,
+          0.0005217143880379021
+        ]
+      },
+      "wall_s": 129.6
+    },
+    "wimp02_s105": {
+      "objective": "weighted_importance_0.2",
+      "seed": 105,
+      "npz": "results/campaigns/sampling_budget_v2/c2/wimp02_s105.npz",
+      "train_loss_weighted": 0.0002128950561160252,
+      "hw_basis_loss": 0.07122556443260533,
+      "full_basis_loss": 3.130827842282345,
+      "race_op_evs": 113538,
+      "n_trigger_attempts": 0,
+      "n_false_triggers": 0,
+      "train_wall_s": 103.1,
+      "ler_w1": {
+        "ler": 0.0,
+        "k": 0,
+        "n": 100000,
+        "wilson95": [
+          0.0,
+          3.8414524267635735e-05
+        ]
+      },
+      "ler_w2": {
+        "ler": 0.0,
+        "k": 0,
+        "n": 100000,
+        "wilson95": [
+          0.0,
+          3.8414524267635735e-05
+        ]
+      },
+      "ler_iid_p05": {
+        "ler": 0.0005533333333333333,
+        "k": 166,
+        "n": 300000,
+        "wilson95": [
+          0.000475333875312016,
+          0.0006441237896594316
+        ]
+      },
+      "wall_s": 124.8
+    },
+    "wimp02_s106": {
+      "objective": "weighted_importance_0.2",
+      "seed": 106,
+      "npz": "results/campaigns/sampling_budget_v2/c2/wimp02_s106.npz",
+      "train_loss_weighted": 0.00021555698354046939,
+      "hw_basis_loss": 0.07050375900354543,
+      "full_basis_loss": 2.8288046000834193,
+      "race_op_evs": 113616,
+      "n_trigger_attempts": 0,
+      "n_false_triggers": 0,
+      "train_wall_s": 99.5,
+      "ler_w1": {
+        "ler": 0.0,
+        "k": 0,
+        "n": 100000,
+        "wilson95": [
+          0.0,
+          3.8414524267635735e-05
+        ]
+      },
+      "ler_w2": {
+        "ler": 0.0,
+        "k": 0,
+        "n": 100000,
+        "wilson95": [
+          0.0,
+          3.8414524267635735e-05
+        ]
+      },
+      "ler_iid_p05": {
+        "ler": 0.00043,
+        "k": 129,
+        "n": 300000,
+        "wilson95": [
+          0.00036193381394799445,
+          0.0005108603429652283
+        ]
+      },
+      "wall_s": 121.2
+    },
+    "wimp02_s107": {
+      "objective": "weighted_importance_0.2",
+      "seed": 107,
+      "npz": "results/campaigns/sampling_budget_v2/c2/wimp02_s107.npz",
+      "train_loss_weighted": 0.00020834569757982238,
+      "hw_basis_loss": 0.06850543121888306,
+      "full_basis_loss": 2.8994964877687286,
+      "race_op_evs": 113519,
+      "n_trigger_attempts": 0,
+      "n_false_triggers": 0,
+      "train_wall_s": 99.7,
+      "ler_w1": {
+        "ler": 0.0,
+        "k": 0,
+        "n": 100000,
+        "wilson95": [
+          0.0,
+          3.8414524267635735e-05
+        ]
+      },
+      "ler_w2": {
+        "ler": 0.0,
+        "k": 0,
+        "n": 100000,
+        "wilson95": [
+          0.0,
+          3.8414524267635735e-05
+        ]
+      },
+      "ler_iid_p05": {
+        "ler": 0.00057,
+        "k": 171,
+        "n": 300000,
+        "wilson95": [
+          0.000490746667444937,
+          0.0006620439040208653
+        ]
+      },
+      "wall_s": 121.3
+    }
+  },
+  "tally": {
+    "n": 8,
+    "perfect_w2": 8,
+    "perfect_w1": 8,
+    "w2_lers": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "iid_p05_lers": [
+      0.00043,
+      0.00044,
+      0.000447,
+      0.000473,
+      0.000487,
+      0.000527,
+      0.000553,
+      0.00057
+    ],
+    "race_op_evs": [
+      113477,
+      113519,
+      113538,
+      113566,
+      113586,
+      113616,
+      113659,
+      113665
+    ]
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "meta": {
+    "d": 3,
+    "etas": [
+      0.9296,
+      0.92
+    ],
+    "sigma_a2": 0.0,
+    "codes": {
+      "5": "results/campaigns/campaign/d3_n5_dist3_16L.npz",
+      "6": "results/campaigns/r2_campaign/t4_codes/n6_L2_s102.npz",
+      "7": "results/campaigns/r2_campaign/t1a_codes/d3_L2_s100.npz",
+      "8": "results/campaigns/r2_campaign/t4_codes/n8_L2_s100.npz",
+      "9": "results/campaigns/r2_campaign/t4_codes/n9_L2_s100.npz"
+    },
+    "metric": "rate = 1 - F_avg (channel infidelity)",
+    "sampled_primary": "modeA stochastic phases (exact v1 unraveling)",
+    "se_target_frac": 0.15,
+    "cap": 30000
+  },
+  "cells": {
+    "n5@eta0.9296": {
+      "n": 5,
+      "eta": 0.9296,
+      "kind": "exact",
+      "projective_rate": 0.40611332486803464,
+      "petz_rate": 0.16880498442921021,
+      "wall_s": 0.7
+    },
+    "n5@eta0.92": {
+      "n": 5,
+      "eta": 0.92,
+      "kind": "exact",
+      "projective_rate": 0.43846470951449257,
+      "petz_rate": 0.1937905422346452,
+      "wall_s": 0.7
+    },
+    "n6@eta0.9296": {
+      "n": 6,
+      "eta": 0.9296,
+      "kind": "exact",
+      "projective_rate": 0.48157012246306463,
+      "petz_rate": 0.17502586603543235,
+      "wall_s": 4.6
+    },
+    "n6@eta0.92": {
+      "n": 6,
+      "eta": 0.92,
+      "kind": "exact",
+      "projective_rate": 0.5129788506588843,
+      "petz_rate": 0.21014457261661934,
+      "wall_s": 4.6
+    },
+    "n7@eta0.9296": {
+      "n": 7,
+      "eta": 0.9296,
+      "kind": "exact",
+      "projective_rate": 0.5906884161731982,
+      "petz_rate": 0.24609089361381808,
+      "wall_s": 61.0
+    },
+    "n7@eta0.92": {
+      "n": 7,
+      "eta": 0.92,
+      "kind": "exact",
+      "projective_rate": 0.6149068393354101,
+      "petz_rate": 0.287949582368797,
+      "wall_s": 60.3
+    },
+    "n8@eta0.9296": {
+      "n": 8,
+      "eta": 0.9296,
+      "kind": "sampled_modeA",
+      "projective_rate": 0.6742635242750524,
+      "projective_rate_se": 0.0008755763240165716,
+      "n_traj_per_ensemble": 1000,
+      "wall_s": 135.4
+    },
+    "n8@eta0.92": {
+      "n": 8,
+      "eta": 0.92,
+      "kind": "sampled_modeA",
+      "projective_rate": 0.6898812476831986,
+      "projective_rate_se": 0.0007422988763571102,
+      "n_traj_per_ensemble": 1000,
+      "wall_s": 125.6
+    },
+    "n9@eta0.9296": {
+      "n": 9,
+      "eta": 0.9296,
+      "kind": "sampled_modeA",
+      "projective_rate": 0.7215925998472948,
+      "projective_rate_se": 0.0004692935936866483,
+      "n_traj_per_ensemble": 1000,
+      "wall_s": 436.5
+    },
+    "n9@eta0.92": {
+      "n": 9,
+      "eta": 0.92,
+      "kind": "sampled_modeA",
+      "projective_rate": 0.7268105185646694,
+      "projective_rate_se": 0.0004233592251214718,
+      "n_traj_per_ensemble": 1000,
+      "wall_s": 426.1
+    },
+    "n8@eta0.9296_modeB_xcheck": {
+      "n": 8,
+      "eta": 0.9296,
+      "kind": "sampled_modeB_xcheck",
+      "projective_rate": 0.6750634539912298,
+      "projective_rate_se": 0.0001871203354345607,
+      "z_vs_modeA": 0.89,
+      "wall_s": 1094.4
+    }
+  }
+}

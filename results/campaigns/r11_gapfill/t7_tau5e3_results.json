@@ -1,0 +1,328 @@
+{
+  "meta": {
+    "tau": 0.005,
+    "purpose": "tighter-tau control (1.5x floor 3.36e-3); does per-seed strict w2-perfection return, at what budget"
+  },
+  "units": {
+    "importance@f0.05_tau5e3_s100": {
+      "certified": true,
+      "stop_step": 154,
+      "full_loss": 0.004864589163771781,
+      "train_op_evs": 2480,
+      "confirm_op_evs": 221,
+      "monitor_op_evs": 1547,
+      "budget_op_evs": 2701,
+      "n_confirms": 1,
+      "n_premature": 0,
+      "total_ops": 221,
+      "train_wall_s": 15.7,
+      "sampler": "importance",
+      "frac": 0.05,
+      "seed": 100,
+      "tau": 0.005,
+      "npz": "results/campaigns/r11_gapfill/t7_codes/importance@f0.05_tau5e3_s100.npz",
+      "ler_w2": {
+        "ler": 0.0,
+        "k": 0,
+        "n": 100000
+      },
+      "ler_iid_p05": {
+        "ler": 0.00038333333333333334,
+        "k": 115,
+        "n_shots": 300000,
+        "wilson95": [
+          0.00031939114254393784,
+          0.00046007087618509174
+        ],
+        "resolved": true
+      }
+    },
+    "importance@f0.05_tau5e3_s101": {
+      "certified": true,
+      "stop_step": 279,
+      "full_loss": 0.004653920449848265,
+      "train_op_evs": 4480,
+      "confirm_op_evs": 221,
+      "monitor_op_evs": 2652,
+      "budget_op_evs": 4701,
+      "n_confirms": 1,
+      "n_premature": 0,
+      "total_ops": 221,
+      "train_wall_s": 16.7,
+      "sampler": "importance",
+      "frac": 0.05,
+      "seed": 101,
+      "tau": 0.005,
+      "npz": "results/campaigns/r11_gapfill/t7_codes/importance@f0.05_tau5e3_s101.npz",
+      "ler_w2": {
+        "ler": 0.0,
+        "k": 0,
+        "n": 100000
+      },
+      "ler_iid_p05": {
+        "ler": 0.00038,
+        "k": 114,
+        "n_shots": 300000,
+        "wilson95": [
+          0.0003163616844564711,
+          0.0004564337529736876
+        ],
+        "resolved": true
+      }
+    },
+    "importance@f0.05_tau5e3_s102": {
+      "certified": true,
+      "stop_step": 272,
+      "full_loss": 0.004733449431974676,
+      "train_op_evs": 4368,
+      "confirm_op_evs": 442,
+      "monitor_op_evs": 2431,
+      "budget_op_evs": 4810,
+      "n_confirms": 2,
+      "n_premature": 1,
+      "total_ops": 221,
+      "train_wall_s": 14.5,
+      "sampler": "importance",
+      "frac": 0.05,
+      "seed": 102,
+      "tau": 0.005,
+      "npz": "results/campaigns/r11_gapfill/t7_codes/importance@f0.05_tau5e3_s102.npz",
+      "ler_w2": {
+        "ler": 0.0,
+        "k": 0,
+        "n": 100000
+      },
+      "ler_iid_p05": {
+        "ler": 0.00032,
+        "k": 96,
+        "n_shots": 300000,
+        "wilson95": [
+          0.00026207676766304845,
+          0.0003907202063874333
+        ],
+        "resolved": true
+      }
+    },
+    "importance@f0.05_tau5e3_s103": {
+      "certified": true,
+      "stop_step": 206,
+      "full_loss": 0.004664167812395855,
+      "train_op_evs": 3312,
+      "confirm_op_evs": 442,
+      "monitor_op_evs": 1989,
+      "budget_op_evs": 3754,
+      "n_confirms": 2,
+      "n_premature": 1,
+      "total_ops": 221,
+      "train_wall_s": 14.2,
+      "sampler": "importance",
+      "frac": 0.05,
+      "seed": 103,
+      "tau": 0.005,
+      "npz": "results/campaigns/r11_gapfill/t7_codes/importance@f0.05_tau5e3_s103.npz",
+      "ler_w2": {
+        "ler": 0.0,
+        "k": 0,
+        "n": 100000
+      },
+      "ler_iid_p05": {
+        "ler": 0.00030333333333333335,
+        "k": 91,
+        "n_shots": 300000,
+        "wilson95": [
+          0.00024709019588161436,
+          0.0003723738716745127
+        ],
+        "resolved": true
+      }
+    },
+    "full_batch_tau5e3_s100": {
+      "certified": true,
+      "stop_step": 51,
+      "full_loss": 0.0048804114901823915,
+      "train_op_evs": 11492,
+      "confirm_op_evs": 0,
+      "monitor_op_evs": 663,
+      "budget_op_evs": 11492,
+      "n_confirms": 0,
+      "n_premature": 0,
+      "total_ops": 221,
+      "train_wall_s": 12.8,
+      "sampler": "full_batch",
+      "frac": 1.0,
+      "seed": 100,
+      "tau": 0.005,
+      "npz": "results/campaigns/r11_gapfill/t7_codes/full_batch_tau5e3_s100.npz",
+      "ler_w2": {
+        "ler": 0.0,
+        "k": 0,
+        "n": 100000
+      },
+      "ler_iid_p05": {
+        "ler": 0.00042666666666666667,
+        "k": 128,
+        "n_shots": 300000,
+        "wilson95": [
+          0.00035888743729438674,
+          0.000507240138319965
+        ],
+        "resolved": true
+      }
+    },
+    "full_batch_tau5e3_s101": {
+      "certified": true,
+      "stop_step": 66,
+      "full_loss": 0.004880363495129158,
+      "train_op_evs": 14807,
+      "confirm_op_evs": 0,
+      "monitor_op_evs": 663,
+      "budget_op_evs": 14807,
+      "n_confirms": 0,
+      "n_premature": 0,
+      "total_ops": 221,
+      "train_wall_s": 12.9,
+      "sampler": "full_batch",
+      "frac": 1.0,
+      "seed": 101,
+      "tau": 0.005,
+      "npz": "results/campaigns/r11_gapfill/t7_codes/full_batch_tau5e3_s101.npz",
+      "ler_w2": {
+        "ler": 0.0,
+        "k": 0,
+        "n": 100000
+      },
+      "ler_iid_p05": {
+        "ler": 0.00030333333333333335,
+        "k": 91,
+        "n_shots": 300000,
+        "wilson95": [
+          0.00024709019588161436,
+          0.0003723738716745127
+        ],
+        "resolved": true
+      }
+    },
+    "full_batch_tau5e3_s102": {
+      "certified": true,
+      "stop_step": 54,
+      "full_loss": 0.004886031185423467,
+      "train_op_evs": 12155,
+      "confirm_op_evs": 0,
+      "monitor_op_evs": 663,
+      "budget_op_evs": 12155,
+      "n_confirms": 0,
+      "n_premature": 0,
+      "total_ops": 221,
+      "train_wall_s": 12.9,
+      "sampler": "full_batch",
+      "frac": 1.0,
+      "seed": 102,
+      "tau": 0.005,
+      "npz": "results/campaigns/r11_gapfill/t7_codes/full_batch_tau5e3_s102.npz",
+      "ler_w2": {
+        "ler": 0.0,
+        "k": 0,
+        "n": 100000
+      },
+      "ler_iid_p05": {
+        "ler": 0.00030333333333333335,
+        "k": 91,
+        "n_shots": 300000,
+        "wilson95": [
+          0.00024709019588161436,
+          0.0003723738716745127
+        ],
+        "resolved": true
+      }
+    },
+    "full_batch_tau5e3_s103": {
+      "certified": true,
+      "stop_step": 59,
+      "full_loss": 0.004812558047135559,
+      "train_op_evs": 13260,
+      "confirm_op_evs": 0,
+      "monitor_op_evs": 663,
+      "budget_op_evs": 13260,
+      "n_confirms": 0,
+      "n_premature": 0,
+      "total_ops": 221,
+      "train_wall_s": 12.9,
+      "sampler": "full_batch",
+      "frac": 1.0,
+      "seed": 103,
+      "tau": 0.005,
+      "npz": "results/campaigns/r11_gapfill/t7_codes/full_batch_tau5e3_s103.npz",
+      "ler_w2": {
+        "ler": 0.0,
+        "k": 0,
+        "n": 100000
+      },
+      "ler_iid_p05": {
+        "ler": 0.0004133333333333333,
+        "k": 124,
+        "n_shots": 300000,
+        "wilson95": [
+          0.0003467132232678213,
+          0.0004927480271510467
+        ],
+        "resolved": true
+      }
+    }
+  },
+  "summary": {
+    "importance@f0.05": {
+      "certified": 4,
+      "budget_median": 4227.5,
+      "budget_range": [
+        2701,
+        4810
+      ],
+      "stop_steps": [
+        154,
+        279,
+        272,
+        206
+      ],
+      "w2_perfect": 4,
+      "k_w2": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "iid_lers": [
+        0.00038333333333333334,
+        0.00038,
+        0.00032,
+        0.00030333333333333335
+      ]
+    },
+    "full_batch": {
+      "certified": 4,
+      "budget_median": 12707.5,
+      "budget_range": [
+        11492,
+        14807
+      ],
+      "stop_steps": [
+        51,
+        66,
+        54,
+        59
+      ],
+      "w2_perfect": 4,
+      "k_w2": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "iid_lers": [
+        0.00042666666666666667,
+        0.00030333333333333335,
+        0.00030333333333333335,
+        0.0004133333333333333
+      ]
+    }
+  }
+}

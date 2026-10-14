@@ -1,0 +1,11 @@
+{
+  "code": "importance_0.05_s100 (((9,3,3))_3 channel-weighted L=2, certified stop)",
+  "npz": "results/campaigns/r10_sampler/t1_codes/importance_0.05_s100.npz",
+  "A1": 4.005014801014483,
+  "A2": 7.137147557936343,
+  "B1": 4.006414511369351,
+  "B2": 7.1882895533639015,
+  "B1_minus_A1": 0.0013997103548675227,
+  "B2_minus_A2": 0.051141995427558484,
+  "wall_s": 0.5
+}

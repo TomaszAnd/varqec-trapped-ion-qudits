@@ -1,0 +1,154 @@
+{
+  "protocol": {
+    "steps": 1500,
+    "seed": 0,
+    "log_every": 25,
+    "method": "exact replay of theta-independent draw streams (a2_decompose method); train totals exclude the every-25-step full-batch monitoring evals",
+    "validation": "n=5 and n=9 replays asserted against stored op-EV traces at all logged checkpoints"
+  },
+  "table": {
+    "5": {
+      "full_batch": {
+        "total_ops": 221,
+        "nominal_budget_per_step": 221,
+        "realized_ops_per_step_mean": 221.0,
+        "train_total_op_evs": 331500,
+        "replay_matches_stored_trace": true,
+        "validation_note": "stored n=5 run used 1200 steps; replay matches ALL its checkpoints at 1200 steps; the table row is the 1500-step convention (per-step cost is step-count-independent)"
+      },
+      "stratified_0.2": {
+        "total_ops": 221,
+        "nominal_budget_per_step": 44,
+        "realized_ops_per_step_mean": 56.0,
+        "train_total_op_evs": 84000,
+        "replay_matches_stored_trace": true,
+        "validation_note": "stored n=5 run used 1200 steps; replay matches ALL its checkpoints at 1200 steps; the table row is the 1500-step convention (per-step cost is step-count-independent)"
+      },
+      "importance_0.2": {
+        "total_ops": 221,
+        "nominal_budget_per_step": 44,
+        "realized_ops_per_step_mean": 37.83,
+        "train_total_op_evs": 56742,
+        "replay_matches_stored_trace": true,
+        "validation_note": "stored n=5 run used 1200 steps; replay matches ALL its checkpoints at 1200 steps; the table row is the 1500-step convention (per-step cost is step-count-independent)"
+      },
+      "importance_0.35": {
+        "total_ops": 221,
+        "nominal_budget_per_step": 77,
+        "realized_ops_per_step_mean": 58.44,
+        "train_total_op_evs": 87654,
+        "replay_matches_stored_trace": true,
+        "validation_note": "stored n=5 run used 1200 steps; replay matches ALL its checkpoints at 1200 steps; the table row is the 1500-step convention (per-step cost is step-count-independent)"
+      },
+      "full_basis_is_0.1": {
+        "total_ops": 221,
+        "nominal_budget_per_step": 22,
+        "realized_ops_per_step_mean": 26.54,
+        "train_total_op_evs": 39809,
+        "replay_matches_stored_trace": true,
+        "validation_note": "stored n=5 run used 1200 steps; replay matches ALL its checkpoints at 1200 steps; the table row is the 1500-step convention (per-step cost is step-count-independent)"
+      }
+    },
+    "6": {
+      "full_batch": {
+        "total_ops": 313,
+        "nominal_budget_per_step": 313,
+        "realized_ops_per_step_mean": 313.0,
+        "train_total_op_evs": 469500
+      },
+      "stratified_0.2": {
+        "total_ops": 313,
+        "nominal_budget_per_step": 63,
+        "realized_ops_per_step_mean": 79.0,
+        "train_total_op_evs": 118500
+      },
+      "importance_0.2": {
+        "total_ops": 313,
+        "nominal_budget_per_step": 63,
+        "realized_ops_per_step_mean": 55.06,
+        "train_total_op_evs": 82585
+      },
+      "importance_0.35": {
+        "total_ops": 313,
+        "nominal_budget_per_step": 110,
+        "realized_ops_per_step_mean": 81.22,
+        "train_total_op_evs": 121826
+      },
+      "full_basis_is_0.1": {
+        "total_ops": 313,
+        "nominal_budget_per_step": 31,
+        "realized_ops_per_step_mean": 37.37,
+        "train_total_op_evs": 56059
+      }
+    },
+    "7": {
+      "full_batch": {
+        "total_ops": 421,
+        "nominal_budget_per_step": 421,
+        "realized_ops_per_step_mean": 421.0,
+        "train_total_op_evs": 631500
+      },
+      "stratified_0.2": {
+        "total_ops": 421,
+        "nominal_budget_per_step": 84,
+        "realized_ops_per_step_mean": 106.0,
+        "train_total_op_evs": 159000
+      },
+      "importance_0.2": {
+        "total_ops": 421,
+        "nominal_budget_per_step": 84,
+        "realized_ops_per_step_mean": 70.8,
+        "train_total_op_evs": 106194
+      },
+      "importance_0.35": {
+        "total_ops": 421,
+        "nominal_budget_per_step": 147,
+        "realized_ops_per_step_mean": 104.35,
+        "train_total_op_evs": 156521
+      },
+      "full_basis_is_0.1": {
+        "total_ops": 421,
+        "nominal_budget_per_step": 42,
+        "realized_ops_per_step_mean": 49.33,
+        "train_total_op_evs": 73997
+      }
+    },
+    "9": {
+      "full_batch": {
+        "total_ops": 685,
+        "nominal_budget_per_step": 685,
+        "realized_ops_per_step_mean": 685.0,
+        "train_total_op_evs": 1027500,
+        "replay_matches_stored_trace": true
+      },
+      "stratified_0.2": {
+        "total_ops": 685,
+        "nominal_budget_per_step": 137,
+        "realized_ops_per_step_mean": 172.0,
+        "train_total_op_evs": 258000,
+        "replay_matches_stored_trace": true
+      },
+      "importance_0.2": {
+        "total_ops": 685,
+        "nominal_budget_per_step": 137,
+        "realized_ops_per_step_mean": 113.82,
+        "train_total_op_evs": 170736,
+        "replay_matches_stored_trace": true
+      },
+      "importance_0.35": {
+        "total_ops": 685,
+        "nominal_budget_per_step": 240,
+        "realized_ops_per_step_mean": 192.86,
+        "train_total_op_evs": 289290,
+        "replay_matches_stored_trace": true
+      },
+      "full_basis_is_0.1": {
+        "total_ops": 685,
+        "nominal_budget_per_step": 68,
+        "realized_ops_per_step_mean": 74.47,
+        "train_total_op_evs": 111706,
+        "replay_matches_stored_trace": true
+      }
+    }
+  }
+}

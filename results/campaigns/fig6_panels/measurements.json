@@ -1,0 +1,788 @@
+{
+  "p_grid": [
+    0.02,
+    0.03,
+    0.05,
+    0.08,
+    0.12,
+    0.15
+  ],
+  "min_errors": 30,
+  "ladder": [
+    300000,
+    1000000,
+    3000000
+  ],
+  "policy": "escalate shots until >=30 errors or ladder cap (n>=9 capped at 1M); k=0 cells are below-detection Wilson-UB, never zero",
+  "instrument": "batched factored lookup LER",
+  "codes": {
+    "K2": {
+      "label": "((5,2,3))$_3$ L16 a2a",
+      "ms_budget": 320,
+      "n": 5,
+      "d": 3,
+      "seed0": 2210,
+      "points": [
+        {
+          "p": 0.02,
+          "shots": 1000000,
+          "k": 59,
+          "ler": 5.9e-05,
+          "wilson_lo": 4.57439810300489e-05,
+          "wilson_hi": 7.609715090505863e-05,
+          "below_detection": false
+        },
+        {
+          "p": 0.03,
+          "shots": 300000,
+          "k": 40,
+          "ler": 0.00013333333333333334,
+          "wilson_lo": 9.792393084947132e-05,
+          "wilson_hi": 0.00018154449046423765,
+          "below_detection": false
+        },
+        {
+          "p": 0.05,
+          "shots": 300000,
+          "k": 131,
+          "ler": 0.0004366666666666667,
+          "wilson_lo": 0.00036802986417388184,
+          "wilson_hi": 0.0005180974553370828,
+          "below_detection": false
+        },
+        {
+          "p": 0.08,
+          "shots": 300000,
+          "k": 372,
+          "ler": 0.00124,
+          "wilson_lo": 0.0011202934439848576,
+          "wilson_hi": 0.0013724799685540042,
+          "below_detection": false
+        },
+        {
+          "p": 0.12,
+          "shots": 300000,
+          "k": 898,
+          "ler": 0.0029933333333333335,
+          "wilson_lo": 0.002804106409313349,
+          "wilson_hi": 0.003195288766431628,
+          "below_detection": false
+        },
+        {
+          "p": 0.15,
+          "shots": 300000,
+          "k": 1540,
+          "ler": 0.0051333333333333335,
+          "wilson_lo": 0.004883865712693292,
+          "wilson_hi": 0.005395474656926829,
+          "below_detection": false
+        }
+      ],
+      "wall_s": 135.7
+    },
+    "c_n5": {
+      "label": "((5,3,3))$_3$ L16 a2a",
+      "ms_budget": 320,
+      "n": 5,
+      "d": 3,
+      "seed0": 2050,
+      "points": [
+        {
+          "p": 0.02,
+          "shots": 1000000,
+          "k": 80,
+          "ler": 8e-05,
+          "wilson_lo": 6.428556264081199e-05,
+          "wilson_hi": 9.95554079477154e-05,
+          "below_detection": false
+        },
+        {
+          "p": 0.03,
+          "shots": 300000,
+          "k": 59,
+          "ler": 0.00019666666666666666,
+          "wilson_lo": 0.00015248199668725757,
+          "wilson_hi": 0.00025365146930499924,
+          "below_detection": false
+        },
+        {
+          "p": 0.05,
+          "shots": 300000,
+          "k": 147,
+          "ler": 0.00049,
+          "wilson_lo": 0.0004169458774970712,
+          "wilson_hi": 0.0005758467427958284,
+          "below_detection": false
+        },
+        {
+          "p": 0.08,
+          "shots": 300000,
+          "k": 467,
+          "ler": 0.0015566666666666667,
+          "wilson_lo": 0.0014218293161568762,
+          "wilson_hi": 0.001704269319774725,
+          "below_detection": false
+        },
+        {
+          "p": 0.12,
+          "shots": 300000,
+          "k": 1176,
+          "ler": 0.00392,
+          "wilson_lo": 0.0037026565069806835,
+          "wilson_hi": 0.0041500482698504145,
+          "below_detection": false
+        },
+        {
+          "p": 0.15,
+          "shots": 300000,
+          "k": 2133,
+          "ler": 0.00711,
+          "wilson_lo": 0.006815583653829147,
+          "wilson_hi": 0.007417039426021441,
+          "below_detection": false
+        }
+      ],
+      "wall_s": 138.1
+    },
+    "c_n6": {
+      "label": "((6,3,3))$_3$ L16 a2a",
+      "ms_budget": 480,
+      "n": 6,
+      "d": 3,
+      "seed0": 2060,
+      "points": [
+        {
+          "p": 0.02,
+          "shots": 3000000,
+          "k": 13,
+          "ler": 4.333333333333333e-06,
+          "wilson_lo": 2.5325119292060986e-06,
+          "wilson_hi": 7.414675333089037e-06,
+          "below_detection": false
+        },
+        {
+          "p": 0.03,
+          "shots": 3000000,
+          "k": 49,
+          "ler": 1.633333333333333e-05,
+          "wilson_lo": 1.2355686651725543e-05,
+          "wilson_hi": 2.1591469877808948e-05,
+          "below_detection": false
+        },
+        {
+          "p": 0.05,
+          "shots": 1000000,
+          "k": 62,
+          "ler": 6.2e-05,
+          "wilson_lo": 4.8368961362718404e-05,
+          "wilson_hi": 7.947214752287768e-05,
+          "below_detection": false
+        },
+        {
+          "p": 0.08,
+          "shots": 300000,
+          "k": 93,
+          "ler": 0.00031,
+          "wilson_lo": 0.00025307946947801237,
+          "wilson_hi": 0.0003797177606758565,
+          "below_detection": false
+        },
+        {
+          "p": 0.12,
+          "shots": 300000,
+          "k": 422,
+          "ler": 0.0014066666666666667,
+          "wilson_lo": 0.001278782739353483,
+          "wilson_hi": 0.0015473197381289257,
+          "below_detection": false
+        },
+        {
+          "p": 0.15,
+          "shots": 300000,
+          "k": 893,
+          "ler": 0.0029766666666666665,
+          "wilson_lo": 0.00278798302140258,
+          "wilson_hi": 0.003178079247848042,
+          "below_detection": false
+        }
+      ],
+      "wall_s": 757.1
+    },
+    "c_n7": {
+      "label": "((7,3,3))$_3$ L16 a2a",
+      "ms_budget": 672,
+      "n": 7,
+      "d": 3,
+      "seed0": 2070,
+      "points": [
+        {
+          "p": 0.02,
+          "shots": 3000000,
+          "k": 2,
+          "ler": 6.666666666666667e-07,
+          "wilson_lo": 1.8282023825181052e-07,
+          "wilson_hi": 2.4310430812757465e-06,
+          "below_detection": false
+        },
+        {
+          "p": 0.03,
+          "shots": 3000000,
+          "k": 15,
+          "ler": 5e-06,
+          "wilson_lo": 3.0301715892162204e-06,
+          "wilson_hi": 8.25034729903666e-06,
+          "below_detection": false
+        },
+        {
+          "p": 0.05,
+          "shots": 3000000,
+          "k": 110,
+          "ler": 3.6666666666666666e-05,
+          "wilson_lo": 3.042495360857013e-05,
+          "wilson_hi": 4.418881751267549e-05,
+          "below_detection": false
+        },
+        {
+          "p": 0.08,
+          "shots": 300000,
+          "k": 78,
+          "ler": 0.00026,
+          "wilson_lo": 0.0002083524735752948,
+          "wilson_hi": 0.0003244460370955099,
+          "below_detection": false
+        },
+        {
+          "p": 0.12,
+          "shots": 300000,
+          "k": 387,
+          "ler": 0.00129,
+          "wilson_lo": 0.0011677853613872701,
+          "wilson_hi": 0.0014249867706346555,
+          "below_detection": false
+        },
+        {
+          "p": 0.15,
+          "shots": 300000,
+          "k": 859,
+          "ler": 0.002863333333333333,
+          "wilson_lo": 0.002678385354110087,
+          "wilson_hi": 0.0030610131509789225,
+          "below_detection": false
+        }
+      ],
+      "wall_s": 2382.9
+    },
+    "c_n8": {
+      "label": "((8,3,3))$_3$ L16 a2a",
+      "ms_budget": 896,
+      "n": 8,
+      "d": 3,
+      "seed0": 2080,
+      "points": [
+        {
+          "p": 0.02,
+          "shots": 3000000,
+          "k": 1,
+          "ler": 3.3333333333333335e-07,
+          "wilson_lo": 5.884000718467419e-08,
+          "wilson_hi": 1.888357499364012e-06,
+          "below_detection": false
+        },
+        {
+          "p": 0.03,
+          "shots": 3000000,
+          "k": 3,
+          "ler": 1e-06,
+          "wilson_lo": 3.4008414498948103e-07,
+          "wilson_hi": 2.940444987516947e-06,
+          "below_detection": false
+        },
+        {
+          "p": 0.05,
+          "shots": 3000000,
+          "k": 41,
+          "ler": 1.3666666666666667e-05,
+          "wilson_lo": 1.00748613054835e-05,
+          "wilson_hi": 1.8538968720220025e-05,
+          "below_detection": false
+        },
+        {
+          "p": 0.08,
+          "shots": 1000000,
+          "k": 94,
+          "ler": 9.4e-05,
+          "wilson_lo": 7.682165862717087e-05,
+          "wilson_hi": 0.0001150192043969697,
+          "below_detection": false
+        },
+        {
+          "p": 0.12,
+          "shots": 300000,
+          "k": 141,
+          "ler": 0.00047,
+          "wilson_lo": 0.0003985729387544119,
+          "wilson_hi": 0.0005542201937452621,
+          "below_detection": false
+        },
+        {
+          "p": 0.15,
+          "shots": 300000,
+          "k": 468,
+          "ler": 0.00156,
+          "wilson_lo": 0.0014250120344761219,
+          "wilson_hi": 0.00170775318275435,
+          "below_detection": false
+        }
+      ],
+      "wall_s": 9330.1
+    },
+    "c_n9": {
+      "label": "((9,3,3))$_3$ L16 a2a",
+      "ms_budget": 1152,
+      "n": 9,
+      "d": 3,
+      "seed0": 2090,
+      "points": [
+        {
+          "p": 0.02,
+          "shots": 1000000,
+          "k": 0,
+          "ler": 0.0,
+          "wilson_lo": 0.0,
+          "wilson_hi": 3.841585242166133e-06,
+          "below_detection": true
+        },
+        {
+          "p": 0.03,
+          "shots": 1000000,
+          "k": 1,
+          "ler": 1e-06,
+          "wilson_lo": 1.7652003609355793e-07,
+          "wilson_hi": 5.66505752290209e-06,
+          "below_detection": false
+        },
+        {
+          "p": 0.05,
+          "shots": 1000000,
+          "k": 7,
+          "ler": 7e-06,
+          "wilson_lo": 3.390824550644936e-06,
+          "wilson_hi": 1.4450706909327806e-05,
+          "below_detection": false
+        },
+        {
+          "p": 0.08,
+          "shots": 1000000,
+          "k": 65,
+          "ler": 6.5e-05,
+          "wilson_lo": 5.100277626743479e-05,
+          "wilson_hi": 8.283830956864983e-05,
+          "below_detection": false
+        },
+        {
+          "p": 0.12,
+          "shots": 300000,
+          "k": 131,
+          "ler": 0.0004366666666666667,
+          "wilson_lo": 0.00036802986417388184,
+          "wilson_hi": 0.0005180974553370828,
+          "below_detection": false
+        },
+        {
+          "p": 0.15,
+          "shots": 300000,
+          "k": 376,
+          "ler": 0.0012533333333333333,
+          "wilson_lo": 0.0011329530810107729,
+          "wilson_hi": 0.0013864866567235726,
+          "below_detection": false
+        }
+      ],
+      "wall_s": 11677.6
+    },
+    "d4K3": {
+      "label": "((5,3,3))$_4$ L16 a2a",
+      "ms_budget": 480,
+      "n": 5,
+      "d": 4,
+      "seed0": 2230,
+      "points": [
+        {
+          "p": 0.02,
+          "shots": 3000000,
+          "k": 0,
+          "ler": 0.0,
+          "wilson_lo": 0.0,
+          "wilson_hi": 1.2805316935698153e-06,
+          "below_detection": true
+        },
+        {
+          "p": 0.03,
+          "shots": 3000000,
+          "k": 0,
+          "ler": 0.0,
+          "wilson_lo": 0.0,
+          "wilson_hi": 1.2805316935698153e-06,
+          "below_detection": true
+        },
+        {
+          "p": 0.05,
+          "shots": 3000000,
+          "k": 0,
+          "ler": 0.0,
+          "wilson_lo": 0.0,
+          "wilson_hi": 1.2805316935698153e-06,
+          "below_detection": true
+        },
+        {
+          "p": 0.08,
+          "shots": 3000000,
+          "k": 0,
+          "ler": 0.0,
+          "wilson_lo": 0.0,
+          "wilson_hi": 1.2805316935698153e-06,
+          "below_detection": true
+        },
+        {
+          "p": 0.12,
+          "shots": 3000000,
+          "k": 2,
+          "ler": 6.666666666666667e-07,
+          "wilson_lo": 1.8282023825181052e-07,
+          "wilson_hi": 2.4310430812757465e-06,
+          "below_detection": false
+        },
+        {
+          "p": 0.15,
+          "shots": 3000000,
+          "k": 21,
+          "ler": 7e-06,
+          "wilson_lo": 4.578625294310849e-06,
+          "wilson_hi": 1.0701888471815255e-05,
+          "below_detection": false
+        }
+      ],
+      "wall_s": 3023.5
+    },
+    "d5K3": {
+      "label": "((5,3,3))$_5$ L16 a2a",
+      "ms_budget": 640,
+      "n": 5,
+      "d": 5,
+      "seed0": 2240,
+      "points": [
+        {
+          "p": 0.02,
+          "shots": 3000000,
+          "k": 0,
+          "ler": 0.0,
+          "wilson_lo": 0.0,
+          "wilson_hi": 1.2805316935698153e-06,
+          "below_detection": true
+        },
+        {
+          "p": 0.03,
+          "shots": 3000000,
+          "k": 0,
+          "ler": 0.0,
+          "wilson_lo": 0.0,
+          "wilson_hi": 1.2805316935698153e-06,
+          "below_detection": true
+        },
+        {
+          "p": 0.05,
+          "shots": 3000000,
+          "k": 0,
+          "ler": 0.0,
+          "wilson_lo": 0.0,
+          "wilson_hi": 1.2805316935698153e-06,
+          "below_detection": true
+        },
+        {
+          "p": 0.08,
+          "shots": 3000000,
+          "k": 0,
+          "ler": 0.0,
+          "wilson_lo": 0.0,
+          "wilson_hi": 1.2805316935698153e-06,
+          "below_detection": true
+        },
+        {
+          "p": 0.12,
+          "shots": 3000000,
+          "k": 0,
+          "ler": 0.0,
+          "wilson_lo": 0.0,
+          "wilson_hi": 1.2805316935698153e-06,
+          "below_detection": true
+        },
+        {
+          "p": 0.15,
+          "shots": 3000000,
+          "k": 0,
+          "ler": 0.0,
+          "wilson_lo": 0.0,
+          "wilson_hi": 1.2805316935698153e-06,
+          "below_detection": true
+        }
+      ],
+      "wall_s": 7858.6
+    },
+    "dist2": {
+      "label": "((5,3,2))$_3$ L16 a2a",
+      "ms_budget": 320,
+      "n": 5,
+      "d": 3,
+      "seed0": 2220,
+      "points": [
+        {
+          "p": 0.02,
+          "shots": 3000000,
+          "k": 54,
+          "ler": 1.8e-05,
+          "wilson_lo": 1.3796786755153867e-05,
+          "wilson_hi": 2.348369883927498e-05,
+          "below_detection": false
+        },
+        {
+          "p": 0.03,
+          "shots": 1000000,
+          "k": 53,
+          "ler": 5.3e-05,
+          "wilson_lo": 4.0523301460225514e-05,
+          "wilson_hi": 6.931787657390492e-05,
+          "below_detection": false
+        },
+        {
+          "p": 0.05,
+          "shots": 300000,
+          "k": 89,
+          "ler": 0.00029666666666666665,
+          "wilson_lo": 0.00024110833527309723,
+          "wilson_hi": 0.00036502256968528777,
+          "below_detection": false
+        },
+        {
+          "p": 0.08,
+          "shots": 300000,
+          "k": 402,
+          "ler": 0.00134,
+          "wilson_lo": 0.0012153254866374954,
+          "wilson_hi": 0.0014774453648674945,
+          "below_detection": false
+        },
+        {
+          "p": 0.12,
+          "shots": 300000,
+          "k": 1196,
+          "ler": 0.003986666666666667,
+          "wilson_lo": 0.0037674372519956893,
+          "wilson_hi": 0.004218599150812828,
+          "below_detection": false
+        },
+        {
+          "p": 0.15,
+          "shots": 300000,
+          "k": 2230,
+          "ler": 0.0074333333333333335,
+          "wilson_lo": 0.007132204019099807,
+          "wilson_hi": 0.007747077446741263,
+          "below_detection": false
+        }
+      ],
+      "wall_s": 304.2
+    },
+    "pub": {
+      "label": "((5,3,3))$_3$ published L10 ring",
+      "ms_budget": 100,
+      "n": 5,
+      "d": 3,
+      "seed0": 2250,
+      "points": [
+        {
+          "p": 0.02,
+          "shots": 3000000,
+          "k": 88,
+          "ler": 2.9333333333333333e-05,
+          "wilson_lo": 2.381149593812563e-05,
+          "wilson_hi": 3.6135627297584827e-05,
+          "below_detection": false
+        },
+        {
+          "p": 0.03,
+          "shots": 1000000,
+          "k": 91,
+          "ler": 9.1e-05,
+          "wilson_lo": 7.4125748404366e-05,
+          "wilson_hi": 0.00011171513766928603,
+          "below_detection": false
+        },
+        {
+          "p": 0.05,
+          "shots": 300000,
+          "k": 129,
+          "ler": 0.00043,
+          "wilson_lo": 0.00036193381394799445,
+          "wilson_hi": 0.0005108603429652283,
+          "below_detection": false
+        },
+        {
+          "p": 0.08,
+          "shots": 300000,
+          "k": 491,
+          "ler": 0.0016366666666666667,
+          "wilson_lo": 0.0014982580380452234,
+          "wilson_hi": 0.0017878385490592802,
+          "below_detection": false
+        },
+        {
+          "p": 0.12,
+          "shots": 300000,
+          "k": 1574,
+          "ler": 0.005246666666666667,
+          "wilson_lo": 0.004994405666895805,
+          "wilson_hi": 0.005511598466885929,
+          "below_detection": false
+        },
+        {
+          "p": 0.15,
+          "shots": 300000,
+          "k": 2921,
+          "ler": 0.009736666666666666,
+          "wilson_lo": 0.009391511628710828,
+          "wilson_hi": 0.010094377514650064,
+          "below_detection": false
+        }
+      ],
+      "wall_s": 315.3
+    },
+    "s513": {
+      "label": "[[5,1,3]]$_{Z_3}$ (analytic)",
+      "ms_budget": null,
+      "n": 5,
+      "d": 3,
+      "seed0": 2260,
+      "points": [
+        {
+          "p": 0.02,
+          "shots": 1000000,
+          "k": 65,
+          "ler": 6.5e-05,
+          "wilson_lo": 5.100277626743479e-05,
+          "wilson_hi": 8.283830956864983e-05,
+          "below_detection": false
+        },
+        {
+          "p": 0.03,
+          "shots": 300000,
+          "k": 51,
+          "ler": 0.00017,
+          "wilson_lo": 0.00012931034577447822,
+          "wilson_hi": 0.0002234904698268111,
+          "below_detection": false
+        },
+        {
+          "p": 0.05,
+          "shots": 300000,
+          "k": 228,
+          "ler": 0.00076,
+          "wilson_lo": 0.0006675728091704203,
+          "wilson_hi": 0.0008652128963310259,
+          "below_detection": false
+        },
+        {
+          "p": 0.08,
+          "shots": 300000,
+          "k": 1001,
+          "ler": 0.0033366666666666666,
+          "wilson_lo": 0.0031365695917379885,
+          "wilson_hi": 0.0035494834577906947,
+          "below_detection": false
+        },
+        {
+          "p": 0.12,
+          "shots": 300000,
+          "k": 3237,
+          "ler": 0.01079,
+          "wilson_lo": 0.010426512892248822,
+          "wilson_hi": 0.011166015941555286,
+          "below_detection": false
+        },
+        {
+          "p": 0.15,
+          "shots": 300000,
+          "k": 5748,
+          "ler": 0.01916,
+          "wilson_lo": 0.018675561572029254,
+          "wilson_hi": 0.019656752903239785,
+          "below_detection": false
+        }
+      ],
+      "wall_s": 144.0
+    },
+    "t1head": {
+      "label": "((5,3,3))$_3$ central code L2 a2a",
+      "ms_budget": 40,
+      "n": 5,
+      "d": 3,
+      "seed0": 2270,
+      "points": [
+        {
+          "p": 0.02,
+          "shots": 3000000,
+          "k": 58,
+          "ler": 1.9333333333333333e-05,
+          "wilson_lo": 1.4956964402998152e-05,
+          "wilson_hi": 2.499018444334618e-05,
+          "below_detection": false
+        },
+        {
+          "p": 0.03,
+          "shots": 300000,
+          "k": 34,
+          "ler": 0.00011333333333333333,
+          "wilson_lo": 8.110724111301974e-05,
+          "wilson_hi": 0.00015836169240746357,
+          "below_detection": false
+        },
+        {
+          "p": 0.05,
+          "shots": 300000,
+          "k": 88,
+          "ler": 0.0002933333333333333,
+          "wilson_lo": 0.00023812026196959427,
+          "wilson_hi": 0.0003613440616899198,
+          "below_detection": false
+        },
+        {
+          "p": 0.08,
+          "shots": 300000,
+          "k": 433,
+          "ler": 0.0014433333333333334,
+          "wilson_lo": 0.0013137166687219389,
+          "wilson_hi": 0.00158571820304805,
+          "below_detection": false
+        },
+        {
+          "p": 0.12,
+          "shots": 300000,
+          "k": 1298,
+          "ler": 0.004326666666666667,
+          "wilson_lo": 0.004098057952226013,
+          "wilson_hi": 0.004567969743067341,
+          "below_detection": false
+        },
+        {
+          "p": 0.15,
+          "shots": 300000,
+          "k": 2520,
+          "ler": 0.0084,
+          "wilson_lo": 0.008079646100920048,
+          "wilson_hi": 0.008732943941593596,
+          "below_detection": false
+        }
+      ],
+      "wall_s": 232.6
+    }
+  }
+}

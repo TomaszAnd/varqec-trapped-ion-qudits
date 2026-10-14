@@ -1,0 +1,226 @@
+{
+  "codes": {
+    "published_ring_L10": {
+      "spec": "catalog:qutrit_d3",
+      "full_basis_residual": 3.022477682772664,
+      "petz_F_e": 0.9873315193135304,
+      "petz_F_avg": 0.9904986394851478,
+      "petz_infidelity_1mFavg": 0.009501360514852175,
+      "petz_infidelity_1mFe": 0.012668480686469641,
+      "rank": 243,
+      "n_kept": 181,
+      "mc_full_channel": {
+        "mean_fidelity": 0.9893929049600345,
+        "ler_thresh0.5": 0.0016,
+        "shots": 5000
+      },
+      "lookup_iid_ler_doc": 0.000428,
+      "lookup_ler_source": "S3.6 1M",
+      "wall_s": 4.5
+    },
+    "stageH_stalled_L16": {
+      "spec": "results/campaigns/stage_h/race_fullbatch_d3_n5_dist3.npz",
+      "full_basis_residual": 0.40851179699395823,
+      "petz_F_e": 0.9889767854979588,
+      "petz_F_avg": 0.9917325891234691,
+      "petz_infidelity_1mFavg": 0.008267410876530934,
+      "petz_infidelity_1mFe": 0.011023214502041245,
+      "rank": 243,
+      "n_kept": 181,
+      "mc_full_channel": {
+        "mean_fidelity": 0.9907795098201232,
+        "ler_thresh0.5": 0.001,
+        "shots": 5000
+      },
+      "lookup_iid_ler_doc": 0.00053,
+      "lookup_ler_source": "S3.6 1M",
+      "wall_s": 7.1
+    },
+    "deep_L16": {
+      "spec": "results/campaigns/headline_p05_Lsweep/n5_L16.npz",
+      "full_basis_residual": 0.029750308909811004,
+      "petz_F_e": 0.9931304216881616,
+      "petz_F_avg": 0.9948478162661212,
+      "petz_infidelity_1mFavg": 0.0051521837338788234,
+      "petz_infidelity_1mFe": 0.006869578311838431,
+      "rank": 243,
+      "n_kept": 181,
+      "mc_full_channel": {
+        "mean_fidelity": 0.9942524452509235,
+        "ler_thresh0.5": 0.0014,
+        "shots": 5000
+      },
+      "lookup_iid_ler_doc": 0.00118,
+      "lookup_ler_source": "S3.6 1M",
+      "wall_s": 7.4
+    },
+    "deep_L20": {
+      "spec": "results/campaigns/headline_p05_Lsweep/n5_L20.npz",
+      "full_basis_residual": 0.0006275640817160794,
+      "petz_F_e": 0.9936212368518867,
+      "petz_F_avg": 0.9952159276389151,
+      "petz_infidelity_1mFavg": 0.004784072361084912,
+      "petz_infidelity_1mFe": 0.006378763148113253,
+      "rank": 243,
+      "n_kept": 181,
+      "mc_full_channel": {
+        "mean_fidelity": 0.9948643051010208,
+        "ler_thresh0.5": 0.0008,
+        "shots": 5000
+      },
+      "lookup_iid_ler_doc": 0.00114,
+      "lookup_ler_source": "S3.6 1M",
+      "wall_s": 7.0
+    },
+    "deep_L24": {
+      "spec": "results/campaigns/headline_p05_Lsweep/n5_L24.npz",
+      "full_basis_residual": 0.00024265889909929443,
+      "petz_F_e": 0.9935949478540007,
+      "petz_F_avg": 0.9951962108905006,
+      "petz_infidelity_1mFavg": 0.004803789109499412,
+      "petz_infidelity_1mFe": 0.00640505214599929,
+      "rank": 243,
+      "n_kept": 181,
+      "mc_full_channel": {
+        "mean_fidelity": 0.9947868800376666,
+        "ler_thresh0.5": 0.001,
+        "shots": 5000
+      },
+      "lookup_iid_ler_doc": 0.00112,
+      "lookup_ler_source": "S3.6 1M",
+      "wall_s": 6.6
+    },
+    "deep_L28": {
+      "spec": "results/campaigns/headline_p05_Lsweep/n5_L28.npz",
+      "full_basis_residual": 0.00019523796185436047,
+      "petz_F_e": 0.993585956090752,
+      "petz_F_avg": 0.995189467068064,
+      "petz_infidelity_1mFavg": 0.004810532931936007,
+      "petz_infidelity_1mFe": 0.006414043909248046,
+      "rank": 243,
+      "n_kept": 181,
+      "mc_full_channel": {
+        "mean_fidelity": 0.9949821249258299,
+        "ler_thresh0.5": 0.0008,
+        "shots": 5000
+      },
+      "lookup_iid_ler_doc": 0.00119,
+      "lookup_ler_source": "S3.6 1M",
+      "wall_s": 6.9
+    },
+    "hw_L16": {
+      "spec": "results/campaigns/loss_ler_diag/n5_hw_L16.npz",
+      "full_basis_residual": 2.9044869023158673,
+      "petz_F_e": 0.9884058361733795,
+      "petz_F_avg": 0.9913043771300346,
+      "petz_infidelity_1mFavg": 0.008695622869965391,
+      "petz_infidelity_1mFe": 0.011594163826620485,
+      "rank": 243,
+      "n_kept": 181,
+      "mc_full_channel": {
+        "mean_fidelity": 0.9902072154618999,
+        "ler_thresh0.5": 0.0016,
+        "shots": 5000
+      },
+      "lookup_iid_ler_doc": 0.000497,
+      "lookup_ler_source": "T1c 1M",
+      "wall_s": 6.7
+    },
+    "hw_L24": {
+      "spec": "results/campaigns/loss_ler_diag/n5_hw_L24.npz",
+      "full_basis_residual": 2.621024757636767,
+      "petz_F_e": 0.988632205739782,
+      "petz_F_avg": 0.9914741543048365,
+      "petz_infidelity_1mFavg": 0.008525845695163459,
+      "petz_infidelity_1mFe": 0.011367794260217945,
+      "rank": 243,
+      "n_kept": 181,
+      "mc_full_channel": {
+        "mean_fidelity": 0.990407918046769,
+        "ler_thresh0.5": 0.0016,
+        "shots": 5000
+      },
+      "lookup_iid_ler_doc": 0.000519,
+      "lookup_ler_source": "T1c 1M",
+      "wall_s": 7.1
+    },
+    "full_s101_stalled": {
+      "spec": "results/campaigns/loss_ler_diag/t1g/full_s101.npz",
+      "full_basis_residual": 0.4069658496221712,
+      "petz_F_e": 0.9888097476809653,
+      "petz_F_avg": 0.991607310760724,
+      "petz_infidelity_1mFavg": 0.008392689239276052,
+      "petz_infidelity_1mFe": 0.0111902523190347,
+      "rank": 243,
+      "n_kept": 181,
+      "mc_full_channel": {
+        "mean_fidelity": 0.9906149087770675,
+        "ler_thresh0.5": 0.001,
+        "shots": 5000
+      },
+      "lookup_iid_ler_doc": 0.000246,
+      "lookup_ler_source": "T1g 1M",
+      "wall_s": 7.2
+    },
+    "weighted_c2_s100": {
+      "spec": "results/campaigns/sampling_budget_v2/c2/wimp02_s100.npz",
+      "full_basis_residual": 2.8874612125032084,
+      "petz_F_e": 0.9879215679189037,
+      "petz_F_avg": 0.9909411759391777,
+      "petz_infidelity_1mFavg": 0.009058824060822257,
+      "petz_infidelity_1mFe": 0.012078432081096269,
+      "rank": 243,
+      "n_kept": 181,
+      "mc_full_channel": {
+        "mean_fidelity": 0.9897919635288819,
+        "ler_thresh0.5": 0.0016,
+        "shots": 5000
+      },
+      "lookup_iid_ler_doc": 0.0005266666666666667,
+      "lookup_ler_source": "c2 300k (read from c2_results.json)",
+      "wall_s": 7.6
+    },
+    "benchmark_513": {
+      "spec": "catalog:five_qudit_d3",
+      "full_basis_residual": 2.321947609751861e-30,
+      "petz_F_e": 0.9880409072575993,
+      "petz_F_avg": 0.9910306804431994,
+      "petz_infidelity_1mFavg": 0.008969319556800581,
+      "petz_infidelity_1mFe": 0.011959092742400701,
+      "rank": 243,
+      "n_kept": 181,
+      "mc_full_channel": {
+        "mean_fidelity": 0.9897515490758384,
+        "ler_thresh0.5": 0.0016,
+        "shots": 5000
+      },
+      "lookup_iid_ler_doc": 0.000845,
+      "lookup_ler_source": "S3.6 1M",
+      "wall_s": 3.5
+    },
+    "t1_headline": {
+      "spec": "results/campaigns/r1_campaign/t1_codes/A_L2_s100.npz",
+      "full_basis_residual": 4.5993868322825735,
+      "petz_F_e": 0.9832506055192981,
+      "petz_F_avg": 0.9874379541394736,
+      "petz_infidelity_1mFavg": 0.01256204586052645,
+      "petz_infidelity_1mFe": 0.016749394480701896,
+      "rank": 243,
+      "n_kept": 181,
+      "mc_full_channel": {
+        "mean_fidelity": 0.9863738158774773,
+        "ler_thresh0.5": 0.0016,
+        "shots": 5000
+      },
+      "lookup_iid_ler_doc": 0.000342,
+      "lookup_ler_source": "T1 part C 2e6",
+      "wall_s": 4.4
+    }
+  },
+  "channel": {
+    "desc": "iid hardware channel p=0.05 truncated to weight<=2, renormalized (conditioned on w<=2)",
+    "covered_mass": 0.9988418749999997,
+    "dropped_wge3_mass": 0.001158125000000343,
+    "n_nonzero_ops": 181
+  }
+}

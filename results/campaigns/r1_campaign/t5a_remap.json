@@ -1,0 +1,20 @@
+{
+  "desc": "Cross-q remap: per-qudit avg channel infidelity of the iid discrete hardware channel, 1-F_avg = c_q * p (exact, linear); F_avg = (q F_e + 1)/(q+1), F_e = sum|Tr K_i|^2/q^2",
+  "c_q": {
+    "3": {
+      "n_ops": 4,
+      "sum_absTr2": 4.0,
+      "c_q": 0.6666666666666666
+    },
+    "4": {
+      "n_ops": 6,
+      "sum_absTr2": 24.0,
+      "c_q": 0.6
+    },
+    "5": {
+      "n_ops": 8,
+      "sum_absTr2": 72.0,
+      "c_q": 0.5333333333333333
+    }
+  }
+}

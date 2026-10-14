@@ -1,0 +1,347 @@
+{
+  "protocol": "Weight-2 objective pilot (option (ii)): full-batch union objective, lambda=1.0, uniform-within-new-set weights scaled to lambda*base mass.",
+  "units": {
+    "n5_L2_s100": {
+      "arm": "n5_L2",
+      "n": 5,
+      "L": 2,
+      "seed": 100,
+      "npz": "results/campaigns/r2_campaign/t5_codes/n5_L2_s100.npz",
+      "lambda": 1.0,
+      "train_loss_union": 0.011255263832565822,
+      "ops_per_step_full_batch": 1021,
+      "op_evs": 3063000,
+      "train_wall_s": 117.1,
+      "base_weighted_loss": 0.004015282995112124,
+      "same_support_residual": 5.7919846699629565,
+      "ler_w1": {
+        "k": 0,
+        "n": 200000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          1.92076310598226e-05
+        ]
+      },
+      "ler_w2": {
+        "k": 0,
+        "n": 100000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          3.8414524267635735e-05
+        ]
+      },
+      "ler_w3": {
+        "k": 26916,
+        "n": 100000,
+        "ler": 0.26916,
+        "wilson95": [
+          0.26641992037571777,
+          0.27191781484184613
+        ]
+      },
+      "ler_iid_p05": {
+        "k": 337,
+        "n": 1000000,
+        "ler": 0.000337,
+        "wilson95": [
+          0.000302893640429084,
+          0.00037494535558462886
+        ]
+      },
+      "wall_s": 176.1
+    },
+    "n5_L2_s101": {
+      "arm": "n5_L2",
+      "n": 5,
+      "L": 2,
+      "seed": 101,
+      "npz": "results/campaigns/r2_campaign/t5_codes/n5_L2_s101.npz",
+      "lambda": 1.0,
+      "train_loss_union": 0.01092236677637368,
+      "ops_per_step_full_batch": 1021,
+      "op_evs": 3063000,
+      "train_wall_s": 113.4,
+      "base_weighted_loss": 0.003655900266555204,
+      "same_support_residual": 5.813173207854783,
+      "ler_w1": {
+        "k": 0,
+        "n": 200000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          1.92076310598226e-05
+        ]
+      },
+      "ler_w2": {
+        "k": 0,
+        "n": 100000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          3.8414524267635735e-05
+        ]
+      },
+      "ler_w3": {
+        "k": 24636,
+        "n": 100000,
+        "ler": 0.24636,
+        "wilson95": [
+          0.24369908907871227,
+          0.2490403978411582
+        ]
+      },
+      "ler_iid_p05": {
+        "k": 298,
+        "n": 1000000,
+        "ler": 0.000298,
+        "wilson95": [
+          0.0002660354877857372,
+          0.0003338038078716245
+        ]
+      },
+      "wall_s": 171.1
+    },
+    "n5_L2_s102": {
+      "arm": "n5_L2",
+      "n": 5,
+      "L": 2,
+      "seed": 102,
+      "npz": "results/campaigns/r2_campaign/t5_codes/n5_L2_s102.npz",
+      "lambda": 1.0,
+      "train_loss_union": 0.010984794198370708,
+      "ops_per_step_full_batch": 1021,
+      "op_evs": 3063000,
+      "train_wall_s": 113.2,
+      "base_weighted_loss": 0.003796466212646591,
+      "same_support_residual": 5.750662388579298,
+      "ler_w1": {
+        "k": 0,
+        "n": 200000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          1.92076310598226e-05
+        ]
+      },
+      "ler_w2": {
+        "k": 0,
+        "n": 100000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          3.8414524267635735e-05
+        ]
+      },
+      "ler_w3": {
+        "k": 30524,
+        "n": 100000,
+        "ler": 0.30524,
+        "wilson95": [
+          0.302393262254856,
+          0.30810170097063677
+        ]
+      },
+      "ler_iid_p05": {
+        "k": 363,
+        "n": 1000000,
+        "ler": 0.000363,
+        "wilson95": [
+          0.00032753392861908925,
+          0.00040230486763219095
+        ]
+      },
+      "wall_s": 170.6
+    },
+    "n5_L2_s103": {
+      "arm": "n5_L2",
+      "n": 5,
+      "L": 2,
+      "seed": 103,
+      "npz": "results/campaigns/r2_campaign/t5_codes/n5_L2_s103.npz",
+      "lambda": 1.0,
+      "train_loss_union": 0.011014294025215442,
+      "ops_per_step_full_batch": 1021,
+      "op_evs": 3063000,
+      "train_wall_s": 116.3,
+      "base_weighted_loss": 0.004036225367330901,
+      "same_support_residual": 5.582454926307632,
+      "ler_w1": {
+        "k": 0,
+        "n": 200000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          1.92076310598226e-05
+        ]
+      },
+      "ler_w2": {
+        "k": 0,
+        "n": 100000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          3.8414524267635735e-05
+        ]
+      },
+      "ler_w3": {
+        "k": 26386,
+        "n": 100000,
+        "ler": 0.26386,
+        "wilson95": [
+          0.26113747115718383,
+          0.26660067125433723
+        ]
+      },
+      "ler_iid_p05": {
+        "k": 312,
+        "n": 1000000,
+        "ler": 0.000312,
+        "wilson95": [
+          0.00027925137399432254,
+          0.0003485878140986524
+        ]
+      },
+      "wall_s": 179.4
+    },
+    "n7_d3_s100": {
+      "arm": "n7_d3",
+      "n": 7,
+      "L": 2,
+      "seed": 100,
+      "npz": "results/campaigns/r2_campaign/t5_codes/n7_d3_s100.npz",
+      "lambda": 1.0,
+      "train_loss_union": 0.0011958969482511665,
+      "ops_per_step_full_batch": 2101,
+      "op_evs": 6303000,
+      "train_wall_s": 2075.8,
+      "base_weighted_loss": 0.00043396336667769157,
+      "same_support_residual": 1.2800484170434376,
+      "ler_w1": {
+        "k": 0,
+        "n": 200000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          1.92076310598226e-05
+        ]
+      },
+      "ler_w2": {
+        "k": 0,
+        "n": 100000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          3.8414524267635735e-05
+        ]
+      },
+      "ler_w3": {
+        "k": 0,
+        "n": 100000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          3.8414524267635735e-05
+        ]
+      },
+      "ler_iid_p05": {
+        "k": 41,
+        "n": 1000000,
+        "ler": 4.1e-05,
+        "wilson95": [
+          3.0224676055301497e-05,
+          5.561659417687476e-05
+        ]
+      },
+      "wall_s": 2259.4
+    },
+    "n7_d3_s101": {
+      "arm": "n7_d3",
+      "n": 7,
+      "L": 2,
+      "seed": 101,
+      "npz": "results/campaigns/r2_campaign/t5_codes/n7_d3_s101.npz",
+      "lambda": 1.0,
+      "train_loss_union": 0.0011512121153335636,
+      "ops_per_step_full_batch": 2101,
+      "op_evs": 6303000,
+      "train_wall_s": 2015.7,
+      "base_weighted_loss": 0.00042161334212109213,
+      "same_support_residual": 1.2257259389969513,
+      "ler_w1": {
+        "k": 0,
+        "n": 200000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          1.92076310598226e-05
+        ]
+      },
+      "ler_w2": {
+        "k": 0,
+        "n": 100000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          3.8414524267635735e-05
+        ]
+      },
+      "ler_w3": {
+        "k": 0,
+        "n": 100000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          3.8414524267635735e-05
+        ]
+      },
+      "ler_iid_p05": {
+        "k": 39,
+        "n": 1000000,
+        "ler": 3.9e-05,
+        "wilson95": [
+          2.853093537108785e-05,
+          5.3310350227429377e-05
+        ]
+      },
+      "wall_s": 2196.1
+    }
+  },
+  "n5_L2_baselines": {
+    "headline_A_L2_s100": {
+      "base_weighted_loss": 0.003357026475223928,
+      "same_support_residual": 8.9278527148152
+    },
+    "A_L2_s101": {
+      "base_weighted_loss": 0.003330630005922763,
+      "same_support_residual": 8.088841818562791
+    },
+    "A_L2_s102": {
+      "base_weighted_loss": 0.003182959054443169,
+      "same_support_residual": 8.148474517525376
+    },
+    "A_L2_s103": {
+      "base_weighted_loss": 0.0032818844126487868,
+      "same_support_residual": 8.395496069352879
+    }
+  },
+  "n7_d3_baselines": {
+    "d3_L2_s100": {
+      "base_weighted_loss": 0.00040346915272831626,
+      "same_support_residual": 1.9505683417918562
+    },
+    "d3_L2_s101": {
+      "base_weighted_loss": 0.0004101617497366555,
+      "same_support_residual": 1.949436073387035
+    },
+    "d3_L2_s102": {
+      "base_weighted_loss": 0.00041843582008517776,
+      "same_support_residual": 1.9171161294024794
+    },
+    "d3_L2_s103": {
+      "base_weighted_loss": 0.0004039665565202095,
+      "same_support_residual": 1.9655878659975665
+    }
+  }
+}

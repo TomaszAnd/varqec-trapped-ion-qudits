@@ -1,0 +1,256 @@
+{
+  "protocol": "Sampler frontier with certified stop (Figs. 10-11): sampler-frontier\nvariance pilot.\n\nSystem: ((9,3,3))_3, all-to-all MS, L=2, channel-weighted objective\n(build_race weighted=True: v1 Meth prior eta=0.9296, 685-op closure).\nStopping (all cells incl. full batch): certified rule \u2014 sampled\nloss < TAU for 5 CONSECUTIVE steps, >= 50 steps between full-batch\nconfirmations, stop on confirmed full-batch < TAU; backstop 3000 steps\n(uncertified -> best monitored theta, stated). TAU = 1e-4 (the paper's\nconvention; measured L=2 weighted floor 4.2-5.3e-5).\nAccounting: realized op-EVs (nonzero weight entries) = train; 685 per\nconfirmation = confirm; every-25-step monitor evals logged for traces,\nEXCLUDED from budgets (paper convention).\n\nScoring per code:\n  (a) w1@2e5 / w2@1e5 conditioned probes + iid LER p=0.05 (3e5 shots\n      doubling to >= 30 errors, cap 2.4e6, Wilson 95%);\n  (b) channel-v2 projective sampled rate at s=0.5 (eta=e^{-0.0365},\n      sigma_a2=0.0235), MODE A, 1000 traj/ensemble, SE stated.\n\nShards:\n  0: score the five committed L=2 strategy codes (r3_campaign/t3_sampler_L2)\n  1: even pilot units   2: odd pilot units\nPilot units = {full_batch, importance@0.05, importance@0.4,\nfull_basis_is@0.05, full_basis_is@0.4} x seeds {100..103}.\n\nWrites t1_results_shard{K}.json (resumable per unit).\nLaunch (one per shard):\n  cd results/campaigns/r10_sampler\n  nohup nice -n 19 python3 t1_pilot.py --shard K >> t1_shard{K}.log 2>&1 &\n",
+  "tau": 0.0001,
+  "units": {
+    "existing_full_batch": {
+      "kind": "existing",
+      "name": "full_batch",
+      "npz": "results/campaigns/r3_campaign/t3_sampler_L2/full_batch.npz",
+      "min_loss_trace": 4.231495371677259e-05,
+      "final_op_evs_trace": 1069285,
+      "protocol": "preset 1500 steps (earlier protocol), NOT the certified rule",
+      "ler_w1": {
+        "k": 0,
+        "n": 200000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          1.92076310598226e-05
+        ],
+        "wall_s": 412.1
+      },
+      "ler_w2": {
+        "k": 0,
+        "n": 100000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          3.8414524267635735e-05
+        ],
+        "wall_s": 223.3
+      },
+      "ler_iid_p05": {
+        "k": 20,
+        "n": 2400000,
+        "ler": 8.333333333333334e-06,
+        "wilson95": [
+          5.394766327218578e-06,
+          1.2872537766250003e-05
+        ],
+        "resolved": false,
+        "wall_s": 3846.9
+      },
+      "corr_v2_s05_proj": {
+        "s": 0.5,
+        "eta": 0.964158093896324,
+        "sigma_a2": 0.0235,
+        "rate_1mFavg": 0.6555776987546345,
+        "F_avg_se": 0.0009536877767352109,
+        "n_traj_per_ensemble": 1000,
+        "n_sectors": 649,
+        "wall_s": 956.5
+      },
+      "wall_s": 8823.1
+    },
+    "existing_stratified_0.2": {
+      "kind": "existing",
+      "name": "stratified_0.2",
+      "npz": "results/campaigns/r3_campaign/t3_sampler_L2/stratified_0.2.npz",
+      "min_loss_trace": 4.623723985071844e-05,
+      "final_op_evs_trace": 299785,
+      "protocol": "preset 1500 steps (earlier protocol), NOT the certified rule",
+      "ler_w1": {
+        "k": 0,
+        "n": 200000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          1.92076310598226e-05
+        ],
+        "wall_s": 363.6
+      },
+      "ler_w2": {
+        "k": 0,
+        "n": 100000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          3.8414524267635735e-05
+        ],
+        "wall_s": 183.8
+      },
+      "ler_iid_p05": {
+        "k": 23,
+        "n": 2400000,
+        "ler": 9.583333333333334e-06,
+        "wilson95": [
+          6.38614363521966e-06,
+          1.4381156456588658e-05
+        ],
+        "resolved": false,
+        "wall_s": 3773.2
+      },
+      "corr_v2_s05_proj": {
+        "s": 0.5,
+        "eta": 0.964158093896324,
+        "sigma_a2": 0.0235,
+        "rate_1mFavg": 0.6554777162321266,
+        "F_avg_se": 0.0009536148552956657,
+        "n_traj_per_ensemble": 1000,
+        "n_sectors": 649,
+        "wall_s": 945.8
+      },
+      "wall_s": 8554.8
+    },
+    "existing_importance_0.2": {
+      "kind": "existing",
+      "name": "importance_0.2",
+      "npz": "results/campaigns/r3_campaign/t3_sampler_L2/importance_0.2.npz",
+      "min_loss_trace": 4.9675269531465555e-05,
+      "final_op_evs_trace": 212521,
+      "protocol": "preset 1500 steps (earlier protocol), NOT the certified rule",
+      "ler_w1": {
+        "k": 0,
+        "n": 200000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          1.92076310598226e-05
+        ],
+        "wall_s": 339.8
+      },
+      "ler_w2": {
+        "k": 0,
+        "n": 100000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          3.8414524267635735e-05
+        ],
+        "wall_s": 275.4
+      },
+      "ler_iid_p05": {
+        "k": 10,
+        "n": 2400000,
+        "ler": 4.166666666666667e-06,
+        "wilson95": [
+          2.263304438477089e-06,
+          7.670679660525694e-06
+        ],
+        "resolved": false,
+        "wall_s": 3852.8
+      },
+      "corr_v2_s05_proj": {
+        "s": 0.5,
+        "eta": 0.964158093896324,
+        "sigma_a2": 0.0235,
+        "rate_1mFavg": 0.6557385567809999,
+        "F_avg_se": 0.0009519751326791843,
+        "n_traj_per_ensemble": 1000,
+        "n_sectors": 649,
+        "wall_s": 902.7
+      },
+      "wall_s": 8785.4
+    },
+    "existing_importance_0.35": {
+      "kind": "existing",
+      "name": "importance_0.35",
+      "npz": "results/campaigns/r3_campaign/t3_sampler_L2/importance_0.35.npz",
+      "min_loss_trace": 4.897275261454967e-05,
+      "final_op_evs_trace": 331075,
+      "protocol": "preset 1500 steps (earlier protocol), NOT the certified rule",
+      "ler_w1": {
+        "k": 0,
+        "n": 200000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          1.92076310598226e-05
+        ],
+        "wall_s": 358.6
+      },
+      "ler_w2": {
+        "k": 0,
+        "n": 100000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          3.8414524267635735e-05
+        ],
+        "wall_s": 187.9
+      },
+      "ler_iid_p05": {
+        "k": 19,
+        "n": 2400000,
+        "ler": 7.916666666666667e-06,
+        "wilson95": [
+          5.068378785044734e-06,
+          1.2365593308977263e-05
+        ],
+        "resolved": false,
+        "wall_s": 3781.3
+      },
+      "corr_v2_s05_proj": {
+        "s": 0.5,
+        "eta": 0.964158093896324,
+        "sigma_a2": 0.0235,
+        "rate_1mFavg": 0.6557928360039939,
+        "F_avg_se": 0.0009513317183434139,
+        "n_traj_per_ensemble": 1000,
+        "n_sectors": 649,
+        "wall_s": 1056.1
+      },
+      "wall_s": 8727.8
+    },
+    "existing_full_basis_is_0.1": {
+      "kind": "existing",
+      "name": "full_basis_is_0.1",
+      "npz": "results/campaigns/r3_campaign/t3_sampler_L2/full_basis_is_0.1.npz",
+      "min_loss_trace": 5.314371971679183e-05,
+      "final_op_evs_trace": 153491,
+      "protocol": "preset 1500 steps (earlier protocol), NOT the certified rule",
+      "ler_w1": {
+        "k": 0,
+        "n": 200000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          1.92076310598226e-05
+        ],
+        "wall_s": 343.3
+      },
+      "ler_w2": {
+        "k": 0,
+        "n": 100000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          3.8414524267635735e-05
+        ],
+        "wall_s": 181.5
+      },
+      "ler_iid_p05": {
+        "k": 19,
+        "n": 2400000,
+        "ler": 7.916666666666667e-06,
+        "wilson95": [
+          5.068378785044734e-06,
+          1.2365593308977263e-05
+        ],
+        "resolved": false,
+        "wall_s": 4216.2
+      },
+      "corr_v2_s05_proj": {
+        "s": 0.5,
+        "eta": 0.964158093896324,
+        "sigma_a2": 0.0235,
+        "rate_1mFavg": 0.6555608496449965,
+        "F_avg_se": 0.0009530336913649725,
+        "n_traj_per_ensemble": 1000,
+        "n_sectors": 649,
+        "wall_s": 1195.2
+      },
+      "wall_s": 9265.7
+    }
+  }
+}

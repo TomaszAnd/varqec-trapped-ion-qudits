@@ -1,0 +1,263 @@
+{
+  "model": "F_e(R) - 1/9 = A * lambda^R, LS fit on ln(F_e - 1/9), fit window = all recorded rounds (stated)",
+  "cells": {
+    "headline@s0.25": {
+      "code": "headline",
+      "n": 5,
+      "s": 0.25,
+      "rounds_recorded": 6,
+      "F_e_by_round": [
+        0.8429914669901865,
+        0.7524753223431364,
+        0.6758340164540217,
+        0.608712471052972,
+        0.5495640492854219,
+        0.49729737158461174
+      ],
+      "lambda_per_round": 0.8802542507333446,
+      "A": 0.8292811708597789,
+      "fit_max_log_resid": 0.00260227796165996,
+      "per_round_infid_1mlambda": 0.11974574926665538,
+      "fit_window_rounds": [
+        1,
+        6
+      ]
+    },
+    "headline@s0.50": {
+      "code": "headline",
+      "n": 5,
+      "s": 0.5,
+      "rounds_recorded": 3,
+      "F_e_by_round": [
+        0.6910733443055666,
+        0.5252968347010349,
+        0.4062689140264735
+      ],
+      "lambda_per_round": 0.7133904277812575,
+      "A": 0.8132582553206783,
+      "fit_max_log_resid": 0.0007186123928616395,
+      "per_round_infid_1mlambda": 0.2866095722187425,
+      "fit_window_rounds": [
+        1,
+        3
+      ]
+    },
+    "five_one_three_Z3@s0.25": {
+      "code": "five_one_three_Z3",
+      "n": 5,
+      "s": 0.25,
+      "rounds_recorded": 8,
+      "F_e_by_round": [
+        0.8611835579699616,
+        0.7887405601474747,
+        0.7273453070959248,
+        0.6722488231219074,
+        0.622247491210275,
+        0.5767208566439326,
+        0.5352185275883016,
+        0.4973641590976839
+      ],
+      "lambda_per_round": 0.9099904739356984,
+      "A": 0.8199953036502281,
+      "fit_max_log_resid": 0.005192332419565737,
+      "per_round_infid_1mlambda": 0.09000952606430157,
+      "fit_window_rounds": [
+        1,
+        8
+      ]
+    },
+    "five_one_three_Z3@s0.50": {
+      "code": "five_one_three_Z3",
+      "n": 5,
+      "s": 0.5,
+      "rounds_recorded": 3,
+      "F_e_by_round": [
+        0.7193834967939376,
+        0.5739591092249529,
+        0.4660899897661547
+      ],
+      "lambda_per_round": 0.7639276091504261,
+      "A": 0.7951979568878451,
+      "fit_max_log_resid": 0.0026278902069624133,
+      "per_round_infid_1mlambda": 0.23607239084957388,
+      "fit_window_rounds": [
+        1,
+        3
+      ]
+    },
+    "d2@s0.25": {
+      "code": "d2",
+      "n": 7,
+      "s": 0.25,
+      "rounds_recorded": 3,
+      "F_e_by_round": [
+        0.6548509180747313,
+        0.5035799374913217,
+        0.39423039302052243
+      ],
+      "lambda_per_round": 0.7215877631175786,
+      "A": 0.7536046942707878,
+      "fit_max_log_resid": 0.000191695188740737,
+      "per_round_infid_1mlambda": 0.27841223688242145,
+      "fit_window_rounds": [
+        1,
+        3
+      ]
+    },
+    "d2@s0.50": {
+      "code": "d2",
+      "n": 7,
+      "s": 0.5,
+      "rounds_recorded": 1,
+      "F_e_by_round": [
+        0.4102659223115277
+      ]
+    },
+    "d3@s0.25": {
+      "code": "d3",
+      "n": 7,
+      "s": 0.25,
+      "rounds_recorded": 3,
+      "F_e_by_round": [
+        0.6594130611750909,
+        0.5105577514265343,
+        0.40215973941792493
+      ],
+      "lambda_per_round": 0.7285726818889926,
+      "A": 0.7525504278507129,
+      "fit_max_log_resid": 5.203984295087949e-05,
+      "per_round_infid_1mlambda": 0.2714273181110074,
+      "fit_window_rounds": [
+        1,
+        3
+      ]
+    },
+    "d3@s0.50": {
+      "code": "d3",
+      "n": 7,
+      "s": 0.5,
+      "rounds_recorded": 1,
+      "F_e_by_round": [
+        0.4134907867123425
+      ]
+    },
+    "d4@s0.25": {
+      "code": "d4",
+      "n": 7,
+      "s": 0.25,
+      "rounds_recorded": 3,
+      "F_e_by_round": [
+        0.6600691118610268,
+        0.5122199076687832,
+        0.404445565386688
+      ],
+      "lambda_per_round": 0.7309909142523068,
+      "A": 0.7508689911703963,
+      "fit_max_log_resid": 0.0002899900564273805,
+      "per_round_infid_1mlambda": 0.2690090857476932,
+      "fit_window_rounds": [
+        1,
+        3
+      ]
+    },
+    "d4@s0.50": {
+      "code": "d4",
+      "n": 7,
+      "s": 0.5,
+      "rounds_recorded": 1,
+      "F_e_by_round": [
+        0.4148605176355662
+      ]
+    }
+  },
+  "verdict_i_trio": {
+    "s0.25": {
+      "Fe_gap_d4_minus_d2_by_round": [
+        0.005218193786295511,
+        0.008639970177461542,
+        0.010215172366165592
+      ],
+      "ordering_by_round": [
+        [
+          "d4",
+          "d3",
+          "d2"
+        ],
+        [
+          "d4",
+          "d3",
+          "d2"
+        ],
+        [
+          "d4",
+          "d3",
+          "d2"
+        ]
+      ],
+      "lambda": {
+        "d2": 0.7215877631175786,
+        "d3": 0.7285726818889926,
+        "d4": 0.7309909142523068
+      },
+      "per_round_infid": {
+        "d2": 0.27841223688242145,
+        "d3": 0.2714273181110074,
+        "d4": 0.2690090857476932
+      },
+      "per_round_ratio_d2_over_d4": 1.0349547715408673
+    },
+    "s0.50": {
+      "Fe_gap_d4_minus_d2_by_round": [
+        0.004594595324038497
+      ],
+      "ordering_by_round": [
+        [
+          "d4",
+          "d3",
+          "d2"
+        ]
+      ],
+      "lambda": {
+        "d2": null,
+        "d3": null,
+        "d4": null
+      },
+      "per_round_infid": {
+        "d2": null,
+        "d3": null,
+        "d4": null
+      }
+    }
+  },
+  "verdict_ii_vs_513": {
+    "s0.25": {
+      "headline": 0.8802542507333446,
+      "five_one_three_Z3": 0.9099904739356984,
+      "note": "references run the n=5 dose (10 gate steps/round); the trio runs the n=7 dose (21 steps/round) -- per-round numbers are NOT dose-matched across n, stated by design",
+      "ratio_perround_infid_d2_over_513": 3.0931419045971595,
+      "ratio_perround_infid_d3_over_513": 3.015539909821361,
+      "ratio_perround_infid_d4_over_513": 2.988673505018978,
+      "ratio_perround_infid_headline_over_513": 1.3303675122243246
+    },
+    "s0.50": {
+      "headline": 0.7133904277812575,
+      "five_one_three_Z3": 0.7639276091504261,
+      "note": "references run the n=5 dose (10 gate steps/round); the trio runs the n=7 dose (21 steps/round) -- per-round numbers are NOT dose-matched across n, stated by design",
+      "ratio_perround_infid_headline_over_513": 1.2140749334866994
+    }
+  },
+  "verdict_iii_1pct_round": {
+    "s0.25": {
+      "first_round_gap_gt_1pct": 3,
+      "gap_at_that_round": 0.010215172366165592,
+      "Fe_d4_at_that_round": 0.404445565386688,
+      "max_gap_recorded": 0.010215172366165592
+    },
+    "s0.50": {
+      "first_round_gap_gt_1pct": null,
+      "gap_at_that_round": null,
+      "Fe_d4_at_that_round": null,
+      "max_gap_recorded": 0.004594595324038497
+    }
+  }
+}

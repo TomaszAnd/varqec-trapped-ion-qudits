@@ -1,0 +1,285 @@
+{
+  "protocol": "Distance panel n=7: best-by-probe per d, iid p-sweep escalated to >=30 errors (cap 5M), MS budget 42L",
+  "panel": {
+    "d2": {
+      "npz": "results/campaigns/r2_campaign/t1a_codes/d2_L2_s100.npz",
+      "L": 2,
+      "seed": 100,
+      "ms_budget": 84,
+      "probe_selection": {
+        "ler_w1": 0,
+        "ler_w2": 0,
+        "ler_w3": 1
+      },
+      "minimal_viable_L": 2,
+      "probe_selection_mandatory": false,
+      "curve": {
+        "0.02": {
+          "p": 0.02,
+          "k": 7,
+          "n": 5000000,
+          "ler": 1.4e-06,
+          "wilson95": [
+            6.781642711454877e-07,
+            2.8901529872449964e-06
+          ],
+          "resolved": false,
+          "below_detection": false,
+          "wall_s": 1494.8
+        },
+        "0.05": {
+          "p": 0.05,
+          "k": 47,
+          "n": 1200000,
+          "ler": 3.9166666666666665e-05,
+          "wilson95": [
+            2.9456059679751782e-05,
+            5.2078345968104275e-05
+          ],
+          "resolved": true,
+          "below_detection": false,
+          "wall_s": 231.9
+        },
+        "0.08": {
+          "p": 0.08,
+          "k": 73,
+          "n": 300000,
+          "ler": 0.00024333333333333333,
+          "wilson95": [
+            0.0001935534505786967,
+            0.0003059121535977534
+          ],
+          "resolved": true,
+          "below_detection": false,
+          "wall_s": 35.3
+        },
+        "0.1": {
+          "p": 0.1,
+          "k": 176,
+          "n": 300000,
+          "ler": 0.0005866666666666667,
+          "wilson95": [
+            0.0005061775878417327,
+            0.0006799458901184243
+          ],
+          "resolved": true,
+          "below_detection": false,
+          "wall_s": 36.9
+        },
+        "0.12": {
+          "p": 0.12,
+          "k": 430,
+          "n": 300000,
+          "ler": 0.0014333333333333333,
+          "wilson95": [
+            0.0013041870250445394,
+            0.0015752481028288366
+          ],
+          "resolved": true,
+          "below_detection": false,
+          "wall_s": 38.8
+        },
+        "0.15": {
+          "p": 0.15,
+          "k": 904,
+          "n": 300000,
+          "ler": 0.003013333333333333,
+          "wilson95": [
+            0.0028234564824795023,
+            0.0032159381810586995
+          ],
+          "resolved": true,
+          "below_detection": false,
+          "wall_s": 41.0
+        }
+      }
+    },
+    "d3": {
+      "npz": "results/campaigns/r2_campaign/t1a_codes/d3_L2_s100.npz",
+      "L": 2,
+      "seed": 100,
+      "ms_budget": 84,
+      "probe_selection": {
+        "ler_w1": 0,
+        "ler_w2": 0,
+        "ler_w3": 0
+      },
+      "minimal_viable_L": 2,
+      "probe_selection_mandatory": false,
+      "curve": {
+        "0.02": {
+          "p": 0.02,
+          "k": 5,
+          "n": 5000000,
+          "ler": 1e-06,
+          "wilson95": [
+            4.2713399960865955e-07,
+            2.341183873437352e-06
+          ],
+          "resolved": false,
+          "below_detection": false,
+          "wall_s": 1520.1
+        },
+        "0.05": {
+          "p": 0.05,
+          "k": 33,
+          "n": 600000,
+          "ler": 5.5e-05,
+          "wilson95": [
+            3.916491085457295e-05,
+            7.723701052939174e-05
+          ],
+          "resolved": true,
+          "below_detection": false,
+          "wall_s": 101.3
+        },
+        "0.08": {
+          "p": 0.08,
+          "k": 89,
+          "n": 300000,
+          "ler": 0.00029666666666666665,
+          "wilson95": [
+            0.00024110833527309723,
+            0.00036502256968528777
+          ],
+          "resolved": true,
+          "below_detection": false,
+          "wall_s": 36.8
+        },
+        "0.1": {
+          "p": 0.1,
+          "k": 195,
+          "n": 300000,
+          "ler": 0.00065,
+          "wilson95": [
+            0.0005649675886410121,
+            0.0007478209339976928
+          ],
+          "resolved": true,
+          "below_detection": false,
+          "wall_s": 37.9
+        },
+        "0.12": {
+          "p": 0.12,
+          "k": 435,
+          "n": 300000,
+          "ler": 0.00145,
+          "wilson95": [
+            0.0013200706708923512,
+            0.0015926973634753797
+          ],
+          "resolved": true,
+          "below_detection": false,
+          "wall_s": 40.3
+        },
+        "0.15": {
+          "p": 0.15,
+          "k": 863,
+          "n": 300000,
+          "ler": 0.0028766666666666667,
+          "wilson95": [
+            0.0026912753784275995,
+            0.003074789451856894
+          ],
+          "resolved": true,
+          "below_detection": false,
+          "wall_s": 42.9
+        }
+      }
+    },
+    "d4": {
+      "npz": "results/campaigns/r2_campaign/t1a_codes/d4_L2_s103.npz",
+      "L": 2,
+      "seed": 103,
+      "ms_budget": 84,
+      "probe_selection": {
+        "ler_w1": 0,
+        "ler_w2": 0,
+        "ler_w3": 0,
+        "ler_w4": 20916
+      },
+      "minimal_viable_L": 2,
+      "probe_selection_mandatory": false,
+      "curve": {
+        "0.02": {
+          "p": 0.02,
+          "k": 6,
+          "n": 5000000,
+          "ler": 1.2e-06,
+          "wilson95": [
+            5.499633682059498e-07,
+            2.618354197512298e-06
+          ],
+          "resolved": false,
+          "below_detection": false,
+          "wall_s": 1602.0
+        },
+        "0.05": {
+          "p": 0.05,
+          "k": 47,
+          "n": 1200000,
+          "ler": 3.9166666666666665e-05,
+          "wilson95": [
+            2.9456059679751782e-05,
+            5.2078345968104275e-05
+          ],
+          "resolved": true,
+          "below_detection": false,
+          "wall_s": 289.0
+        },
+        "0.08": {
+          "p": 0.08,
+          "k": 73,
+          "n": 300000,
+          "ler": 0.00024333333333333333,
+          "wilson95": [
+            0.0001935534505786967,
+            0.0003059121535977534
+          ],
+          "resolved": true,
+          "below_detection": false,
+          "wall_s": 37.1
+        },
+        "0.1": {
+          "p": 0.1,
+          "k": 194,
+          "n": 300000,
+          "ler": 0.0006466666666666667,
+          "wilson95": [
+            0.0005618677227190799,
+            0.0007442542186207543
+          ],
+          "resolved": true,
+          "below_detection": false,
+          "wall_s": 41.2
+        },
+        "0.12": {
+          "p": 0.12,
+          "k": 396,
+          "n": 300000,
+          "ler": 0.00132,
+          "wilson95": [
+            0.0011963038277816732,
+            0.001456467535930091
+          ],
+          "resolved": true,
+          "below_detection": false,
+          "wall_s": 41.6
+        },
+        "0.15": {
+          "p": 0.15,
+          "k": 845,
+          "n": 300000,
+          "ler": 0.0028166666666666665,
+          "wilson95": [
+            0.002633278512900582,
+            0.0030127878540042344
+          ],
+          "resolved": true,
+          "below_detection": false,
+          "wall_s": 45.3
+        }
+      }
+    }
+  }
+}

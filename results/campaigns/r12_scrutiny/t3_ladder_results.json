@@ -1,0 +1,148 @@
+{
+  "meta": {
+    "d": 3,
+    "n": 5,
+    "s_grid": [
+      0.125,
+      0.25,
+      1.5
+    ],
+    "convention": "eta(s)=e^{-s*0.073}, sigma_a2(s)=s*0.047",
+    "complements": "r9 t4 (s 0.5/1.0), r9 t1 (headline+513 full grid), r11 t5_sgrid (depth ladder full grid)",
+    "metric": "rate = 1 - F_avg (channel infidelity)"
+  },
+  "cells": {
+    "hw_basis_L16@v2_s0.125": {
+      "code": "hw_basis_L16",
+      "residual": 2.9,
+      "s": 0.125,
+      "eta": 0.9909165064677175,
+      "sigma_a2": 0.005875,
+      "projective_rate": 0.050228926578274824,
+      "petz_rate": 0.005424299962967005,
+      "petz_leak_max": 1.4654943925052066e-14,
+      "wall_s": 1.5
+    },
+    "plateau_B_s202@v2_s0.125": {
+      "code": "plateau_B_s202",
+      "residual": 0.449,
+      "s": 0.125,
+      "eta": 0.9909165064677175,
+      "sigma_a2": 0.005875,
+      "projective_rate": 0.053920940882126844,
+      "petz_rate": 0.009659998276611681,
+      "petz_leak_max": 9.325873406851315e-15,
+      "wall_s": 1.3
+    },
+    "converged_B_s202@v2_s0.125": {
+      "code": "converged_B_s202",
+      "residual": 0.36,
+      "s": 0.125,
+      "eta": 0.9909165064677175,
+      "sigma_a2": 0.005875,
+      "projective_rate": 0.056237678658500045,
+      "petz_rate": 0.014159972345381355,
+      "petz_leak_max": 7.882583474838611e-15,
+      "wall_s": 1.2
+    },
+    "deep_L28@v2_s0.125": {
+      "code": "deep_L28",
+      "residual": 0.000195,
+      "s": 0.125,
+      "eta": 0.9909165064677175,
+      "sigma_a2": 0.005875,
+      "projective_rate": 0.04538681314785198,
+      "petz_rate": 0.044895400643433225,
+      "petz_leak_max": -2.220446049250313e-16,
+      "wall_s": 1.2
+    },
+    "hw_basis_L16@v2_s0.250": {
+      "code": "hw_basis_L16",
+      "residual": 2.9,
+      "s": 0.25,
+      "eta": 0.9819155227901859,
+      "sigma_a2": 0.01175,
+      "projective_rate": 0.10887874662685626,
+      "petz_rate": 0.017941131251867914,
+      "petz_leak_max": 5.662137425588298e-15,
+      "wall_s": 1.1
+    },
+    "plateau_B_s202@v2_s0.250": {
+      "code": "plateau_B_s202",
+      "residual": 0.449,
+      "s": 0.25,
+      "eta": 0.9819155227901859,
+      "sigma_a2": 0.01175,
+      "projective_rate": 0.11821219600848809,
+      "petz_rate": 0.02882422959516151,
+      "petz_leak_max": 9.880984919163893e-15,
+      "wall_s": 1.1
+    },
+    "converged_B_s202@v2_s0.250": {
+      "code": "converged_B_s202",
+      "residual": 0.36,
+      "s": 0.25,
+      "eta": 0.9819155227901859,
+      "sigma_a2": 0.01175,
+      "projective_rate": 0.12543601238510582,
+      "petz_rate": 0.04057231467985112,
+      "petz_leak_max": 3.6637359812630166e-15,
+      "wall_s": 1.1
+    },
+    "deep_L28@v2_s0.250": {
+      "code": "deep_L28",
+      "residual": 0.000195,
+      "s": 0.25,
+      "eta": 0.9819155227901859,
+      "sigma_a2": 0.01175,
+      "projective_rate": 0.1280330252775953,
+      "petz_rate": 0.12661698901325136,
+      "petz_leak_max": -1.9984014443252818e-15,
+      "wall_s": 1.1
+    },
+    "hw_basis_L16@v2_s1.500": {
+      "code": "hw_basis_L16",
+      "residual": 2.9,
+      "s": 1.5,
+      "eta": 0.896282164362109,
+      "sigma_a2": 0.07050000000000001,
+      "projective_rate": 0.4876976379562198,
+      "petz_rate": 0.2577082446601816,
+      "petz_leak_max": 2.4424906541753444e-15,
+      "wall_s": 1.2
+    },
+    "plateau_B_s202@v2_s1.500": {
+      "code": "plateau_B_s202",
+      "residual": 0.449,
+      "s": 1.5,
+      "eta": 0.896282164362109,
+      "sigma_a2": 0.07050000000000001,
+      "projective_rate": 0.5052277338944418,
+      "petz_rate": 0.2852940430022798,
+      "petz_leak_max": 3.6637359812630166e-15,
+      "wall_s": 1.1
+    },
+    "converged_B_s202@v2_s1.500": {
+      "code": "converged_B_s202",
+      "residual": 0.36,
+      "s": 1.5,
+      "eta": 0.896282164362109,
+      "sigma_a2": 0.07050000000000001,
+      "projective_rate": 0.5195085079420325,
+      "petz_rate": 0.3120290170926089,
+      "petz_leak_max": 2.4424906541753444e-15,
+      "wall_s": 1.2
+    },
+    "deep_L28@v2_s1.500": {
+      "code": "deep_L28",
+      "residual": 0.000195,
+      "s": 1.5,
+      "eta": 0.896282164362109,
+      "sigma_a2": 0.07050000000000001,
+      "projective_rate": 0.5452982157966562,
+      "petz_rate": 0.48262073121408,
+      "petz_leak_max": -2.220446049250313e-15,
+      "wall_s": 1.2
+    }
+  }
+}

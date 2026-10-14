@@ -1,0 +1,200 @@
+{
+  "units": {
+    "abl_prune60": {
+      "pct": 60,
+      "threshold_wrapped_theta": 1.8502168781153185,
+      "n_gates_pruned": 24,
+      "ms_budget": 16,
+      "surviving_gates_per_layer": [
+        10,
+        6
+      ],
+      "wloss_after_finetune": 0.0054137876802869585,
+      "npz": "results/campaigns/r2_campaign/t3_codes/abl_prune60.npz",
+      "ler_w1": {
+        "k": 0,
+        "n": 200000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          1.92076310598226e-05
+        ]
+      },
+      "ler_w2": {
+        "k": 0,
+        "n": 100000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          3.8414524267635735e-05
+        ]
+      },
+      "ler_w3": {
+        "k": 25628,
+        "n": 100000,
+        "ler": 0.25628,
+        "wilson95": [
+          0.2535834581853162,
+          0.2589952665903928
+        ]
+      },
+      "ler_iid_p05": {
+        "k": 325,
+        "n": 1000000,
+        "ler": 0.000325,
+        "wilson95": [
+          0.0002915388419387769,
+          0.0003623002462729817
+        ]
+      },
+      "wall_s": 76.3
+    },
+    "abl_prune70": {
+      "pct": 70,
+      "threshold_wrapped_theta": 1.9879496482974421,
+      "n_gates_pruned": 28,
+      "ms_budget": 12,
+      "surviving_gates_per_layer": [
+        7,
+        5
+      ],
+      "wloss_after_finetune": 0.00429284747487762,
+      "npz": "results/campaigns/r2_campaign/t3_codes/abl_prune70.npz",
+      "ler_w1": {
+        "k": 0,
+        "n": 200000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          1.92076310598226e-05
+        ]
+      },
+      "ler_w2": {
+        "k": 0,
+        "n": 100000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          3.8414524267635735e-05
+        ]
+      },
+      "ler_w3": {
+        "k": 33662,
+        "n": 100000,
+        "ler": 0.33662,
+        "wilson95": [
+          0.3336974076763661,
+          0.33955514465358355
+        ]
+      },
+      "ler_iid_p05": {
+        "k": 419,
+        "n": 1000000,
+        "ler": 0.000419,
+        "wilson95": [
+          0.0003807615803879411,
+          0.00046107678560579194
+        ]
+      },
+      "wall_s": 59.6
+    },
+    "abl_prune80": {
+      "pct": 80,
+      "threshold_wrapped_theta": 2.2326055058209224,
+      "n_gates_pruned": 32,
+      "ms_budget": 8,
+      "surviving_gates_per_layer": [
+        4,
+        4
+      ],
+      "wloss_after_finetune": 0.0038630412836398813,
+      "npz": "results/campaigns/r2_campaign/t3_codes/abl_prune80.npz",
+      "ler_w1": {
+        "k": 0,
+        "n": 200000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          1.92076310598226e-05
+        ]
+      },
+      "ler_w2": {
+        "k": 2422,
+        "n": 100000,
+        "ler": 0.02422,
+        "wilson95": [
+          0.02328528182625024,
+          0.02519127189846187
+        ]
+      },
+      "ler_w3": {
+        "k": 41516,
+        "n": 100000,
+        "ler": 0.41516,
+        "wilson95": [
+          0.4121092223100746,
+          0.41821729586640305
+        ]
+      },
+      "ler_iid_p05": {
+        "k": 1000,
+        "n": 1000000,
+        "ler": 0.001,
+        "wilson95": [
+          0.0009399377742246103,
+          0.0010638961278470714
+        ]
+      },
+      "wall_s": 59.6
+    },
+    "abl_prune90": {
+      "pct": 90,
+      "threshold_wrapped_theta": 2.661804403836314,
+      "n_gates_pruned": 36,
+      "ms_budget": 4,
+      "surviving_gates_per_layer": [
+        2,
+        2
+      ],
+      "wloss_after_finetune": 0.00566803548135946,
+      "npz": "results/campaigns/r2_campaign/t3_codes/abl_prune90.npz",
+      "ler_w1": {
+        "k": 0,
+        "n": 200000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          1.92076310598226e-05
+        ]
+      },
+      "ler_w2": {
+        "k": 12062,
+        "n": 100000,
+        "ler": 0.12062,
+        "wilson95": [
+          0.11861594240533493,
+          0.1226532049990984
+        ]
+      },
+      "ler_w3": {
+        "k": 46203,
+        "n": 100000,
+        "ler": 0.46203,
+        "wilson95": [
+          0.45894143429991835,
+          0.4651214828990545
+        ]
+      },
+      "ler_iid_p05": {
+        "k": 3088,
+        "n": 1000000,
+        "ler": 0.003088,
+        "wilson95": [
+          0.0029811439222556823,
+          0.0031986739373560283
+        ]
+      },
+      "wall_s": 60.4
+    }
+  }
+}

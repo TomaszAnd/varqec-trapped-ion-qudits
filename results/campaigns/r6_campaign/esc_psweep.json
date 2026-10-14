@@ -1,0 +1,56 @@
+{
+  "cells": {
+    "ms": {
+      "gate": "ms",
+      "seed": 102,
+      "npz": "results/campaigns/r3_campaign/t3_codes/ms_s102.npz",
+      "p": 0.02,
+      "base_k": 15,
+      "base_n": 5000000,
+      "chunks": [
+        {
+          "seed": 8000,
+          "k": 20,
+          "n": 5000000,
+          "wall_s": 214.6
+        }
+      ],
+      "combined": {
+        "k": 35,
+        "n": 10000000,
+        "ler": 3.5e-06,
+        "wilson95": [
+          2.5167280130780675e-06,
+          4.867429150224117e-06
+        ],
+        "resolved": true
+      }
+    },
+    "zz": {
+      "gate": "zz",
+      "seed": 101,
+      "npz": "results/campaigns/r3_campaign/t3_codes/zz_s101.npz",
+      "p": 0.02,
+      "base_k": 15,
+      "base_n": 5000000,
+      "chunks": [
+        {
+          "seed": 8000,
+          "k": 25,
+          "n": 5000000,
+          "wall_s": 210.2
+        }
+      ],
+      "combined": {
+        "k": 40,
+        "n": 10000000,
+        "ler": 4e-06,
+        "wilson95": [
+          2.937675196468079e-06,
+          5.446481582674251e-06
+        ],
+        "resolved": true
+      }
+    }
+  }
+}

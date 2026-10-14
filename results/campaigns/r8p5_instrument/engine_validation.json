@@ -1,0 +1,37 @@
+{
+  "eta": 0.9296008300257927,
+  "sigma_a2": 0.047,
+  "n5_timing": {
+    "n_gate_steps": 10,
+    "wall_s_forward": 0.034,
+    "wall_s_adjoint": 0.03,
+    "trace_dev": 4.773965819048349e-15,
+    "herm_dev": 6.7983203740909265e-18,
+    "min_eig": 2.08673595654814e-07,
+    "rho_bytes_mb": 0.9
+  },
+  "n7_timing": {
+    "n_gate_steps": 21,
+    "wall_s_forward": 17.537,
+    "wall_s_adjoint": 17.309,
+    "trace_dev": 9.99200732953216e-15,
+    "herm_dev": 1.308601591152097e-18,
+    "min_eig": null,
+    "rho_bytes_mb": 73.0
+  },
+  "n5_kraus_vs_exact_maxdev": 1.1947314456285663e-05,
+  "modeB_kraus_sampler": {
+    "n_traj": 4000,
+    "max_dev_vs_engine": 0.0020004677280552295,
+    "stat_scale": 0.015811388300841896,
+    "wall_s": 14.5,
+    "ms_per_traj": 3.617
+  },
+  "modeA_trajectory_mc": {
+    "n_traj": 4000,
+    "max_dev_vs_engine": 0.000541702882492315,
+    "stat_scale": 0.015811388300841896,
+    "wall_s": 4.0,
+    "ms_per_traj": 1.011
+  }
+}

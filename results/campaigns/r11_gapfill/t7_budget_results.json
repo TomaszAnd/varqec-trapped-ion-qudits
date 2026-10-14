@@ -1,0 +1,539 @@
+{
+  "floor": {
+    "per_checkpoint_full_weighted_loss": {
+      "A_L2_s100": 0.0033570264752239287,
+      "A_L2_s101": 0.0033306300059227634,
+      "A_L2_s102": 0.0031829590544431687,
+      "A_L2_s103": 0.003281884412648787
+    },
+    "floor_max": 0.0033570264752239287,
+    "tau": 0.01,
+    "tau_rule": "smallest decade point >= 2x max checkpoint floor (Sec IX A / Table VI convention)"
+  },
+  "units": {
+    "full_batch_s100": {
+      "certified": true,
+      "stop_step": 6,
+      "full_loss": 0.008684885323460031,
+      "train_op_evs": 1547,
+      "confirm_op_evs": 0,
+      "monitor_op_evs": 221,
+      "budget_op_evs": 1547,
+      "n_confirms": 0,
+      "n_premature": 0,
+      "total_ops": 221,
+      "train_wall_s": 24.0,
+      "sampler": "full_batch",
+      "frac": 1.0,
+      "seed": 100,
+      "npz": "results/campaigns/r11_gapfill/t7_codes/full_batch_s100.npz",
+      "ler_w2": {
+        "ler": 1e-05,
+        "k": 1,
+        "n": 100000
+      },
+      "ler_iid_p05": {
+        "ler": 0.00032333333333333335,
+        "k": 97,
+        "n_shots": 300000,
+        "wilson95": [
+          0.0002650793262642747,
+          0.00039438422908507796
+        ],
+        "resolved": true
+      }
+    },
+    "full_batch_s101": {
+      "certified": true,
+      "stop_step": 10,
+      "full_loss": 0.008899891566810172,
+      "train_op_evs": 2431,
+      "confirm_op_evs": 0,
+      "monitor_op_evs": 221,
+      "budget_op_evs": 2431,
+      "n_confirms": 0,
+      "n_premature": 0,
+      "total_ops": 221,
+      "train_wall_s": 27.8,
+      "sampler": "full_batch",
+      "frac": 1.0,
+      "seed": 101,
+      "npz": "results/campaigns/r11_gapfill/t7_codes/full_batch_s101.npz",
+      "ler_w2": {
+        "ler": 0.0,
+        "k": 0,
+        "n": 100000
+      },
+      "ler_iid_p05": {
+        "ler": 0.0002866666666666667,
+        "k": 86,
+        "n_shots": 300000,
+        "wilson95": [
+          0.00023214999127419838,
+          0.0003539811697875739
+        ],
+        "resolved": true
+      }
+    },
+    "full_batch_s102": {
+      "certified": true,
+      "stop_step": 8,
+      "full_loss": 0.008791855660981644,
+      "train_op_evs": 1989,
+      "confirm_op_evs": 0,
+      "monitor_op_evs": 221,
+      "budget_op_evs": 1989,
+      "n_confirms": 0,
+      "n_premature": 0,
+      "total_ops": 221,
+      "train_wall_s": 19.6,
+      "sampler": "full_batch",
+      "frac": 1.0,
+      "seed": 102,
+      "npz": "results/campaigns/r11_gapfill/t7_codes/full_batch_s102.npz",
+      "ler_w2": {
+        "ler": 7e-05,
+        "k": 7,
+        "n": 100000
+      },
+      "ler_iid_p05": {
+        "ler": 0.00029,
+        "k": 87,
+        "n_shots": 300000,
+        "wilson95": [
+          0.00023513413620405692,
+          0.0003576636061565862
+        ],
+        "resolved": true
+      }
+    },
+    "full_batch_s103": {
+      "certified": true,
+      "stop_step": 6,
+      "full_loss": 0.008624583448194398,
+      "train_op_evs": 1547,
+      "confirm_op_evs": 0,
+      "monitor_op_evs": 221,
+      "budget_op_evs": 1547,
+      "n_confirms": 0,
+      "n_premature": 0,
+      "total_ops": 221,
+      "train_wall_s": 14.1,
+      "sampler": "full_batch",
+      "frac": 1.0,
+      "seed": 103,
+      "npz": "results/campaigns/r11_gapfill/t7_codes/full_batch_s103.npz",
+      "ler_w2": {
+        "ler": 0.0,
+        "k": 0,
+        "n": 100000
+      },
+      "ler_iid_p05": {
+        "ler": 0.00035,
+        "k": 105,
+        "n_shots": 300000,
+        "wilson95": [
+          0.0002891584095135151,
+          0.000423637796226805
+        ],
+        "resolved": true
+      }
+    },
+    "importance@f0.2_s100": {
+      "certified": true,
+      "stop_step": 12,
+      "full_loss": 0.008888547699164825,
+      "train_op_evs": 498,
+      "confirm_op_evs": 221,
+      "monitor_op_evs": 221,
+      "budget_op_evs": 719,
+      "n_confirms": 1,
+      "n_premature": 0,
+      "total_ops": 221,
+      "train_wall_s": 13.7,
+      "sampler": "importance",
+      "frac": 0.2,
+      "seed": 100,
+      "npz": "results/campaigns/r11_gapfill/t7_codes/importance@f0.2_s100.npz",
+      "ler_w2": {
+        "ler": 1e-05,
+        "k": 1,
+        "n": 100000
+      },
+      "ler_iid_p05": {
+        "ler": 0.00035666666666666664,
+        "k": 107,
+        "n_shots": 300000,
+        "wilson95": [
+          0.0002951936097744908,
+          0.00043093575856357124
+        ],
+        "resolved": true
+      }
+    },
+    "importance@f0.2_s101": {
+      "certified": true,
+      "stop_step": 25,
+      "full_loss": 0.007825938516115571,
+      "train_op_evs": 981,
+      "confirm_op_evs": 221,
+      "monitor_op_evs": 442,
+      "budget_op_evs": 1202,
+      "n_confirms": 1,
+      "n_premature": 0,
+      "total_ops": 221,
+      "train_wall_s": 15.8,
+      "sampler": "importance",
+      "frac": 0.2,
+      "seed": 101,
+      "npz": "results/campaigns/r11_gapfill/t7_codes/importance@f0.2_s101.npz",
+      "ler_w2": {
+        "ler": 0.0,
+        "k": 0,
+        "n": 100000
+      },
+      "ler_iid_p05": {
+        "ler": 0.0003133333333333333,
+        "k": 94,
+        "n_shots": 300000,
+        "wilson95": [
+          0.00025607681209899227,
+          0.00038338699935374753
+        ],
+        "resolved": true
+      }
+    },
+    "importance@f0.2_s102": {
+      "certified": true,
+      "stop_step": 14,
+      "full_loss": 0.008847644193794666,
+      "train_op_evs": 578,
+      "confirm_op_evs": 221,
+      "monitor_op_evs": 221,
+      "budget_op_evs": 799,
+      "n_confirms": 1,
+      "n_premature": 0,
+      "total_ops": 221,
+      "train_wall_s": 16.0,
+      "sampler": "importance",
+      "frac": 0.2,
+      "seed": 102,
+      "npz": "results/campaigns/r11_gapfill/t7_codes/importance@f0.2_s102.npz",
+      "ler_w2": {
+        "ler": 6e-05,
+        "k": 6,
+        "n": 100000
+      },
+      "ler_iid_p05": {
+        "ler": 0.0003133333333333333,
+        "k": 94,
+        "n_shots": 300000,
+        "wilson95": [
+          0.00025607681209899227,
+          0.00038338699935374753
+        ],
+        "resolved": true
+      }
+    },
+    "importance@f0.2_s103": {
+      "certified": true,
+      "stop_step": 11,
+      "full_loss": 0.008329743420563508,
+      "train_op_evs": 455,
+      "confirm_op_evs": 221,
+      "monitor_op_evs": 221,
+      "budget_op_evs": 676,
+      "n_confirms": 1,
+      "n_premature": 0,
+      "total_ops": 221,
+      "train_wall_s": 19.0,
+      "sampler": "importance",
+      "frac": 0.2,
+      "seed": 103,
+      "npz": "results/campaigns/r11_gapfill/t7_codes/importance@f0.2_s103.npz",
+      "ler_w2": {
+        "ler": 0.0,
+        "k": 0,
+        "n": 100000
+      },
+      "ler_iid_p05": {
+        "ler": 0.0004566666666666667,
+        "k": 137,
+        "n_shots": 300000,
+        "wilson95": [
+          0.00038634351180944014,
+          0.0005397832954947501
+        ],
+        "resolved": true
+      }
+    },
+    "importance@f0.05_s100": {
+      "certified": true,
+      "stop_step": 15,
+      "full_loss": 0.008992228592356316,
+      "train_op_evs": 256,
+      "confirm_op_evs": 221,
+      "monitor_op_evs": 221,
+      "budget_op_evs": 477,
+      "n_confirms": 1,
+      "n_premature": 0,
+      "total_ops": 221,
+      "train_wall_s": 14.9,
+      "sampler": "importance",
+      "frac": 0.05,
+      "seed": 100,
+      "npz": "results/campaigns/r11_gapfill/t7_codes/importance@f0.05_s100.npz",
+      "ler_w2": {
+        "ler": 0.0,
+        "k": 0,
+        "n": 100000
+      },
+      "ler_iid_p05": {
+        "ler": 0.00033,
+        "k": 99,
+        "n_shots": 300000,
+        "wilson95": [
+          0.00027108947440920394,
+          0.00040170724353789055
+        ],
+        "resolved": true
+      }
+    },
+    "importance@f0.05_s101": {
+      "certified": true,
+      "stop_step": 39,
+      "full_loss": 0.008572811431318305,
+      "train_op_evs": 640,
+      "confirm_op_evs": 221,
+      "monitor_op_evs": 442,
+      "budget_op_evs": 861,
+      "n_confirms": 1,
+      "n_premature": 0,
+      "total_ops": 221,
+      "train_wall_s": 14.1,
+      "sampler": "importance",
+      "frac": 0.05,
+      "seed": 101,
+      "npz": "results/campaigns/r11_gapfill/t7_codes/importance@f0.05_s101.npz",
+      "ler_w2": {
+        "ler": 0.0,
+        "k": 0,
+        "n": 100000
+      },
+      "ler_iid_p05": {
+        "ler": 0.00034,
+        "k": 102,
+        "n_shots": 300000,
+        "wilson95": [
+          0.0002801169012477462,
+          0.00041267956059596114
+        ],
+        "resolved": true
+      }
+    },
+    "importance@f0.05_s102": {
+      "certified": true,
+      "stop_step": 28,
+      "full_loss": 0.008921680675257459,
+      "train_op_evs": 464,
+      "confirm_op_evs": 221,
+      "monitor_op_evs": 442,
+      "budget_op_evs": 685,
+      "n_confirms": 1,
+      "n_premature": 0,
+      "total_ops": 221,
+      "train_wall_s": 14.2,
+      "sampler": "importance",
+      "frac": 0.05,
+      "seed": 102,
+      "npz": "results/campaigns/r11_gapfill/t7_codes/importance@f0.05_s102.npz",
+      "ler_w2": {
+        "ler": 1e-05,
+        "k": 1,
+        "n": 100000
+      },
+      "ler_iid_p05": {
+        "ler": 0.00028,
+        "k": 84,
+        "n_shots": 300000,
+        "wilson95": [
+          0.00022618778195169803,
+          0.0003466102165123323
+        ],
+        "resolved": true
+      }
+    },
+    "importance@f0.05_s103": {
+      "certified": true,
+      "stop_step": 13,
+      "full_loss": 0.008827833211832555,
+      "train_op_evs": 224,
+      "confirm_op_evs": 221,
+      "monitor_op_evs": 221,
+      "budget_op_evs": 445,
+      "n_confirms": 1,
+      "n_premature": 0,
+      "total_ops": 221,
+      "train_wall_s": 18.1,
+      "sampler": "importance",
+      "frac": 0.05,
+      "seed": 103,
+      "npz": "results/campaigns/r11_gapfill/t7_codes/importance@f0.05_s103.npz",
+      "ler_w2": {
+        "ler": 0.0,
+        "k": 0,
+        "n": 100000
+      },
+      "ler_iid_p05": {
+        "ler": 0.00035666666666666664,
+        "k": 107,
+        "n_shots": 300000,
+        "wilson95": [
+          0.0002951936097744908,
+          0.00043093575856357124
+        ],
+        "resolved": true
+      }
+    }
+  },
+  "summary": {
+    "full_batch": {
+      "certified": 4,
+      "n": 4,
+      "budget_median": 1768.0,
+      "budget_range": [
+        1547,
+        2431
+      ],
+      "train_op_evs": [
+        1547,
+        2431,
+        1989,
+        1547
+      ],
+      "confirm_op_evs": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "stop_steps": [
+        6,
+        10,
+        8,
+        6
+      ],
+      "n_confirms": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "n_premature": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "w2_perfect": 2,
+      "iid_lers": [
+        0.00032333333333333335,
+        0.0002866666666666667,
+        0.00029,
+        0.00035
+      ]
+    },
+    "importance@f0.2": {
+      "certified": 4,
+      "n": 4,
+      "budget_median": 759.0,
+      "budget_range": [
+        676,
+        1202
+      ],
+      "train_op_evs": [
+        498,
+        981,
+        578,
+        455
+      ],
+      "confirm_op_evs": [
+        221,
+        221,
+        221,
+        221
+      ],
+      "stop_steps": [
+        12,
+        25,
+        14,
+        11
+      ],
+      "n_confirms": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "n_premature": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "w2_perfect": 2,
+      "iid_lers": [
+        0.00035666666666666664,
+        0.0003133333333333333,
+        0.0003133333333333333,
+        0.0004566666666666667
+      ]
+    },
+    "importance@f0.05": {
+      "certified": 4,
+      "n": 4,
+      "budget_median": 581.0,
+      "budget_range": [
+        445,
+        861
+      ],
+      "train_op_evs": [
+        256,
+        640,
+        464,
+        224
+      ],
+      "confirm_op_evs": [
+        221,
+        221,
+        221,
+        221
+      ],
+      "stop_steps": [
+        15,
+        39,
+        28,
+        13
+      ],
+      "n_confirms": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "n_premature": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "w2_perfect": 3,
+      "iid_lers": [
+        0.00033,
+        0.00034,
+        0.00028,
+        0.00035666666666666664
+      ]
+    }
+  }
+}

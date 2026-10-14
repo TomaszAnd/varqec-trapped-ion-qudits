@@ -1,0 +1,76 @@
+[
+  {
+    "name": "L16",
+    "L": 16,
+    "stored": 0.029750308909811004,
+    "theta_loss": 0.029750308909811004,
+    "states_full": 0.029750308909811004,
+    "hw_loss": 0.010806164109302796,
+    "ortho": 2.1094237467877974e-15,
+    "conn_ok": true,
+    "params_ok": true,
+    "ppl_match": true
+  },
+  {
+    "name": "L20",
+    "L": 20,
+    "stored": 0.0006275640817160794,
+    "theta_loss": 0.0006275640817160794,
+    "states_full": 0.0006275640817160794,
+    "hw_loss": 0.00021255834378879908,
+    "ortho": 4.218847493575595e-15,
+    "conn_ok": true,
+    "params_ok": true,
+    "ppl_match": true
+  },
+  {
+    "name": "L24",
+    "L": 24,
+    "stored": 0.00024265889909929443,
+    "theta_loss": 0.00024265889909929443,
+    "states_full": 0.00024265889909929443,
+    "hw_loss": 8.725065577076703e-05,
+    "ortho": 2.6645352591003757e-15,
+    "conn_ok": true,
+    "params_ok": true,
+    "ppl_match": true
+  },
+  {
+    "name": "L28",
+    "L": 28,
+    "stored": 0.00019523796185436047,
+    "theta_loss": 0.00019523796185436047,
+    "states_full": 0.00019523796185436047,
+    "hw_loss": 7.222253185141446e-05,
+    "ortho": 6.661338147750939e-15,
+    "conn_ok": true,
+    "params_ok": true,
+    "ppl_match": true
+  },
+  {
+    "name": "stageH",
+    "L": 16,
+    "stored": 0.40851179699395823,
+    "theta_loss": 0.40851179699395823,
+    "states_full": 0.40851179699395823,
+    "hw_loss": 0.1455143879820396,
+    "ortho": 2.6645352591003757e-15,
+    "conn_ok": true,
+    "params_ok": true,
+    "ppl_match": true
+  },
+  {
+    "name": "published_L10_ring",
+    "stored": null,
+    "states_full": 3.022477682772664,
+    "hw_loss": 0.13627082040802102,
+    "ortho": 8.881784197001252e-16
+  },
+  {
+    "name": "[[5,1,3]]",
+    "stored": null,
+    "states_full": 2.321947609751861e-30,
+    "hw_loss": 8.253134626966405e-31,
+    "ortho": 7.771561172376096e-16
+  }
+]

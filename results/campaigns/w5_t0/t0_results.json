@@ -1,0 +1,638 @@
+{
+  "meta": {
+    "d": 3,
+    "n": 5,
+    "s_grid": [
+      0.5,
+      1.0
+    ],
+    "convention": "eta(s)=e^{-s*0.073}, sigma_a2(s)=s*0.047",
+    "channel": "v2 (dephasing + MS gate-angle jitter), exact engine",
+    "metric": "rate = 1 - F_avg (channel infidelity)",
+    "instruments": "projective-MAP (operational) + full-dose Petz (near-optimal bound)"
+  },
+  "cells": {
+    "depth_L2_s100@s0.500": {
+      "code": "depth_L2_s100",
+      "s": 0.5,
+      "eta": 0.964158093896324,
+      "sigma_a2": 0.0235,
+      "path": "results/campaigns/r1_campaign/t1_codes/A_L2_s100.npz",
+      "projective_rate": 0.2316949917708251,
+      "petz_rate": 0.06031888776396266,
+      "wall_s": 1.0,
+      "L": 2,
+      "seed": 100
+    },
+    "depth_L2_s101@s0.500": {
+      "code": "depth_L2_s101",
+      "s": 0.5,
+      "eta": 0.964158093896324,
+      "sigma_a2": 0.0235,
+      "path": "results/campaigns/r1_campaign/t1_codes/A_L2_s101.npz",
+      "projective_rate": 0.2281107747415001,
+      "petz_rate": 0.059375484981075144,
+      "wall_s": 1.0,
+      "L": 2,
+      "seed": 101
+    },
+    "depth_L2_s102@s0.500": {
+      "code": "depth_L2_s102",
+      "s": 0.5,
+      "eta": 0.964158093896324,
+      "sigma_a2": 0.0235,
+      "path": "results/campaigns/r1_campaign/t1_codes/A_L2_s102.npz",
+      "projective_rate": 0.22635020661847594,
+      "petz_rate": 0.05826524373588304,
+      "wall_s": 1.0,
+      "L": 2,
+      "seed": 102
+    },
+    "depth_L2_s103@s0.500": {
+      "code": "depth_L2_s103",
+      "s": 0.5,
+      "eta": 0.964158093896324,
+      "sigma_a2": 0.0235,
+      "path": "results/campaigns/r1_campaign/t1_codes/A_L2_s103.npz",
+      "projective_rate": 0.22938986494865599,
+      "petz_rate": 0.06093599499088698,
+      "wall_s": 1.0,
+      "L": 2,
+      "seed": 103
+    },
+    "depth_L4_s100@s0.500": {
+      "code": "depth_L4_s100",
+      "s": 0.5,
+      "eta": 0.964158093896324,
+      "sigma_a2": 0.0235,
+      "path": "results/campaigns/r1_campaign/t1_codes/A_L4_s100.npz",
+      "projective_rate": 0.22155405814712725,
+      "petz_rate": 0.056347197822040895,
+      "wall_s": 1.0,
+      "L": 4,
+      "seed": 100
+    },
+    "depth_L4_s101@s0.500": {
+      "code": "depth_L4_s101",
+      "s": 0.5,
+      "eta": 0.964158093896324,
+      "sigma_a2": 0.0235,
+      "path": "results/campaigns/r1_campaign/t1_codes/A_L4_s101.npz",
+      "projective_rate": 0.22823391120030456,
+      "petz_rate": 0.06081019280339084,
+      "wall_s": 1.0,
+      "L": 4,
+      "seed": 101
+    },
+    "depth_L4_s102@s0.500": {
+      "code": "depth_L4_s102",
+      "s": 0.5,
+      "eta": 0.964158093896324,
+      "sigma_a2": 0.0235,
+      "path": "results/campaigns/r1_campaign/t1_codes/A_L4_s102.npz",
+      "projective_rate": 0.23032497148715025,
+      "petz_rate": 0.058552166955938345,
+      "wall_s": 1.0,
+      "L": 4,
+      "seed": 102
+    },
+    "depth_L4_s103@s0.500": {
+      "code": "depth_L4_s103",
+      "s": 0.5,
+      "eta": 0.964158093896324,
+      "sigma_a2": 0.0235,
+      "path": "results/campaigns/r1_campaign/t1_codes/A_L4_s103.npz",
+      "projective_rate": 0.22273056090939558,
+      "petz_rate": 0.0569372783611547,
+      "wall_s": 1.0,
+      "L": 4,
+      "seed": 103
+    },
+    "depth_L8_s100@s0.500": {
+      "code": "depth_L8_s100",
+      "s": 0.5,
+      "eta": 0.964158093896324,
+      "sigma_a2": 0.0235,
+      "path": "results/campaigns/r1_campaign/t1_codes/A_L8_s100.npz",
+      "projective_rate": 0.22394390895485583,
+      "petz_rate": 0.05586988198543086,
+      "wall_s": 1.0,
+      "L": 8,
+      "seed": 100
+    },
+    "depth_L8_s101@s0.500": {
+      "code": "depth_L8_s101",
+      "s": 0.5,
+      "eta": 0.964158093896324,
+      "sigma_a2": 0.0235,
+      "path": "results/campaigns/r1_campaign/t1_codes/A_L8_s101.npz",
+      "projective_rate": 0.22274627520507717,
+      "petz_rate": 0.056983597453797,
+      "wall_s": 1.0,
+      "L": 8,
+      "seed": 101
+    },
+    "depth_L8_s102@s0.500": {
+      "code": "depth_L8_s102",
+      "s": 0.5,
+      "eta": 0.964158093896324,
+      "sigma_a2": 0.0235,
+      "path": "results/campaigns/r1_campaign/t1_codes/A_L8_s102.npz",
+      "projective_rate": 0.2255813197460621,
+      "petz_rate": 0.05771505291422374,
+      "wall_s": 1.0,
+      "L": 8,
+      "seed": 102
+    },
+    "depth_L8_s103@s0.500": {
+      "code": "depth_L8_s103",
+      "s": 0.5,
+      "eta": 0.964158093896324,
+      "sigma_a2": 0.0235,
+      "path": "results/campaigns/r1_campaign/t1_codes/A_L8_s103.npz",
+      "projective_rate": 0.22484462384737092,
+      "petz_rate": 0.057992524332502904,
+      "wall_s": 1.0,
+      "L": 8,
+      "seed": 103
+    },
+    "depth_L16_s100@s0.500": {
+      "code": "depth_L16_s100",
+      "s": 0.5,
+      "eta": 0.964158093896324,
+      "sigma_a2": 0.0235,
+      "path": "results/campaigns/r1_campaign/t1_codes/A_L16_s100.npz",
+      "projective_rate": 0.21884456445067135,
+      "petz_rate": 0.05456524154432507,
+      "wall_s": 1.0,
+      "L": 16,
+      "seed": 100
+    },
+    "depth_L16_s101@s0.500": {
+      "code": "depth_L16_s101",
+      "s": 0.5,
+      "eta": 0.964158093896324,
+      "sigma_a2": 0.0235,
+      "path": "results/campaigns/r1_campaign/t1_codes/A_L16_s101.npz",
+      "projective_rate": 0.22241030947162743,
+      "petz_rate": 0.056398038812541906,
+      "wall_s": 1.0,
+      "L": 16,
+      "seed": 101
+    },
+    "depth_L16_s102@s0.500": {
+      "code": "depth_L16_s102",
+      "s": 0.5,
+      "eta": 0.964158093896324,
+      "sigma_a2": 0.0235,
+      "path": "results/campaigns/r1_campaign/t1_codes/A_L16_s102.npz",
+      "projective_rate": 0.2225170320324883,
+      "petz_rate": 0.05484145065229151,
+      "wall_s": 1.0,
+      "L": 16,
+      "seed": 102
+    },
+    "depth_L16_s103@s0.500": {
+      "code": "depth_L16_s103",
+      "s": 0.5,
+      "eta": 0.964158093896324,
+      "sigma_a2": 0.0235,
+      "path": "results/campaigns/r1_campaign/t1_codes/A_L16_s103.npz",
+      "projective_rate": 0.2225249916856793,
+      "petz_rate": 0.05644422889140022,
+      "wall_s": 1.0,
+      "L": 16,
+      "seed": 103
+    },
+    "prune_gates40@s0.500": {
+      "code": "prune_gates40",
+      "s": 0.5,
+      "eta": 0.964158093896324,
+      "sigma_a2": 0.0235,
+      "path": "results/campaigns/r1_campaign/t1_codes/A_L2_s100.npz",
+      "projective_rate": 0.2316949917708251,
+      "petz_rate": 0.06031888776396266,
+      "wall_s": 1.0,
+      "gates": 40
+    },
+    "prune_gates16@s0.500": {
+      "code": "prune_gates16",
+      "s": 0.5,
+      "eta": 0.964158093896324,
+      "sigma_a2": 0.0235,
+      "path": "results/campaigns/r2_campaign/t3_codes/abl_prune60.npz",
+      "projective_rate": 0.23758483341125403,
+      "petz_rate": 0.06568815551043661,
+      "wall_s": 1.0,
+      "gates": 16
+    },
+    "prune_gates12@s0.500": {
+      "code": "prune_gates12",
+      "s": 0.5,
+      "eta": 0.964158093896324,
+      "sigma_a2": 0.0235,
+      "path": "results/campaigns/r2_campaign/t3_codes/abl_prune70.npz",
+      "projective_rate": 0.22840525199572959,
+      "petz_rate": 0.062365554763893494,
+      "wall_s": 1.0,
+      "gates": 12
+    },
+    "prune_gates8@s0.500": {
+      "code": "prune_gates8",
+      "s": 0.5,
+      "eta": 0.964158093896324,
+      "sigma_a2": 0.0235,
+      "path": "results/campaigns/r2_campaign/t3_codes/abl_prune80.npz",
+      "projective_rate": 0.24245422512190318,
+      "petz_rate": 0.06876963483858312,
+      "wall_s": 1.0,
+      "gates": 8
+    },
+    "depth_L2_s100@s1.000": {
+      "code": "depth_L2_s100",
+      "s": 1.0,
+      "eta": 0.9296008300257927,
+      "sigma_a2": 0.047,
+      "path": "results/campaigns/r1_campaign/t1_codes/A_L2_s100.npz",
+      "projective_rate": 0.3962175072250742,
+      "petz_rate": 0.1622292450521723,
+      "wall_s": 1.0,
+      "L": 2,
+      "seed": 100
+    },
+    "depth_L2_s101@s1.000": {
+      "code": "depth_L2_s101",
+      "s": 1.0,
+      "eta": 0.9296008300257927,
+      "sigma_a2": 0.047,
+      "path": "results/campaigns/r1_campaign/t1_codes/A_L2_s101.npz",
+      "projective_rate": 0.39202531496052584,
+      "petz_rate": 0.16137595503161672,
+      "wall_s": 1.0,
+      "L": 2,
+      "seed": 101
+    },
+    "depth_L2_s102@s1.000": {
+      "code": "depth_L2_s102",
+      "s": 1.0,
+      "eta": 0.9296008300257927,
+      "sigma_a2": 0.047,
+      "path": "results/campaigns/r1_campaign/t1_codes/A_L2_s102.npz",
+      "projective_rate": 0.39008457963631704,
+      "petz_rate": 0.15887605118680836,
+      "wall_s": 1.0,
+      "L": 2,
+      "seed": 102
+    },
+    "depth_L2_s103@s1.000": {
+      "code": "depth_L2_s103",
+      "s": 1.0,
+      "eta": 0.9296008300257927,
+      "sigma_a2": 0.047,
+      "path": "results/campaigns/r1_campaign/t1_codes/A_L2_s103.npz",
+      "projective_rate": 0.3937866313595888,
+      "petz_rate": 0.16252285432530644,
+      "wall_s": 1.0,
+      "L": 2,
+      "seed": 103
+    },
+    "depth_L4_s100@s1.000": {
+      "code": "depth_L4_s100",
+      "s": 1.0,
+      "eta": 0.9296008300257927,
+      "sigma_a2": 0.047,
+      "path": "results/campaigns/r1_campaign/t1_codes/A_L4_s100.npz",
+      "projective_rate": 0.38599479373410983,
+      "petz_rate": 0.1569989023989271,
+      "wall_s": 1.0,
+      "L": 4,
+      "seed": 100
+    },
+    "depth_L4_s101@s1.000": {
+      "code": "depth_L4_s101",
+      "s": 1.0,
+      "eta": 0.9296008300257927,
+      "sigma_a2": 0.047,
+      "path": "results/campaigns/r1_campaign/t1_codes/A_L4_s101.npz",
+      "projective_rate": 0.39292848713928374,
+      "petz_rate": 0.1632616278641691,
+      "wall_s": 1.0,
+      "L": 4,
+      "seed": 101
+    },
+    "depth_L4_s102@s1.000": {
+      "code": "depth_L4_s102",
+      "s": 1.0,
+      "eta": 0.9296008300257927,
+      "sigma_a2": 0.047,
+      "path": "results/campaigns/r1_campaign/t1_codes/A_L4_s102.npz",
+      "projective_rate": 0.3954608547844263,
+      "petz_rate": 0.15943114527764102,
+      "wall_s": 1.0,
+      "L": 4,
+      "seed": 102
+    },
+    "depth_L4_s103@s1.000": {
+      "code": "depth_L4_s103",
+      "s": 1.0,
+      "eta": 0.9296008300257927,
+      "sigma_a2": 0.047,
+      "path": "results/campaigns/r1_campaign/t1_codes/A_L4_s103.npz",
+      "projective_rate": 0.3873120678061417,
+      "petz_rate": 0.1571043088230335,
+      "wall_s": 1.0,
+      "L": 4,
+      "seed": 103
+    },
+    "depth_L8_s100@s1.000": {
+      "code": "depth_L8_s100",
+      "s": 1.0,
+      "eta": 0.9296008300257927,
+      "sigma_a2": 0.047,
+      "path": "results/campaigns/r1_campaign/t1_codes/A_L8_s100.npz",
+      "projective_rate": 0.3891918102908094,
+      "petz_rate": 0.15585796843312527,
+      "wall_s": 1.0,
+      "L": 8,
+      "seed": 100
+    },
+    "depth_L8_s101@s1.000": {
+      "code": "depth_L8_s101",
+      "s": 1.0,
+      "eta": 0.9296008300257927,
+      "sigma_a2": 0.047,
+      "path": "results/campaigns/r1_campaign/t1_codes/A_L8_s101.npz",
+      "projective_rate": 0.3873573634648334,
+      "petz_rate": 0.15719175776967964,
+      "wall_s": 1.0,
+      "L": 8,
+      "seed": 101
+    },
+    "depth_L8_s102@s1.000": {
+      "code": "depth_L8_s102",
+      "s": 1.0,
+      "eta": 0.9296008300257927,
+      "sigma_a2": 0.047,
+      "path": "results/campaigns/r1_campaign/t1_codes/A_L8_s102.npz",
+      "projective_rate": 0.3900104647729741,
+      "petz_rate": 0.15909783199158456,
+      "wall_s": 1.0,
+      "L": 8,
+      "seed": 102
+    },
+    "depth_L8_s103@s1.000": {
+      "code": "depth_L8_s103",
+      "s": 1.0,
+      "eta": 0.9296008300257927,
+      "sigma_a2": 0.047,
+      "path": "results/campaigns/r1_campaign/t1_codes/A_L8_s103.npz",
+      "projective_rate": 0.3905090236681201,
+      "petz_rate": 0.15977576831564133,
+      "wall_s": 1.0,
+      "L": 8,
+      "seed": 103
+    },
+    "depth_L16_s100@s1.000": {
+      "code": "depth_L16_s100",
+      "s": 1.0,
+      "eta": 0.9296008300257927,
+      "sigma_a2": 0.047,
+      "path": "results/campaigns/r1_campaign/t1_codes/A_L16_s100.npz",
+      "projective_rate": 0.38470117562338935,
+      "petz_rate": 0.1532249930484738,
+      "wall_s": 1.0,
+      "L": 16,
+      "seed": 100
+    },
+    "depth_L16_s101@s1.000": {
+      "code": "depth_L16_s101",
+      "s": 1.0,
+      "eta": 0.9296008300257927,
+      "sigma_a2": 0.047,
+      "path": "results/campaigns/r1_campaign/t1_codes/A_L16_s101.npz",
+      "projective_rate": 0.38830596708011256,
+      "petz_rate": 0.1574424059099131,
+      "wall_s": 1.0,
+      "L": 16,
+      "seed": 101
+    },
+    "depth_L16_s102@s1.000": {
+      "code": "depth_L16_s102",
+      "s": 1.0,
+      "eta": 0.9296008300257927,
+      "sigma_a2": 0.047,
+      "path": "results/campaigns/r1_campaign/t1_codes/A_L16_s102.npz",
+      "projective_rate": 0.3887611347762817,
+      "petz_rate": 0.15556917909189794,
+      "wall_s": 1.0,
+      "L": 16,
+      "seed": 102
+    },
+    "depth_L16_s103@s1.000": {
+      "code": "depth_L16_s103",
+      "s": 1.0,
+      "eta": 0.9296008300257927,
+      "sigma_a2": 0.047,
+      "path": "results/campaigns/r1_campaign/t1_codes/A_L16_s103.npz",
+      "projective_rate": 0.3886189446460371,
+      "petz_rate": 0.157626913663778,
+      "wall_s": 1.0,
+      "L": 16,
+      "seed": 103
+    },
+    "prune_gates40@s1.000": {
+      "code": "prune_gates40",
+      "s": 1.0,
+      "eta": 0.9296008300257927,
+      "sigma_a2": 0.047,
+      "path": "results/campaigns/r1_campaign/t1_codes/A_L2_s100.npz",
+      "projective_rate": 0.3962175072250742,
+      "petz_rate": 0.1622292450521723,
+      "wall_s": 1.0,
+      "gates": 40
+    },
+    "prune_gates16@s1.000": {
+      "code": "prune_gates16",
+      "s": 1.0,
+      "eta": 0.9296008300257927,
+      "sigma_a2": 0.047,
+      "path": "results/campaigns/r2_campaign/t3_codes/abl_prune60.npz",
+      "projective_rate": 0.4004228430320407,
+      "petz_rate": 0.16977805988589334,
+      "wall_s": 1.0,
+      "gates": 16
+    },
+    "prune_gates12@s1.000": {
+      "code": "prune_gates12",
+      "s": 1.0,
+      "eta": 0.9296008300257927,
+      "sigma_a2": 0.047,
+      "path": "results/campaigns/r2_campaign/t3_codes/abl_prune70.npz",
+      "projective_rate": 0.39124687446277906,
+      "petz_rate": 0.1655852630280481,
+      "wall_s": 1.0,
+      "gates": 12
+    },
+    "prune_gates8@s1.000": {
+      "code": "prune_gates8",
+      "s": 1.0,
+      "eta": 0.9296008300257927,
+      "sigma_a2": 0.047,
+      "path": "results/campaigns/r2_campaign/t3_codes/abl_prune80.npz",
+      "projective_rate": 0.40716640859735054,
+      "petz_rate": 0.17675566027668133,
+      "wall_s": 1.0,
+      "gates": 8
+    }
+  },
+  "summary": {
+    "depth": {
+      "s0.500": {
+        "per_L": {
+          "L2": {
+            "proj_median": 0.22875031984507804,
+            "proj_range": [
+              0.22635020661847594,
+              0.2316949917708251
+            ],
+            "petz_median": 0.0598471863725189,
+            "petz_range": [
+              0.05826524373588304,
+              0.06093599499088698
+            ]
+          },
+          "L4": {
+            "proj_median": 0.22548223605485007,
+            "proj_range": [
+              0.22155405814712725,
+              0.23032497148715025
+            ],
+            "petz_median": 0.05774472265854652,
+            "petz_range": [
+              0.056347197822040895,
+              0.06081019280339084
+            ]
+          },
+          "L8": {
+            "proj_median": 0.22439426640111337,
+            "proj_range": [
+              0.22274627520507717,
+              0.2255813197460621
+            ],
+            "petz_median": 0.05734932518401037,
+            "petz_range": [
+              0.05586988198543086,
+              0.057992524332502904
+            ]
+          },
+          "L16": {
+            "proj_median": 0.22246367075205786,
+            "proj_range": [
+              0.21884456445067135,
+              0.2225249916856793
+            ],
+            "petz_median": 0.05561974473241671,
+            "petz_range": [
+              0.05456524154432507,
+              0.05644422889140022
+            ]
+          }
+        },
+        "proj_median_monotone_nondecreasing_in_L": false,
+        "petz_median_monotone_nondecreasing_in_L": false
+      },
+      "s1.000": {
+        "per_L": {
+          "L2": {
+            "proj_median": 0.3929059731600573,
+            "proj_range": [
+              0.39008457963631704,
+              0.3962175072250742
+            ],
+            "petz_median": 0.1618026000418945,
+            "petz_range": [
+              0.15887605118680836,
+              0.16252285432530644
+            ]
+          },
+          "L4": {
+            "proj_median": 0.3901202774727127,
+            "proj_range": [
+              0.38599479373410983,
+              0.3954608547844263
+            ],
+            "petz_median": 0.15826772705033726,
+            "petz_range": [
+              0.1569989023989271,
+              0.1632616278641691
+            ]
+          },
+          "L8": {
+            "proj_median": 0.38960113753189174,
+            "proj_range": [
+              0.3873573634648334,
+              0.3905090236681201
+            ],
+            "petz_median": 0.1581447948806321,
+            "petz_range": [
+              0.15585796843312527,
+              0.15977576831564133
+            ]
+          },
+          "L16": {
+            "proj_median": 0.3884624558630748,
+            "proj_range": [
+              0.38470117562338935,
+              0.3887611347762817
+            ],
+            "petz_median": 0.15650579250090552,
+            "petz_range": [
+              0.1532249930484738,
+              0.157626913663778
+            ]
+          }
+        },
+        "proj_median_monotone_nondecreasing_in_L": false,
+        "petz_median_monotone_nondecreasing_in_L": false
+      }
+    },
+    "prune": {
+      "s0.500": {
+        "gates40": {
+          "projective_rate": 0.2316949917708251,
+          "petz_rate": 0.06031888776396266
+        },
+        "gates16": {
+          "projective_rate": 0.23758483341125403,
+          "petz_rate": 0.06568815551043661
+        },
+        "gates12": {
+          "projective_rate": 0.22840525199572959,
+          "petz_rate": 0.062365554763893494
+        },
+        "gates8": {
+          "projective_rate": 0.24245422512190318,
+          "petz_rate": 0.06876963483858312
+        }
+      },
+      "s1.000": {
+        "gates40": {
+          "projective_rate": 0.3962175072250742,
+          "petz_rate": 0.1622292450521723
+        },
+        "gates16": {
+          "projective_rate": 0.4004228430320407,
+          "petz_rate": 0.16977805988589334
+        },
+        "gates12": {
+          "projective_rate": 0.39124687446277906,
+          "petz_rate": 0.1655852630280481
+        },
+        "gates8": {
+          "projective_rate": 0.40716640859735054,
+          "petz_rate": 0.17675566027668133
+        }
+      }
+    }
+  }
+}

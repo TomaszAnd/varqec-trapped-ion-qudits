@@ -1,0 +1,738 @@
+{
+  "protocol": "q = 4, 5 codes: q-panel retrains ((5,3,3))_4 and ((5,3,3))_5,\nnoise-weighted, minimal L (replaces the L=16 unweighted panel codes\nd4K3/d5K3).\n\nProtocol (pre-registered):\n- K-explicit weighted trainer (r2_campaign/t2_queue.py kexp lineage,\n  generalized to d): build_varqec_loss_weighted(K=3) over the\n  hardware-closure grouped basis at d in {4,5}, weights =\n  compute_meth_group_weights(d, 5, distance=3) \u2014 the q=4/5 channel weights\n  \u2014 full batch, 3000 steps, three-stage Adam LR (0.05, /5 below 0.5,\n  /50 below 1e-3), theta-init PRNGKey(seed)->split->uniform[0,2pi).\n- L ascent {2,4,8}, 4 seeds {100..103}; minimal L = first with 4/4 seeds\n  w2-probe-perfect (k=0/100k); fallback: smallest L with >=1 perfect seed,\n  flagged probe_selection_mandatory.\n- Selection at minimal L: lexicographic (k_w2, k_w3, seed).\n- Panel measurement (selected code per q): conditioned probes w=1..5\n  (w1 200k seed 1001; w2..w5 100k seeds 1002..1005) + direct MC on the\n  standing q-panel grid p in {0.02,0.03,0.05,0.08,0.12,0.15}, shots 3e5\n  escalated x2 until >=30 errors, cap 5M. Cells below the cap floor get the\n  RECONSTRUCTED LER sum_{w=1..5} C(5,w) p^w (1-p)^{5-w} * LER|w\n  (reconstructed points labelled; validation factor = direct/reconstructed\n  on every resolved cell).\n\nWrites t2b_results.json (incremental, resume anchor). Feeds the q = 4, 5\ncode results of the paper.\nLaunch: nohup nice -n 19 python3 t2b_queue.py >> t2b.log 2>&1 &\n",
+  "units": {
+    "q4_L2_s100": {
+      "d": 4,
+      "L": 2,
+      "seed": 100,
+      "npz": "results/campaigns/r3_campaign/t2b_codes/q4_L2_s100.npz",
+      "ms_budget": 60,
+      "train_loss_weighted": 0.0007471569805954747,
+      "train_wall_s": 153.5,
+      "ler_w1": {
+        "k": 0,
+        "n": 200000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          1.92076310598226e-05
+        ]
+      },
+      "ler_w2": {
+        "k": 0,
+        "n": 100000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          3.8414524267635735e-05
+        ]
+      },
+      "ler_w3": {
+        "k": 0,
+        "n": 100000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          3.8414524267635735e-05
+        ]
+      },
+      "wall_s": 189.8
+    },
+    "q4_L2_s101": {
+      "d": 4,
+      "L": 2,
+      "seed": 101,
+      "npz": "results/campaigns/r3_campaign/t2b_codes/q4_L2_s101.npz",
+      "ms_budget": 60,
+      "train_loss_weighted": 0.0007317531837451597,
+      "train_wall_s": 147.2,
+      "ler_w1": {
+        "k": 0,
+        "n": 200000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          1.92076310598226e-05
+        ]
+      },
+      "ler_w2": {
+        "k": 0,
+        "n": 100000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          3.8414524267635735e-05
+        ]
+      },
+      "ler_w3": {
+        "k": 0,
+        "n": 100000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          3.8414524267635735e-05
+        ]
+      },
+      "wall_s": 183.7
+    },
+    "q4_L2_s102": {
+      "d": 4,
+      "L": 2,
+      "seed": 102,
+      "npz": "results/campaigns/r3_campaign/t2b_codes/q4_L2_s102.npz",
+      "ms_budget": 60,
+      "train_loss_weighted": 0.0007433816237257277,
+      "train_wall_s": 144.8,
+      "ler_w1": {
+        "k": 0,
+        "n": 200000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          1.92076310598226e-05
+        ]
+      },
+      "ler_w2": {
+        "k": 0,
+        "n": 100000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          3.8414524267635735e-05
+        ]
+      },
+      "ler_w3": {
+        "k": 0,
+        "n": 100000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          3.8414524267635735e-05
+        ]
+      },
+      "wall_s": 181.0
+    },
+    "q4_L2_s103": {
+      "d": 4,
+      "L": 2,
+      "seed": 103,
+      "npz": "results/campaigns/r3_campaign/t2b_codes/q4_L2_s103.npz",
+      "ms_budget": 60,
+      "train_loss_weighted": 0.0007161331154128715,
+      "train_wall_s": 150.0,
+      "ler_w1": {
+        "k": 0,
+        "n": 200000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          1.92076310598226e-05
+        ]
+      },
+      "ler_w2": {
+        "k": 0,
+        "n": 100000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          3.8414524267635735e-05
+        ]
+      },
+      "ler_w3": {
+        "k": 0,
+        "n": 100000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          3.8414524267635735e-05
+        ]
+      },
+      "wall_s": 186.5
+    },
+    "q5_L2_s100": {
+      "d": 5,
+      "L": 2,
+      "seed": 100,
+      "npz": "results/campaigns/r3_campaign/t2b_codes/q5_L2_s100.npz",
+      "ms_budget": 80,
+      "train_loss_weighted": 0.00022962478907975187,
+      "train_wall_s": 814.0,
+      "ler_w1": {
+        "k": 0,
+        "n": 200000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          1.92076310598226e-05
+        ]
+      },
+      "ler_w2": {
+        "k": 0,
+        "n": 100000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          3.8414524267635735e-05
+        ]
+      },
+      "ler_w3": {
+        "k": 0,
+        "n": 100000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          3.8414524267635735e-05
+        ]
+      },
+      "wall_s": 898.1
+    },
+    "q5_L2_s101": {
+      "d": 5,
+      "L": 2,
+      "seed": 101,
+      "npz": "results/campaigns/r3_campaign/t2b_codes/q5_L2_s101.npz",
+      "ms_budget": 80,
+      "train_loss_weighted": 0.00021921062699654752,
+      "train_wall_s": 797.4,
+      "ler_w1": {
+        "k": 0,
+        "n": 200000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          1.92076310598226e-05
+        ]
+      },
+      "ler_w2": {
+        "k": 0,
+        "n": 100000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          3.8414524267635735e-05
+        ]
+      },
+      "ler_w3": {
+        "k": 0,
+        "n": 100000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          3.8414524267635735e-05
+        ]
+      },
+      "wall_s": 881.6
+    },
+    "q5_L2_s102": {
+      "d": 5,
+      "L": 2,
+      "seed": 102,
+      "npz": "results/campaigns/r3_campaign/t2b_codes/q5_L2_s102.npz",
+      "ms_budget": 80,
+      "train_loss_weighted": 0.00021978478949891166,
+      "train_wall_s": 797.8,
+      "ler_w1": {
+        "k": 0,
+        "n": 200000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          1.92076310598226e-05
+        ]
+      },
+      "ler_w2": {
+        "k": 0,
+        "n": 100000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          3.8414524267635735e-05
+        ]
+      },
+      "ler_w3": {
+        "k": 0,
+        "n": 100000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          3.8414524267635735e-05
+        ]
+      },
+      "wall_s": 882.1
+    },
+    "q5_L2_s103": {
+      "d": 5,
+      "L": 2,
+      "seed": 103,
+      "npz": "results/campaigns/r3_campaign/t2b_codes/q5_L2_s103.npz",
+      "ms_budget": 80,
+      "train_loss_weighted": 0.000228822087323107,
+      "train_wall_s": 801.4,
+      "ler_w1": {
+        "k": 0,
+        "n": 200000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          1.92076310598226e-05
+        ]
+      },
+      "ler_w2": {
+        "k": 0,
+        "n": 100000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          3.8414524267635735e-05
+        ]
+      },
+      "ler_w3": {
+        "k": 0,
+        "n": 100000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          3.8414524267635735e-05
+        ]
+      },
+      "wall_s": 885.9
+    }
+  },
+  "minimal_L": {
+    "q4": {
+      "L_min": 2,
+      "probe_selection_mandatory": false,
+      "selected_seed": 100,
+      "selected_npz": "results/campaigns/r3_campaign/t2b_codes/q4_L2_s100.npz",
+      "ms_budget": 60,
+      "selection": "(k_w2, k_w3, seed) lexicographic"
+    },
+    "q5": {
+      "L_min": 2,
+      "probe_selection_mandatory": false,
+      "selected_seed": 100,
+      "selected_npz": "results/campaigns/r3_campaign/t2b_codes/q5_L2_s100.npz",
+      "ms_budget": 80,
+      "selection": "(k_w2, k_w3, seed) lexicographic"
+    }
+  },
+  "panel": {
+    "panel_q4": {
+      "probes": {
+        "ler_w1": {
+          "k": 0,
+          "n": 200000,
+          "ler": 0.0,
+          "wilson95": [
+            0.0,
+            1.92076310598226e-05
+          ]
+        },
+        "ler_w2": {
+          "k": 0,
+          "n": 100000,
+          "ler": 0.0,
+          "wilson95": [
+            0.0,
+            3.8414524267635735e-05
+          ]
+        },
+        "ler_w3": {
+          "k": 0,
+          "n": 100000,
+          "ler": 0.0,
+          "wilson95": [
+            0.0,
+            3.8414524267635735e-05
+          ]
+        },
+        "ler_w4": {
+          "k": 28,
+          "n": 100000,
+          "ler": 0.00028,
+          "wilson95": [
+            0.00019373769447967064,
+            0.0004046553176543752
+          ]
+        },
+        "ler_w5": {
+          "k": 11466,
+          "n": 100000,
+          "ler": 0.11466,
+          "wilson95": [
+            0.11270001254679643,
+            0.11664959275876616
+          ]
+        }
+      },
+      "cells": {
+        "p0.02": {
+          "p": 0.02,
+          "k": 0,
+          "shots": 5000000,
+          "resolved": false,
+          "ler_direct": 0.0,
+          "wilson95": [
+            0.0,
+            7.68319409684831e-07
+          ],
+          "ler_reconstructed": 5.86432e-10,
+          "validation_factor": null,
+          "wall_s": 838.6
+        },
+        "p0.03": {
+          "p": 0.03,
+          "k": 0,
+          "shots": 5000000,
+          "resolved": false,
+          "ler_direct": 0.0,
+          "wilson95": [
+            0.0,
+            7.68319409684831e-07
+          ],
+          "ler_reconstructed": 3.886217999999999e-09,
+          "validation_factor": null,
+          "wall_s": 852.9
+        },
+        "p0.05": {
+          "p": 0.05,
+          "k": 1,
+          "shots": 5000000,
+          "resolved": false,
+          "ler_direct": 2e-07,
+          "wilson95": [
+            3.530400372922339e-08,
+            1.133015098627844e-06
+          ],
+          "ler_reconstructed": 4.414375000000001e-08,
+          "validation_factor": null,
+          "wall_s": 888.4
+        },
+        "p0.08": {
+          "p": 0.08,
+          "k": 4,
+          "shots": 5000000,
+          "resolved": false,
+          "ler_direct": 8e-07,
+          "wilson95": [
+            3.1109938856467915e-07,
+            2.0572187918090965e-06
+          ],
+          "ler_reconstructed": 4.2847436800000004e-07,
+          "validation_factor": null,
+          "wall_s": 935.9
+        },
+        "p0.12": {
+          "p": 0.12,
+          "k": 13,
+          "shots": 5000000,
+          "resolved": false,
+          "ler_direct": 2.6e-06,
+          "wilson95": [
+            1.5195067537927767e-06,
+            4.4488086606311236e-06
+          ],
+          "ler_reconstructed": 3.1085752319999993e-06,
+          "validation_factor": null,
+          "wall_s": 1002.7
+        },
+        "p0.15": {
+          "p": 0.15,
+          "k": 32,
+          "shots": 4800000,
+          "resolved": true,
+          "ler_direct": 6.666666666666667e-06,
+          "wilson95": [
+            4.722548566659169e-06,
+            9.411106788371994e-06
+          ],
+          "ler_reconstructed": 9.309431249999998e-06,
+          "validation_factor": 0.7161196519568978,
+          "wall_s": 683.7
+        }
+      }
+    },
+    "panel_q5": {
+      "probes": {
+        "ler_w1": {
+          "k": 0,
+          "n": 200000,
+          "ler": 0.0,
+          "wilson95": [
+            0.0,
+            1.92076310598226e-05
+          ]
+        },
+        "ler_w2": {
+          "k": 0,
+          "n": 100000,
+          "ler": 0.0,
+          "wilson95": [
+            0.0,
+            3.8414524267635735e-05
+          ]
+        },
+        "ler_w3": {
+          "k": 0,
+          "n": 100000,
+          "ler": 0.0,
+          "wilson95": [
+            0.0,
+            3.8414524267635735e-05
+          ]
+        },
+        "ler_w4": {
+          "k": 0,
+          "n": 100000,
+          "ler": 0.0,
+          "wilson95": [
+            0.0,
+            3.8414524267635735e-05
+          ]
+        },
+        "ler_w5": {
+          "k": 0,
+          "n": 100000,
+          "ler": 0.0,
+          "wilson95": [
+            0.0,
+            3.8414524267635735e-05
+          ]
+        }
+      },
+      "cells": {
+        "p0.02": {
+          "p": 0.02,
+          "k": 0,
+          "shots": 5000000,
+          "resolved": false,
+          "ler_direct": 0.0,
+          "wilson95": [
+            0.0,
+            7.68319409684831e-07
+          ],
+          "ler_reconstructed": 0.0,
+          "validation_factor": null,
+          "wall_s": 2025.7
+        },
+        "p0.03": {
+          "p": 0.03,
+          "k": 0,
+          "shots": 5000000,
+          "resolved": false,
+          "ler_direct": 0.0,
+          "wilson95": [
+            0.0,
+            7.68319409684831e-07
+          ],
+          "ler_reconstructed": 0.0,
+          "validation_factor": null,
+          "wall_s": 2055.7
+        },
+        "p0.05": {
+          "p": 0.05,
+          "k": 0,
+          "shots": 5000000,
+          "resolved": false,
+          "ler_direct": 0.0,
+          "wilson95": [
+            0.0,
+            7.68319409684831e-07
+          ],
+          "ler_reconstructed": 0.0,
+          "validation_factor": null,
+          "wall_s": 2119.4
+        },
+        "p0.08": {
+          "p": 0.08,
+          "k": 0,
+          "shots": 5000000,
+          "resolved": false,
+          "ler_direct": 0.0,
+          "wilson95": [
+            0.0,
+            7.68319409684831e-07
+          ],
+          "ler_reconstructed": 0.0,
+          "validation_factor": null,
+          "wall_s": 2200.3
+        },
+        "p0.12": {
+          "p": 0.12,
+          "k": 0,
+          "shots": 5000000,
+          "resolved": false,
+          "ler_direct": 0.0,
+          "wilson95": [
+            0.0,
+            7.68319409684831e-07
+          ],
+          "ler_reconstructed": 0.0,
+          "validation_factor": null,
+          "wall_s": 2321.2
+        },
+        "p0.15": {
+          "p": 0.15,
+          "k": 0,
+          "shots": 5000000,
+          "resolved": false,
+          "ler_direct": 0.0,
+          "wilson95": [
+            0.0,
+            7.68319409684831e-07
+          ],
+          "ler_reconstructed": 0.0,
+          "validation_factor": null,
+          "wall_s": 2400.0
+        }
+      }
+    }
+  },
+  "escalated_probes": {
+    "q5_w2_esc": {
+      "w": 2,
+      "seed": 2002,
+      "shots": 1000000,
+      "k": 0,
+      "ler": 0.0,
+      "wilson_ub": 3.841585242166133e-06,
+      "wall_s": 287.0
+    },
+    "q5_w3_esc": {
+      "w": 3,
+      "seed": 2003,
+      "shots": 1000000,
+      "k": 0,
+      "ler": 0.0,
+      "wilson_ub": 3.841585242166133e-06,
+      "wall_s": 330.1
+    },
+    "q5_w4_esc": {
+      "w": 4,
+      "seed": 2004,
+      "shots": 2000000,
+      "k": 0,
+      "ler": 0.0,
+      "wilson_ub": 1.9207963105344467e-06,
+      "wall_s": 750.8
+    },
+    "q5_w5_esc": {
+      "w": 5,
+      "seed": 2005,
+      "shots": 2000000,
+      "k": 0,
+      "ler": 0.0,
+      "wilson_ub": 1.9207963105344467e-06,
+      "wall_s": 840.4
+    },
+    "q4_w4_esc": {
+      "w": 4,
+      "seed": 2004,
+      "shots": 1000000,
+      "k": 268,
+      "ler": 0.000268,
+      "wilson_ub": 0.00030205937130581956,
+      "wall_s": 199.6
+    }
+  },
+  "reconstruction_q5_escalated": {
+    "probes": {
+      "1": [
+        0,
+        200000
+      ],
+      "2": [
+        0,
+        1000000
+      ],
+      "3": [
+        0,
+        1000000
+      ],
+      "4": [
+        0,
+        2000000
+      ],
+      "5": [
+        0,
+        2000000
+      ]
+    },
+    "cells": {
+      "0.02": {
+        "reconstructed": 0.0,
+        "reconstructed_ub": 1.7864100777779032e-06
+      },
+      "0.03": {
+        "reconstructed": 0.0,
+        "reconstructed_ub": 2.5831951716718873e-06
+      },
+      "0.05": {
+        "reconstructed": 0.0,
+        "reconstructed_ub": 3.997917277395597e-06
+      },
+      "0.08": {
+        "reconstructed": 0.0,
+        "reconstructed_ub": 5.712550006570739e-06
+      },
+      "0.12": {
+        "reconstructed": 0.0,
+        "reconstructed_ub": 7.341425633341059e-06
+      },
+      "0.15": {
+        "reconstructed": 0.0,
+        "reconstructed_ub": 8.148653870402487e-06
+      }
+    }
+  },
+  "reconstruction_q4_escalated": {
+    "probes": {
+      "1": [
+        0,
+        200000
+      ],
+      "2": [
+        0,
+        100000
+      ],
+      "3": [
+        0,
+        100000
+      ],
+      "4": [
+        268,
+        1000000
+      ],
+      "5": [
+        11466,
+        100000
+      ]
+    },
+    "cells": {
+      "0.02": {
+        "reconstructed": 5.77024e-10,
+        "reconstructed_ub": 1.9198340615312235e-06
+      },
+      "0.03": {
+        "reconstructed": 3.839075999999999e-09,
+        "reconstructed_ub": 2.879975909454023e-06
+      },
+      "0.05": {
+        "reconstructed": 4.378750000000001e-08,
+        "reconstructed_ub": 4.823331975591194e-06
+      },
+      "0.08": {
+        "reconstructed": 4.2621337600000007e-07,
+        "reconstructed_ub": 8.024134285637704e-06
+      },
+      "0.12": {
+        "reconstructed": 3.0976266239999994e-06,
+        "reconstructed_ub": 1.437318751123634e-05
+      },
+      "0.15": {
+        "reconstructed": 9.283612499999998e-06,
+        "reconstructed_ub": 2.327261676314265e-05
+      }
+    }
+  }
+}

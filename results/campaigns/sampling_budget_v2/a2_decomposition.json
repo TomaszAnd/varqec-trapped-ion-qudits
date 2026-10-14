@@ -1,0 +1,158 @@
+{
+  "protocol": {
+    "steps": 1500,
+    "seed": 0,
+    "log_every": 25,
+    "cert_component": "EXACTLY 0: fig8_weighted_train has no trigger/certification logic (fixed-steps trainer)",
+    "validation": "replayed rng stream (draws are theta-independent) asserted against stored op_evs at all logged checkpoints"
+  },
+  "samplers": {
+    "full_batch": {
+      "sampler": "full_batch",
+      "frac": 1.0,
+      "total_ops": 685,
+      "replay_matches_stored_all_checkpoints": true,
+      "n_checkpoints": 61,
+      "committed_total_op_evs": 1069285,
+      "min_loss": 1.1754900124292835e-06,
+      "min_loss_step": 1499,
+      "op_evs_at_min_loss": 1069285,
+      "decomposition_full_run": {
+        "train": 1027500,
+        "monitor": 41785,
+        "cert": 0,
+        "monitor_share": 0.0391
+      },
+      "decomposition_at_min_loss": {
+        "train": 1027500,
+        "monitor": 41785,
+        "cert": 0,
+        "monitor_share": 0.0391
+      },
+      "realized_ops_per_step_mean": 685.0,
+      "nominal_budget_per_step": 685
+    },
+    "stratified_0.2": {
+      "sampler": "stratified",
+      "frac": 0.2,
+      "total_ops": 685,
+      "replay_matches_stored_all_checkpoints": true,
+      "n_checkpoints": 61,
+      "committed_total_op_evs": 299785,
+      "min_loss": 7.152544084145223e-06,
+      "min_loss_step": 550,
+      "op_evs_at_min_loss": 110527,
+      "decomposition_full_run": {
+        "train": 258000,
+        "monitor": 41785,
+        "cert": 0,
+        "monitor_share": 0.1394
+      },
+      "decomposition_at_min_loss": {
+        "train": 94772,
+        "monitor": 15755,
+        "cert": 0,
+        "monitor_share": 0.1425
+      },
+      "realized_ops_per_step_mean": 172.0,
+      "nominal_budget_per_step": 137
+    },
+    "importance_0.2": {
+      "sampler": "importance",
+      "frac": 0.2,
+      "total_ops": 685,
+      "replay_matches_stored_all_checkpoints": true,
+      "n_checkpoints": 61,
+      "committed_total_op_evs": 212521,
+      "min_loss": 2.808150000408877e-06,
+      "min_loss_step": 1475,
+      "op_evs_at_min_loss": 209122,
+      "decomposition_full_run": {
+        "train": 170736,
+        "monitor": 41785,
+        "cert": 0,
+        "monitor_share": 0.1966
+      },
+      "decomposition_at_min_loss": {
+        "train": 168022,
+        "monitor": 41100,
+        "cert": 0,
+        "monitor_share": 0.1965
+      },
+      "realized_ops_per_step_mean": 113.82,
+      "nominal_budget_per_step": 137
+    },
+    "importance_0.35": {
+      "sampler": "importance",
+      "frac": 0.35,
+      "total_ops": 685,
+      "replay_matches_stored_all_checkpoints": true,
+      "n_checkpoints": 61,
+      "committed_total_op_evs": 331075,
+      "min_loss": 2.173562928336512e-06,
+      "min_loss_step": 1499,
+      "op_evs_at_min_loss": 331075,
+      "decomposition_full_run": {
+        "train": 289290,
+        "monitor": 41785,
+        "cert": 0,
+        "monitor_share": 0.1262
+      },
+      "decomposition_at_min_loss": {
+        "train": 289290,
+        "monitor": 41785,
+        "cert": 0,
+        "monitor_share": 0.1262
+      },
+      "realized_ops_per_step_mean": 192.86,
+      "nominal_budget_per_step": 240
+    },
+    "full_basis_is_0.1": {
+      "sampler": "full_basis_is",
+      "frac": 0.1,
+      "total_ops": 685,
+      "replay_matches_stored_all_checkpoints": true,
+      "n_checkpoints": 61,
+      "committed_total_op_evs": 153491,
+      "min_loss": 3.941007426967455e-06,
+      "min_loss_step": 1499,
+      "op_evs_at_min_loss": 153491,
+      "decomposition_full_run": {
+        "train": 111706,
+        "monitor": 41785,
+        "cert": 0,
+        "monitor_share": 0.2722
+      },
+      "decomposition_at_min_loss": {
+        "train": 111706,
+        "monitor": 41785,
+        "cert": 0,
+        "monitor_share": 0.2722
+      },
+      "realized_ops_per_step_mean": 74.47,
+      "nominal_budget_per_step": 68
+    }
+  },
+  "advantage_vs_full_batch": {
+    "stratified_0.2": {
+      "total_committed": 3.57,
+      "train_only": 3.98,
+      "train_plus_cert": 3.98
+    },
+    "importance_0.2": {
+      "total_committed": 5.03,
+      "train_only": 6.02,
+      "train_plus_cert": 6.02
+    },
+    "importance_0.35": {
+      "total_committed": 3.23,
+      "train_only": 3.55,
+      "train_plus_cert": 3.55
+    },
+    "full_basis_is_0.1": {
+      "total_committed": 6.97,
+      "train_only": 9.2,
+      "train_plus_cert": 9.2
+    }
+  }
+}

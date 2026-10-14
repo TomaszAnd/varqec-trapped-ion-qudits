@@ -1,0 +1,987 @@
+{
+  "protocol": "Budget levers (T2a single-transition MS, T2b pruning frontier) + T4 correlated-channel family",
+  "units": {
+    "2a_ms1_L2_s300": {
+      "part": "2a",
+      "L": 2,
+      "seed": 300,
+      "npz": "results/campaigns/r1_campaign/t2_codes/2a_ms1_L2_s300.npz",
+      "entangler": "ms1",
+      "ms_budget": 20,
+      "train_loss_weighted": 0.0035820952778470305,
+      "race_op_evs": 113387,
+      "train_wall_s": 37.4,
+      "ler_w1": {
+        "ler": 0.0,
+        "k": 0,
+        "n": 200000,
+        "wilson95": [
+          0.0,
+          1.92076310598226e-05
+        ]
+      },
+      "ler_w2": {
+        "ler": 0.00677,
+        "k": 677,
+        "n": 100000,
+        "wilson95": [
+          0.006280356322438277,
+          0.007297538069170773
+        ]
+      },
+      "ler_w3": {
+        "ler": 0.31039,
+        "k": 31039,
+        "n": 100000,
+        "wilson95": [
+          0.30752977493159284,
+          0.31326479262429996
+        ]
+      },
+      "probe_wall_s": 23.1,
+      "ler_iid_p05": {
+        "ler": 0.000517,
+        "k": 517,
+        "n": 1000000,
+        "wilson95": [
+          0.00047432335187432825,
+          0.0005635142611686974
+        ]
+      },
+      "iid_wall_s": 31.0,
+      "wall_s": 93.0
+    },
+    "2a_ms1_L2_s301": {
+      "part": "2a",
+      "L": 2,
+      "seed": 301,
+      "npz": "results/campaigns/r1_campaign/t2_codes/2a_ms1_L2_s301.npz",
+      "entangler": "ms1",
+      "ms_budget": 20,
+      "train_loss_weighted": 0.003485361706434357,
+      "race_op_evs": 113610,
+      "train_wall_s": 33.9,
+      "ler_w1": {
+        "ler": 0.0,
+        "k": 0,
+        "n": 200000,
+        "wilson95": [
+          0.0,
+          1.92076310598226e-05
+        ]
+      },
+      "ler_w2": {
+        "ler": 0.0,
+        "k": 0,
+        "n": 100000,
+        "wilson95": [
+          0.0,
+          3.8414524267635735e-05
+        ]
+      },
+      "ler_w3": {
+        "ler": 0.33361,
+        "k": 33361,
+        "n": 100000,
+        "wilson95": [
+          0.33069403973728406,
+          0.3365387438481018
+        ]
+      },
+      "probe_wall_s": 27.9,
+      "ler_iid_p05": {
+        "ler": 0.000424,
+        "k": 424,
+        "n": 1000000,
+        "wilson95": [
+          0.0003855233136617463,
+          0.0004663150139161344
+        ]
+      },
+      "iid_wall_s": 39.2,
+      "wall_s": 102.4
+    },
+    "2a_ms1_L2_s302": {
+      "part": "2a",
+      "L": 2,
+      "seed": 302,
+      "npz": "results/campaigns/r1_campaign/t2_codes/2a_ms1_L2_s302.npz",
+      "entangler": "ms1",
+      "ms_budget": 20,
+      "train_loss_weighted": 0.003971624293404063,
+      "race_op_evs": 113479,
+      "train_wall_s": 37.3,
+      "ler_w1": {
+        "ler": 0.0,
+        "k": 0,
+        "n": 200000,
+        "wilson95": [
+          0.0,
+          1.92076310598226e-05
+        ]
+      },
+      "ler_w2": {
+        "ler": 0.0,
+        "k": 0,
+        "n": 100000,
+        "wilson95": [
+          0.0,
+          3.8414524267635735e-05
+        ]
+      },
+      "ler_w3": {
+        "ler": 0.32007,
+        "k": 32007,
+        "n": 100000,
+        "wilson95": [
+          0.31718554267997134,
+          0.3229682811707316
+        ]
+      },
+      "probe_wall_s": 23.4,
+      "ler_iid_p05": {
+        "ler": 0.000382,
+        "k": 382,
+        "n": 1000000,
+        "wilson95": [
+          0.0003455708076674563,
+          0.00042226784260358477
+        ]
+      },
+      "iid_wall_s": 31.1,
+      "wall_s": 93.2
+    },
+    "2a_ms1_L2_s303": {
+      "part": "2a",
+      "L": 2,
+      "seed": 303,
+      "npz": "results/campaigns/r1_campaign/t2_codes/2a_ms1_L2_s303.npz",
+      "entangler": "ms1",
+      "ms_budget": 20,
+      "train_loss_weighted": 0.003436710424456462,
+      "race_op_evs": 113510,
+      "train_wall_s": 34.4,
+      "ler_w1": {
+        "ler": 0.0,
+        "k": 0,
+        "n": 200000,
+        "wilson95": [
+          0.0,
+          1.92076310598226e-05
+        ]
+      },
+      "ler_w2": {
+        "ler": 0.0,
+        "k": 0,
+        "n": 100000,
+        "wilson95": [
+          0.0,
+          3.8414524267635735e-05
+        ]
+      },
+      "ler_w3": {
+        "ler": 0.27283,
+        "k": 27283,
+        "n": 100000,
+        "wilson95": [
+          0.27007806017591474,
+          0.275599393079041
+        ]
+      },
+      "probe_wall_s": 23.8,
+      "ler_iid_p05": {
+        "ler": 0.000307,
+        "k": 307,
+        "n": 1000000,
+        "wilson95": [
+          0.0002745293600011439,
+          0.00034330986650768345
+        ]
+      },
+      "iid_wall_s": 30.9,
+      "wall_s": 90.6
+    },
+    "2b_prune10": {
+      "part": "2b",
+      "pct": 10,
+      "threshold_wrapped_theta": 0.5812240731010716,
+      "n_gates_pruned": 4,
+      "ms_budget": 36,
+      "wloss_after_finetune": 0.0041128752061136125,
+      "npz": "results/campaigns/r1_campaign/t2_codes/headline_prune10.npz",
+      "ler_w1": {
+        "ler": 0.0,
+        "k": 0,
+        "n": 200000,
+        "wilson95": [
+          0.0,
+          1.92076310598226e-05
+        ]
+      },
+      "ler_w2": {
+        "ler": 0.0,
+        "k": 0,
+        "n": 100000,
+        "wilson95": [
+          0.0,
+          3.8414524267635735e-05
+        ]
+      },
+      "ler_w3": {
+        "ler": 0.29958,
+        "k": 29958,
+        "n": 100000,
+        "wilson95": [
+          0.2967485708356129,
+          0.3024268272422945
+        ]
+      },
+      "probe_wall_s": 23.7,
+      "ler_iid_p05": {
+        "ler": 0.000351,
+        "k": 351,
+        "n": 1000000,
+        "wilson95": [
+          0.0003161552306605395,
+          0.00038968365778878654
+        ]
+      },
+      "iid_wall_s": 31.2,
+      "wall_s": 70.5
+    },
+    "2b_prune25": {
+      "part": "2b",
+      "pct": 25,
+      "threshold_wrapped_theta": 0.8512490543288961,
+      "n_gates_pruned": 10,
+      "ms_budget": 30,
+      "wloss_after_finetune": 0.0044641741192742185,
+      "npz": "results/campaigns/r1_campaign/t2_codes/headline_prune25.npz",
+      "ler_w1": {
+        "ler": 0.0,
+        "k": 0,
+        "n": 200000,
+        "wilson95": [
+          0.0,
+          1.92076310598226e-05
+        ]
+      },
+      "ler_w2": {
+        "ler": 0.0,
+        "k": 0,
+        "n": 100000,
+        "wilson95": [
+          0.0,
+          3.8414524267635735e-05
+        ]
+      },
+      "ler_w3": {
+        "ler": 0.27666,
+        "k": 27666,
+        "n": 100000,
+        "wilson95": [
+          0.2738959347014233,
+          0.2794412242982766
+        ]
+      },
+      "probe_wall_s": 23.7,
+      "ler_iid_p05": {
+        "ler": 0.000334,
+        "k": 334,
+        "n": 1000000,
+        "wilson95": [
+          0.00030005385136335644,
+          0.0003717851676998678
+        ]
+      },
+      "iid_wall_s": 31.1,
+      "wall_s": 58.6
+    },
+    "2b_prune50": {
+      "part": "2b",
+      "pct": 50,
+      "threshold_wrapped_theta": 1.3513981108317719,
+      "n_gates_pruned": 20,
+      "ms_budget": 20,
+      "wloss_after_finetune": 0.005268329998089866,
+      "npz": "results/campaigns/r1_campaign/t2_codes/headline_prune50.npz",
+      "ler_w1": {
+        "ler": 0.0,
+        "k": 0,
+        "n": 200000,
+        "wilson95": [
+          0.0,
+          1.92076310598226e-05
+        ]
+      },
+      "ler_w2": {
+        "ler": 0.0,
+        "k": 0,
+        "n": 100000,
+        "wilson95": [
+          0.0,
+          3.8414524267635735e-05
+        ]
+      },
+      "ler_w3": {
+        "ler": 0.27773,
+        "k": 27773,
+        "n": 100000,
+        "wilson95": [
+          0.27496259267934575,
+          0.2805144841132722
+        ]
+      },
+      "probe_wall_s": 23.8,
+      "ler_iid_p05": {
+        "ler": 0.000348,
+        "k": 348,
+        "n": 1000000,
+        "wilson95": [
+          0.00031331220587581276,
+          0.00038652670562302474
+        ]
+      },
+      "iid_wall_s": 30.9,
+      "wall_s": 58.7
+    },
+    "t4_n5@0.8642": {
+      "part": "4",
+      "code": "n5",
+      "n": 5,
+      "npz": "results/campaigns/campaign/d3_n5_dist3_16L.npz",
+      "eta": 0.8642,
+      "shots": 10000,
+      "k": 343,
+      "ler": 0.0343,
+      "wilson95": [
+        0.030907865139522712,
+        0.038049804082269024
+      ],
+      "bootstrap_ci": [
+        0.0308975,
+        0.037802499999999996
+      ],
+      "resolved": true,
+      "below_detection": false,
+      "wall_s": 25.0
+    },
+    "t4_n5@0.9": {
+      "part": "4",
+      "code": "n5",
+      "n": 5,
+      "npz": "results/campaigns/campaign/d3_n5_dist3_16L.npz",
+      "eta": 0.9,
+      "shots": 20000,
+      "k": 178,
+      "ler": 0.0089,
+      "wilson95": [
+        0.007689372991256113,
+        0.010299251753702875
+      ],
+      "bootstrap_ci": [
+        0.007748750000000001,
+        0.0102
+      ],
+      "resolved": true,
+      "below_detection": false,
+      "wall_s": 73.1
+    },
+    "t4_n5@0.92": {
+      "part": "4",
+      "code": "n5",
+      "n": 5,
+      "npz": "results/campaigns/campaign/d3_n5_dist3_16L.npz",
+      "eta": 0.92,
+      "shots": 40000,
+      "k": 118,
+      "ler": 0.00295,
+      "wilson95": [
+        0.002464127901728632,
+        0.0035313362938900203
+      ],
+      "bootstrap_ci": [
+        0.0024,
+        0.0035
+      ],
+      "resolved": true,
+      "below_detection": false,
+      "wall_s": 141.4
+    },
+    "t4_n5@0.9296": {
+      "part": "4",
+      "code": "n5",
+      "n": 5,
+      "npz": "results/campaigns/campaign/d3_n5_dist3_16L.npz",
+      "eta": 0.9296,
+      "shots": 80000,
+      "k": 167,
+      "ler": 0.0020875,
+      "wilson95": [
+        0.0017942346615801342,
+        0.0024285825587369463
+      ],
+      "bootstrap_ci": [
+        0.0017875,
+        0.0024
+      ],
+      "resolved": true,
+      "below_detection": false,
+      "wall_s": 345.8
+    },
+    "t4_n5@0.93": {
+      "part": "4",
+      "code": "n5",
+      "n": 5,
+      "npz": "results/campaigns/campaign/d3_n5_dist3_16L.npz",
+      "eta": 0.93,
+      "shots": 80000,
+      "k": 166,
+      "ler": 0.002075,
+      "wilson95": [
+        0.0017826788835586527,
+        0.002415139537200783
+      ],
+      "bootstrap_ci": [
+        0.0017625,
+        0.002375
+      ],
+      "resolved": true,
+      "below_detection": false,
+      "wall_s": 296.0
+    },
+    "t4_n6@0.8642": {
+      "part": "4",
+      "code": "n6",
+      "n": 6,
+      "npz": "results/campaigns/campaign/d3_n6_dist3_16L.npz",
+      "eta": 0.8642,
+      "shots": 10000,
+      "k": 165,
+      "ler": 0.0165,
+      "wilson95": [
+        0.014182445742763578,
+        0.019188894323236668
+      ],
+      "bootstrap_ci": [
+        0.0142,
+        0.0189025
+      ],
+      "resolved": true,
+      "below_detection": false,
+      "wall_s": 48.2
+    },
+    "t4_n6@0.9": {
+      "part": "4",
+      "code": "n6",
+      "n": 6,
+      "npz": "results/campaigns/campaign/d3_n6_dist3_16L.npz",
+      "eta": 0.9,
+      "shots": 80000,
+      "k": 144,
+      "ler": 0.0018,
+      "wilson95": [
+        0.0015292216277261563,
+        0.0021186232027650843
+      ],
+      "bootstrap_ci": [
+        0.0015,
+        0.0021
+      ],
+      "resolved": true,
+      "below_detection": false,
+      "wall_s": 701.8
+    },
+    "t4_n6@0.92": {
+      "part": "4",
+      "code": "n6",
+      "n": 6,
+      "npz": "results/campaigns/campaign/d3_n6_dist3_16L.npz",
+      "eta": 0.92,
+      "shots": 640000,
+      "k": 173,
+      "ler": 0.0002703125,
+      "wilson95": [
+        0.00023292522907878967,
+        0.0003136989898093365
+      ],
+      "bootstrap_ci": [
+        0.0002328125,
+        0.0003140625
+      ],
+      "resolved": true,
+      "below_detection": false,
+      "wall_s": 5803.8
+    },
+    "t4_n6@0.9296": {
+      "part": "4",
+      "code": "n6",
+      "n": 6,
+      "npz": "results/campaigns/campaign/d3_n6_dist3_16L.npz",
+      "eta": 0.9296,
+      "shots": 640000,
+      "k": 65,
+      "ler": 0.0001015625,
+      "wilson95": [
+        7.969211380658885e-05,
+        0.00012943413091312723
+      ],
+      "bootstrap_ci": [
+        7.8125e-05,
+        0.0001265625
+      ],
+      "resolved": false,
+      "below_detection": false,
+      "wall_s": 5717.2
+    },
+    "t4_n6@0.93": {
+      "part": "4",
+      "code": "n6",
+      "n": 6,
+      "npz": "results/campaigns/campaign/d3_n6_dist3_16L.npz",
+      "eta": 0.93,
+      "shots": 640000,
+      "k": 51,
+      "ler": 7.96875e-05,
+      "wilson95": [
+        6.0613658447892724e-05,
+        0.00010476284887962206
+      ],
+      "bootstrap_ci": [
+        5.9375e-05,
+        0.000103125
+      ],
+      "resolved": false,
+      "below_detection": false,
+      "wall_s": 5669.6
+    },
+    "t4_n7@0.8642": {
+      "part": "4",
+      "code": "n7",
+      "n": 7,
+      "npz": "results/campaigns/campaign/d3_n7_dist3_16L.npz",
+      "eta": 0.8642,
+      "shots": 10000,
+      "k": 595,
+      "ler": 0.0595,
+      "wilson95": [
+        0.05503042313121131,
+        0.064307891861701
+      ],
+      "bootstrap_ci": [
+        0.0548,
+        0.0643025
+      ],
+      "resolved": true,
+      "below_detection": false,
+      "wall_s": 117.4
+    },
+    "t4_n7@0.9": {
+      "part": "4",
+      "code": "n7",
+      "n": 7,
+      "npz": "results/campaigns/campaign/d3_n7_dist3_16L.npz",
+      "eta": 0.9,
+      "shots": 20000,
+      "k": 173,
+      "ler": 0.00865,
+      "wilson95": [
+        0.007457617340510044,
+        0.010031103426005127
+      ],
+      "bootstrap_ci": [
+        0.0074,
+        0.01
+      ],
+      "resolved": true,
+      "below_detection": false,
+      "wall_s": 424.3
+    },
+    "t4_n7@0.92": {
+      "part": "4",
+      "code": "n7",
+      "n": 7,
+      "npz": "results/campaigns/campaign/d3_n7_dist3_16L.npz",
+      "eta": 0.92,
+      "shots": 160000,
+      "k": 186,
+      "ler": 0.0011625,
+      "wilson95": [
+        0.0010070792138203175,
+        0.0013418743878037074
+      ],
+      "bootstrap_ci": [
+        0.00100609375,
+        0.001325
+      ],
+      "resolved": true,
+      "below_detection": false,
+      "wall_s": 3161.3
+    },
+    "t4_n7@0.9296": {
+      "part": "4",
+      "code": "n7",
+      "n": 7,
+      "npz": "results/campaigns/campaign/d3_n7_dist3_16L.npz",
+      "eta": 0.9296,
+      "shots": 320000,
+      "k": 91,
+      "ler": 0.000284375,
+      "wilson95": [
+        0.00023164669300176015,
+        0.0003491013351181623
+      ],
+      "bootstrap_ci": [
+        0.000228125,
+        0.000346875
+      ],
+      "resolved": false,
+      "below_detection": false,
+      "wall_s": 6802.8
+    },
+    "t4_n7@0.93": {
+      "part": "4",
+      "code": "n7",
+      "n": 7,
+      "npz": "results/campaigns/campaign/d3_n7_dist3_16L.npz",
+      "eta": 0.93,
+      "shots": 320000,
+      "k": 101,
+      "ler": 0.000315625,
+      "wilson95": [
+        0.0002597865918167822,
+        0.0003834606859996476
+      ],
+      "bootstrap_ci": [
+        0.000259375,
+        0.000378125
+      ],
+      "resolved": true,
+      "below_detection": false,
+      "wall_s": 6499.3
+    },
+    "t4_n8@0.8642": {
+      "part": "4",
+      "code": "n8",
+      "n": 8,
+      "npz": "results/campaigns/campaign/d3_n8_dist3_16L.npz",
+      "eta": 0.8642,
+      "shots": 10000,
+      "k": 1419,
+      "ler": 0.1419,
+      "wilson95": [
+        0.13519807370349762,
+        0.14887695603307877
+      ],
+      "bootstrap_ci": [
+        0.1346,
+        0.1488
+      ],
+      "resolved": true,
+      "below_detection": false,
+      "wall_s": 333.1
+    },
+    "t4_n8@0.9": {
+      "part": "4",
+      "code": "n8",
+      "n": 8,
+      "npz": "results/campaigns/campaign/d3_n8_dist3_16L.npz",
+      "eta": 0.9,
+      "shots": 10000,
+      "k": 293,
+      "ler": 0.0293,
+      "wilson95": [
+        0.02617098625564034,
+        0.03279052309092908
+      ],
+      "bootstrap_ci": [
+        0.026097500000000003,
+        0.0325
+      ],
+      "resolved": true,
+      "below_detection": false,
+      "wall_s": 344.9
+    },
+    "t4_n8@0.92": {
+      "part": "4",
+      "code": "n8",
+      "n": 8,
+      "npz": "results/campaigns/campaign/d3_n8_dist3_16L.npz",
+      "eta": 0.92,
+      "shots": 40000,
+      "k": 170,
+      "ler": 0.00425,
+      "wilson95": [
+        0.0036583399442285305,
+        0.004936874571369392
+      ],
+      "bootstrap_ci": [
+        0.003625,
+        0.0049
+      ],
+      "resolved": true,
+      "below_detection": false,
+      "wall_s": 2000.1
+    },
+    "t4_n8@0.9296": {
+      "part": "4",
+      "code": "n8",
+      "n": 8,
+      "npz": "results/campaigns/campaign/d3_n8_dist3_16L.npz",
+      "eta": 0.9296,
+      "shots": 80000,
+      "k": 115,
+      "ler": 0.0014375,
+      "wilson95": [
+        0.0011978125726957998,
+        0.0017250670706237283
+      ],
+      "bootstrap_ci": [
+        0.0011625,
+        0.001725
+      ],
+      "resolved": true,
+      "below_detection": false,
+      "wall_s": 3878.7
+    },
+    "t4_n8@0.93": {
+      "part": "4",
+      "code": "n8",
+      "n": 8,
+      "npz": "results/campaigns/campaign/d3_n8_dist3_16L.npz",
+      "eta": 0.93,
+      "shots": 160000,
+      "k": 160,
+      "ler": 0.001,
+      "wilson95": [
+        0.0008566457373842303,
+        0.0011673156673024435
+      ],
+      "bootstrap_ci": [
+        0.00085,
+        0.00115015625
+      ],
+      "resolved": true,
+      "below_detection": false,
+      "wall_s": 9310.2
+    },
+    "t4_n9@0.8642": {
+      "part": "4",
+      "code": "n9",
+      "n": 9,
+      "npz": "results/campaigns/campaign/d3_n9_dist3_16L.npz",
+      "eta": 0.8642,
+      "shots": 10000,
+      "k": 2728,
+      "ler": 0.2728,
+      "wilson95": [
+        0.26415866991970033,
+        0.28161582535019664
+      ],
+      "bootstrap_ci": [
+        0.2641975,
+        0.2815
+      ],
+      "resolved": true,
+      "below_detection": false,
+      "wall_s": 848.4
+    },
+    "t4_n9@0.9": {
+      "part": "4",
+      "code": "n9",
+      "n": 9,
+      "npz": "results/campaigns/campaign/d3_n9_dist3_16L.npz",
+      "eta": 0.9,
+      "shots": 10000,
+      "k": 891,
+      "ler": 0.0891,
+      "wilson95": [
+        0.08367282809662654,
+        0.09484275335760198
+      ],
+      "bootstrap_ci": [
+        0.0836,
+        0.0949
+      ],
+      "resolved": true,
+      "below_detection": false,
+      "wall_s": 816.1
+    },
+    "t4_n9@0.92": {
+      "part": "4",
+      "code": "n9",
+      "n": 9,
+      "npz": "results/campaigns/campaign/d3_n9_dist3_16L.npz",
+      "eta": 0.92,
+      "shots": 20000,
+      "k": 395,
+      "ler": 0.01975,
+      "wilson95": [
+        0.017911827506371606,
+        0.021772629903049196
+      ],
+      "bootstrap_ci": [
+        0.0180475,
+        0.021751249999999996
+      ],
+      "resolved": true,
+      "below_detection": false,
+      "wall_s": 1618.6
+    },
+    "t4_n9@0.9296": {
+      "part": "4",
+      "code": "n9",
+      "n": 9,
+      "npz": "results/campaigns/campaign/d3_n9_dist3_16L.npz",
+      "eta": 0.9296,
+      "shots": 40000,
+      "k": 219,
+      "ler": 0.005475,
+      "wilson95": [
+        0.004797820601410577,
+        0.006247158638783194
+      ],
+      "bootstrap_ci": [
+        0.004775,
+        0.00625
+      ],
+      "resolved": true,
+      "below_detection": false,
+      "wall_s": 3140.4
+    },
+    "t4_n9@0.93": {
+      "part": "4",
+      "code": "n9",
+      "n": 9,
+      "npz": "results/campaigns/campaign/d3_n9_dist3_16L.npz",
+      "eta": 0.93,
+      "shots": 40000,
+      "k": 203,
+      "ler": 0.005075,
+      "wilson95": [
+        0.004424572607262634,
+        0.0058204834575529
+      ],
+      "bootstrap_ci": [
+        0.0044,
+        0.005725
+      ],
+      "resolved": true,
+      "below_detection": false,
+      "wall_s": 3211.0
+    },
+    "t4_t1_headline@0.8642": {
+      "part": "4",
+      "code": "t1_headline",
+      "n": 5,
+      "npz": "results/campaigns/r1_campaign/t1_codes/A_L2_s100.npz",
+      "eta": 0.8642,
+      "shots": 40000,
+      "k": 161,
+      "ler": 0.004025,
+      "wilson95": [
+        0.003450345465948265,
+        0.004694912263499398
+      ],
+      "bootstrap_ci": [
+        0.0034243750000000008,
+        0.00465
+      ],
+      "resolved": true,
+      "below_detection": false,
+      "wall_s": 168.3
+    },
+    "t4_t1_headline@0.9": {
+      "part": "4",
+      "code": "t1_headline",
+      "n": 5,
+      "npz": "results/campaigns/r1_campaign/t1_codes/A_L2_s100.npz",
+      "eta": 0.9,
+      "shots": 320000,
+      "k": 167,
+      "ler": 0.000521875,
+      "wilson95": [
+        0.0004485129965457881,
+        0.0006072293292675906
+      ],
+      "bootstrap_ci": [
+        0.00044375,
+        0.000603125
+      ],
+      "resolved": true,
+      "below_detection": false,
+      "wall_s": 1448.8
+    },
+    "t4_t1_headline@0.92": {
+      "part": "4",
+      "code": "t1_headline",
+      "n": 5,
+      "npz": "results/campaigns/r1_campaign/t1_codes/A_L2_s100.npz",
+      "eta": 0.92,
+      "shots": 1280000,
+      "k": 146,
+      "ler": 0.0001140625,
+      "wilson95": [
+        9.700096687678019e-05,
+        0.00013412458945764386
+      ],
+      "bootstrap_ci": [
+        9.6875e-05,
+        0.00013359375
+      ],
+      "resolved": true,
+      "below_detection": false,
+      "wall_s": 5804.2
+    },
+    "t4_t1_headline@0.9296": {
+      "part": "4",
+      "code": "t1_headline",
+      "n": 5,
+      "npz": "results/campaigns/r1_campaign/t1_codes/A_L2_s100.npz",
+      "eta": 0.9296,
+      "shots": 1280000,
+      "k": 65,
+      "ler": 5.078125e-05,
+      "wilson95": [
+        3.9845865314833265e-05,
+        6.471757086415389e-05
+      ],
+      "bootstrap_ci": [
+        3.90625e-05,
+        6.40625e-05
+      ],
+      "resolved": false,
+      "below_detection": false,
+      "wall_s": 5770.7
+    },
+    "t4_t1_headline@0.93": {
+      "part": "4",
+      "code": "t1_headline",
+      "n": 5,
+      "npz": "results/campaigns/r1_campaign/t1_codes/A_L2_s100.npz",
+      "eta": 0.93,
+      "shots": 1280000,
+      "k": 55,
+      "ler": 4.296875e-05,
+      "wilson95": [
+        3.30147442750207e-05,
+        5.5923738798356964e-05
+      ],
+      "bootstrap_ci": [
+        3.28125e-05,
+        5.46875e-05
+      ],
+      "resolved": false,
+      "below_detection": false,
+      "wall_s": 5780.2
+    }
+  },
+  "2b_gate_ranking": {
+    "ms_budget_unpruned": 40,
+    "wrapped_theta_percentiles": {
+      "10": 0.5812240731010716,
+      "25": 0.8512490543288961,
+      "50": 1.3513981108317719
+    }
+  }
+}

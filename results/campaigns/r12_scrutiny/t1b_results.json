@@ -1,0 +1,36 @@
+{
+  "meta": {
+    "s": 0.5,
+    "eta": 0.964158093896324,
+    "sigma_a2": 0.0235,
+    "nodes": 32,
+    "method": "Gauss-Hermite quadrature dose + dense instrument arithmetic (independent path)",
+    "reference": "r9_campaign/t1_results.json"
+  },
+  "cells": {
+    "headline_A_L2_s100": {
+      "proj_rate_independent": 0.23169499177082709,
+      "petz_rate_independent": 0.06031888776396466,
+      "proj_rate_engine": 0.2316949917708251,
+      "petz_rate_engine": 0.06031888776396266,
+      "proj_abs_dev": 1.9984014443252818e-15,
+      "petz_abs_dev": 1.9984014443252818e-15,
+      "n_sectors": 81,
+      "claimed_dim": 243,
+      "petz_support_rank": 243,
+      "wall_s": 23.0
+    },
+    "five_one_three_Z3": {
+      "proj_rate_independent": 0.21046237740454854,
+      "petz_rate_independent": 0.030801774700648155,
+      "proj_rate_engine": 0.21046237740454676,
+      "petz_rate_engine": 0.030801774700644602,
+      "proj_abs_dev": 1.7763568394002505e-15,
+      "petz_abs_dev": 3.552713678800501e-15,
+      "n_sectors": 92,
+      "claimed_dim": 243,
+      "petz_support_rank": 243,
+      "wall_s": 19.5
+    }
+  }
+}

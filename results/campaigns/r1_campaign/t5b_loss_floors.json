@@ -1,0 +1,25 @@
+{
+  "desc": "Cross-q full-basis loss floors at the IDENTICAL protocol (n=5, K=3, dist=3, L=16 a2a MS, full closure basis, full batch, best-of-3 seeds, 2000 steps). NOT directly comparable across q as an absolute code-quality number (basis size and closure grow with q; all points are L=16 capacity/step-capped values, not converged); the figure exists to make the previously-uncompared floors visible WITH those caveats attached.",
+  "rows": {
+    "3": {
+      "loss": 0.38999038265952213,
+      "npz": "campaign/d3_n5_dist3_16L.npz",
+      "E_det": 801
+    },
+    "4": {
+      "loss": 0.1722317127717406,
+      "npz": "fig6_panels/d4K3_n5_dist3_16L.npz",
+      "E_det": 1521
+    },
+    "5": {
+      "loss": 0.09102977531481828,
+      "npz": "fig6_panels/d5K3_n5_dist3_16L.npz",
+      "E_det": 2461
+    }
+  },
+  "q3_protocol_references": {
+    "best_of_8_3000steps_L16": 0.02975,
+    "best_of_8_3000steps_L28": 0.0001952,
+    "note": "deeper q=3 protocol/depth references (headline_p05_Lsweep) showing the floors are protocol+capacity values, not intrinsic"
+  }
+}

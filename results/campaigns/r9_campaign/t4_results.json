@@ -1,0 +1,232 @@
+{
+  "meta": {
+    "d": 3,
+    "n": 5,
+    "s_grid": [
+      0.5,
+      1.0
+    ],
+    "convention": "eta(s)=e^{-s*0.073}, sigma_a2(s)=s*0.047",
+    "metric": "rate = 1 - F_avg (channel infidelity)"
+  },
+  "cells": {
+    "headline_A_L2_s100@s0.500": {
+      "code": "headline_A_L2_s100",
+      "s": 0.5,
+      "eta": 0.964158093896324,
+      "sigma_a2": 0.0235,
+      "residual": 4.6,
+      "residual_source": "TableIV/r1 t1_results",
+      "projective_rate": 0.2316949917708251,
+      "petz_rate": 0.06031888776396266,
+      "wall_s": 1.1
+    },
+    "hw_basis_L16@s0.500": {
+      "code": "hw_basis_L16",
+      "s": 0.5,
+      "eta": 0.964158093896324,
+      "sigma_a2": 0.0235,
+      "residual": 2.9,
+      "residual_source": "TableIV/loss_ler_diag t1c_results",
+      "projective_rate": 0.2223056742455688,
+      "petz_rate": 0.05646346788800527,
+      "wall_s": 1.1
+    },
+    "plateau_B_s202@s0.500": {
+      "code": "plateau_B_s202",
+      "s": 0.5,
+      "eta": 0.964158093896324,
+      "sigma_a2": 0.0235,
+      "residual": 0.449,
+      "residual_source": "TableIV/r1 t1_results",
+      "projective_rate": 0.24033863508248,
+      "petz_rate": 0.07874839348913254,
+      "wall_s": 1.1
+    },
+    "converged_B_s202@s0.500": {
+      "code": "converged_B_s202",
+      "s": 0.5,
+      "eta": 0.964158093896324,
+      "sigma_a2": 0.0235,
+      "residual": 0.36,
+      "residual_source": "TableIV/r1 t1_results",
+      "projective_rate": 0.25547964651021593,
+      "petz_rate": 0.10253095668945555,
+      "wall_s": 1.1
+    },
+    "deep_L28@s0.500": {
+      "code": "deep_L28",
+      "s": 0.5,
+      "eta": 0.964158093896324,
+      "sigma_a2": 0.0235,
+      "residual": 0.000195,
+      "residual_source": "TableIV/loss_ler_diag t1b_results",
+      "projective_rate": 0.28438990155189525,
+      "petz_rate": 0.2796296624057184,
+      "wall_s": 1.1
+    },
+    "five_one_three_Z3@s0.500": {
+      "code": "five_one_three_Z3",
+      "s": 0.5,
+      "eta": 0.964158093896324,
+      "sigma_a2": 0.0235,
+      "residual": 1e-30,
+      "residual_source": "analytical (Table IV ~1e-30)",
+      "projective_rate": 0.21046237740454676,
+      "petz_rate": 0.030801774700644602,
+      "wall_s": 1.1
+    },
+    "headline_A_L2_s100@s1.000": {
+      "code": "headline_A_L2_s100",
+      "s": 1.0,
+      "eta": 0.9296008300257927,
+      "sigma_a2": 0.047,
+      "residual": 4.6,
+      "residual_source": "TableIV/r1 t1_results",
+      "projective_rate": 0.3962175072250742,
+      "petz_rate": 0.1622292450521723,
+      "wall_s": 1.2
+    },
+    "hw_basis_L16@s1.000": {
+      "code": "hw_basis_L16",
+      "s": 1.0,
+      "eta": 0.9296008300257927,
+      "sigma_a2": 0.047,
+      "residual": 2.9,
+      "residual_source": "TableIV/loss_ler_diag t1c_results",
+      "projective_rate": 0.3889178932164288,
+      "petz_rate": 0.15699135753561,
+      "wall_s": 1.1
+    },
+    "plateau_B_s202@s1.000": {
+      "code": "plateau_B_s202",
+      "s": 1.0,
+      "eta": 0.9296008300257927,
+      "sigma_a2": 0.047,
+      "residual": 0.449,
+      "residual_source": "TableIV/r1 t1_results",
+      "projective_rate": 0.4103593174448674,
+      "petz_rate": 0.18760202545808025,
+      "wall_s": 1.1
+    },
+    "converged_B_s202@s1.000": {
+      "code": "converged_B_s202",
+      "s": 1.0,
+      "eta": 0.9296008300257927,
+      "sigma_a2": 0.047,
+      "residual": 0.36,
+      "residual_source": "TableIV/r1 t1_results",
+      "projective_rate": 0.428461138513341,
+      "petz_rate": 0.21884845225016447,
+      "wall_s": 1.0
+    },
+    "deep_L28@s1.000": {
+      "code": "deep_L28",
+      "s": 1.0,
+      "eta": 0.9296008300257927,
+      "sigma_a2": 0.047,
+      "residual": 0.000195,
+      "residual_source": "TableIV/loss_ler_diag t1b_results",
+      "projective_rate": 0.4703733051805601,
+      "petz_rate": 0.4367085980499601,
+      "wall_s": 1.1
+    },
+    "five_one_three_Z3@s1.000": {
+      "code": "five_one_three_Z3",
+      "s": 1.0,
+      "eta": 0.9296008300257927,
+      "sigma_a2": 0.047,
+      "residual": 1e-30,
+      "residual_source": "analytical (Table IV ~1e-30)",
+      "projective_rate": 0.37159324640578484,
+      "petz_rate": 0.10431337460288381,
+      "wall_s": 1.7
+    }
+  },
+  "summary": {
+    "s0.500": {
+      "rows_by_descending_residual": [
+        {
+          "code": "headline_A_L2_s100",
+          "residual": 4.6,
+          "projective_rate": 0.2316949917708251,
+          "petz_rate": 0.06031888776396266
+        },
+        {
+          "code": "hw_basis_L16",
+          "residual": 2.9,
+          "projective_rate": 0.2223056742455688,
+          "petz_rate": 0.05646346788800527
+        },
+        {
+          "code": "plateau_B_s202",
+          "residual": 0.449,
+          "projective_rate": 0.24033863508248,
+          "petz_rate": 0.07874839348913254
+        },
+        {
+          "code": "converged_B_s202",
+          "residual": 0.36,
+          "projective_rate": 0.25547964651021593,
+          "petz_rate": 0.10253095668945555
+        },
+        {
+          "code": "deep_L28",
+          "residual": 0.000195,
+          "projective_rate": 0.28438990155189525,
+          "petz_rate": 0.2796296624057184
+        },
+        {
+          "code": "five_one_three_Z3",
+          "residual": 1e-30,
+          "projective_rate": 0.21046237740454676,
+          "petz_rate": 0.030801774700644602
+        }
+      ],
+      "petz_monotone_decreasing_in_residual_rank": false,
+      "projective_monotone_decreasing_in_residual_rank": false
+    },
+    "s1.000": {
+      "rows_by_descending_residual": [
+        {
+          "code": "headline_A_L2_s100",
+          "residual": 4.6,
+          "projective_rate": 0.3962175072250742,
+          "petz_rate": 0.1622292450521723
+        },
+        {
+          "code": "hw_basis_L16",
+          "residual": 2.9,
+          "projective_rate": 0.3889178932164288,
+          "petz_rate": 0.15699135753561
+        },
+        {
+          "code": "plateau_B_s202",
+          "residual": 0.449,
+          "projective_rate": 0.4103593174448674,
+          "petz_rate": 0.18760202545808025
+        },
+        {
+          "code": "converged_B_s202",
+          "residual": 0.36,
+          "projective_rate": 0.428461138513341,
+          "petz_rate": 0.21884845225016447
+        },
+        {
+          "code": "deep_L28",
+          "residual": 0.000195,
+          "projective_rate": 0.4703733051805601,
+          "petz_rate": 0.4367085980499601
+        },
+        {
+          "code": "five_one_three_Z3",
+          "residual": 1e-30,
+          "projective_rate": 0.37159324640578484,
+          "petz_rate": 0.10431337460288381
+        }
+      ],
+      "petz_monotone_decreasing_in_residual_rank": false,
+      "projective_monotone_decreasing_in_residual_rank": false
+    }
+  }
+}

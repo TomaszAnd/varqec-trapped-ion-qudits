@@ -1,0 +1,150 @@
+{
+  "protocol": "Arm-wide statistics for the correlated-channel distance-trio ordering\n(d3 < d4 ~ d2).\n\nExisting cells (r3_campaign/t2c_results.json 'eval'): the SELECTED code per arm\n(d2_L2_s100, d3_L2_s100, d4_L2_s102) at eta in {0.90, 0.92, 0.93}, >=100 errors.\nThis queue measures the 9 NON-selected t2c codes (3 arms x remaining 3 seeds)\nwith the identical instrument (weighted_race_test.map_channel_ler: corrected\nGaussian Meth channel + corrected w<=2 MAP prior, n=7 d=3), FIXED shots per eta\n(20k / 40k / 80k, chosen from the existing cells' LERs to land >=~10 errors per\ncell and >=~50 pooled per arm-eta), one escalation x2 only if k < 10.\n\nInput to t4_verdict.py: per-seed cells + arm-pooled counts (fresh-only and\nfresh+existing). Writes t4_{arm}_results.json.\n\nLaunch (one worker per arm, nice -19, detached):\n  for a in d2 d3 d4; do nohup nice -n 19 python3 t4_arm_map.py --arm $a       >> t4_$a.log 2>&1 & echo $! > t4_$a.pid; done\nResumable: completed cells are skipped on relaunch.\n",
+  "arm": "d4",
+  "cells": {
+    "s100@0.9": {
+      "seed": 100,
+      "eta": 0.9,
+      "k": 137,
+      "shots": 20000,
+      "ler": 0.00685,
+      "wilson95": [
+        0.005797773885584012,
+        0.008091638236135651
+      ],
+      "bootstrap_ci": [
+        0.00575,
+        0.008
+      ],
+      "wall_s": 359.4
+    },
+    "s100@0.92": {
+      "seed": 100,
+      "eta": 0.92,
+      "k": 50,
+      "shots": 40000,
+      "ler": 0.00125,
+      "wilson95": [
+        0.0009483493760728747,
+        0.0016474413241882719
+      ],
+      "bootstrap_ci": [
+        0.000925,
+        0.001625
+      ],
+      "wall_s": 739.3
+    },
+    "s100@0.93": {
+      "seed": 100,
+      "eta": 0.93,
+      "k": 21,
+      "shots": 80000,
+      "ler": 0.0002625,
+      "wilson95": [
+        0.00017170444981063165,
+        0.0004012880350902434
+      ],
+      "bootstrap_ci": [
+        0.0001625,
+        0.000375
+      ],
+      "wall_s": 1464.3
+    },
+    "s101@0.9": {
+      "seed": 101,
+      "eta": 0.9,
+      "k": 134,
+      "shots": 20000,
+      "ler": 0.0067,
+      "wilson95": [
+        0.005660255809530216,
+        0.007929213925123153
+      ],
+      "bootstrap_ci": [
+        0.00565,
+        0.0079
+      ],
+      "wall_s": 306.9
+    },
+    "s101@0.92": {
+      "seed": 101,
+      "eta": 0.92,
+      "k": 34,
+      "shots": 40000,
+      "ler": 0.00085,
+      "wilson95": [
+        0.0006083574789360589,
+        0.001187510045946851
+      ],
+      "bootstrap_ci": [
+        0.000575,
+        0.00115
+      ],
+      "wall_s": 680.5
+    },
+    "s101@0.93": {
+      "seed": 101,
+      "eta": 0.93,
+      "k": 19,
+      "shots": 80000,
+      "ler": 0.0002375,
+      "wilson95": [
+        0.00015205626628393048,
+        0.0003709386195016542
+      ],
+      "bootstrap_ci": [
+        0.0001375,
+        0.00035
+      ],
+      "wall_s": 1547.7
+    },
+    "s103@0.9": {
+      "seed": 103,
+      "eta": 0.9,
+      "k": 129,
+      "shots": 20000,
+      "ler": 0.00645,
+      "wilson95": [
+        0.0054313771141914925,
+        0.007658188642018057
+      ],
+      "bootstrap_ci": [
+        0.00535,
+        0.0076
+      ],
+      "wall_s": 337.1
+    },
+    "s103@0.92": {
+      "seed": 103,
+      "eta": 0.92,
+      "k": 29,
+      "shots": 40000,
+      "ler": 0.000725,
+      "wilson95": [
+        0.0005048587770467781,
+        0.0010410327555304328
+      ],
+      "bootstrap_ci": [
+        0.000475,
+        0.000975
+      ],
+      "wall_s": 709.1
+    },
+    "s103@0.93": {
+      "seed": 103,
+      "eta": 0.93,
+      "k": 21,
+      "shots": 80000,
+      "ler": 0.0002625,
+      "wilson95": [
+        0.00017170444981063165,
+        0.0004012880350902434
+      ],
+      "bootstrap_ci": [
+        0.0001625,
+        0.0003875
+      ],
+      "wall_s": 1290.9
+    }
+  }
+}

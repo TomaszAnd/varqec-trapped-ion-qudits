@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+.venv/
+venv/
+*env/
+.ipynb_checkpoints/
+.pytest_cache/
+.idea/
+.DS_Store
+
+# New optimisation output must never mix with the committed records under
+# results/campaigns and results/params that back the paper.
+results/best_practice_runs/
+
+# Regenerated outputs (produced by the commands in REPRODUCE.md)
+results/figures/
+results/plots/
+results/code_summary.md
+results/round14_scoping/*.png
+results/round14_scoping/*.pdf

@@ -1,0 +1,53 @@
+{
+  "question": "is the iid benchmark operating point p=0.05 derivable from the calibrated channel as a per-encoder-pass physical error probability (the old ~1%-per-gate argument), or is it a convention?",
+  "calibrated_channel": {
+    "eta": 0.9296,
+    "sigma_p2": 0.073,
+    "per_gate_per_qudit_1mFavg_dephasing_only": {
+      "control": 0.03459,
+      "target": 0.03459,
+      "spectator": 0.03459
+    },
+    "note": "all three roles (control f_k=k / target f=1,2,3 / spectator f_k=k) give identically 3.459e-2 at q=3 -- the |Delta f| multiset is the same; active-block depolarization would ADD to the active roles; whole-register per-gate-step p_phys=0.376 (paper Sec III) is the register-level anchor"
+  },
+  "eta_for_1pct_per_gate": 0.9799,
+  "old_argument_reconstruction": "a ~1%-per-gate reading requires eta~0.980 (sigma_p2~0.020), i.e. ~3.5x below the calibrated variance; at the calibrated point the per-gate per-qudit dephasing infidelity is 3.46e-2",
+  "per_pass_table_n5_a2a": {
+    "2": {
+      "ms_gates": 40,
+      "per_qudit_exposures": 40,
+      "per_qudit_error_prob_per_pass": 0.7554
+    },
+    "4": {
+      "ms_gates": 80,
+      "per_qudit_exposures": 80,
+      "per_qudit_error_prob_per_pass": 0.9402
+    },
+    "6": {
+      "ms_gates": 120,
+      "per_qudit_exposures": 120,
+      "per_qudit_error_prob_per_pass": 0.9854
+    },
+    "8": {
+      "ms_gates": 160,
+      "per_qudit_exposures": 160,
+      "per_qudit_error_prob_per_pass": 0.9964
+    },
+    "10": {
+      "ms_gates": 200,
+      "per_qudit_exposures": 200,
+      "per_qudit_error_prob_per_pass": 0.9991
+    },
+    "12": {
+      "ms_gates": 240,
+      "per_qudit_exposures": 240,
+      "per_qudit_error_prob_per_pass": 0.9998
+    },
+    "16": {
+      "ms_gates": 320,
+      "per_qudit_exposures": 320,
+      "per_qudit_error_prob_per_pass": 1.0
+    }
+  },
+  "verdict": "NOT DERIVABLE as a per-encoder-pass quantity: even the minimal L=2 a2a encoder (40 MS gates, every gate dephasing every qudit) accumulates per-qudit error probability ~0.76 per pass at the calibrated point -- 15x above p=0.05. p=0.05 instead sits at ~1.4x the SINGLE-GATE per-qudit infidelity (3.46e-2). RECOMMENDED REFRAMING: p=0.05 is a stated convention approximating one-to-two entangling-gate steps of calibrated per-qudit noise, NOT an encoder-pass equivalent; any per-pass reading would put every code in the >0.15 regime where the ranking inverts (Table I)."
+}

@@ -1,0 +1,218 @@
+{
+  "meta": {
+    "purpose": "Petz crossing audit of the register family on the channel",
+    "convention": "eta(s)=e^{-s*0.073}, sigma_a2(s)=s*0.047, channel v2",
+    "petz_default_rcond": 1e-12
+  },
+  "recompute": {
+    "deep16L_n5@s0.125": {
+      "new": {
+        "projective_rate": 0.05474621602322227,
+        "petz_rate": 0.01230546587083814,
+        "petz_support_rank": 243,
+        "petz_leak_max": 1.2323475573339238e-14
+      },
+      "committed": {
+        "projective_rate": 0.05474621602322227,
+        "petz_rate": 0.01230546587083814
+      },
+      "dev_proj": 0.0,
+      "dev_petz": 0.0,
+      "wall_s": 3.7
+    },
+    "deep16L_n5@s0.25": {
+      "new": {
+        "projective_rate": 0.12195450936772922,
+        "petz_rate": 0.03579468588743051,
+        "petz_support_rank": 243,
+        "petz_leak_max": 6.439293542825908e-15
+      },
+      "committed": {
+        "projective_rate": 0.12195450936772922,
+        "petz_rate": 0.03579468588743051
+      },
+      "dev_proj": 0.0,
+      "dev_petz": 0.0,
+      "wall_s": 4.0
+    },
+    "headline_L2_n5@s0.125": {
+      "new": {
+        "projective_rate": 0.056598163835576476,
+        "petz_rate": 0.00700198130679297,
+        "petz_support_rank": 243,
+        "petz_leak_max": 1.8318679906315083e-14
+      },
+      "committed": {
+        "projective_rate": 0.056598163835576476,
+        "petz_rate": 0.00700198130679297
+      },
+      "dev_proj": 0.0,
+      "dev_petz": 0.0,
+      "wall_s": 4.7
+    }
+  },
+  "rcond_sweep": {
+    "deep16L_n5@s0.25": {
+      "rcond1e-11": {
+        "rcond": 1e-11,
+        "support_rank": 243,
+        "petz_rate": 0.03579468588743051,
+        "eig_min_kept": 1.0130236154527936e-05,
+        "eig_max": 0.5198439504753135
+      },
+      "rcond1e-12": {
+        "rcond": 1e-12,
+        "support_rank": 243,
+        "petz_rate": 0.03579468588743051,
+        "eig_min_kept": 1.0130236154527936e-05,
+        "eig_max": 0.5198439504753135
+      },
+      "rcond1e-13": {
+        "rcond": 1e-13,
+        "support_rank": 243,
+        "petz_rate": 0.03579468588743051,
+        "eig_min_kept": 1.0130236154527936e-05,
+        "eig_max": 0.5198439504753135
+      }
+    },
+    "d3_n7@s0.25": {
+      "rcond1e-11": {
+        "rcond": 1e-11,
+        "support_rank": 2187,
+        "petz_rate": 0.03641486854804643,
+        "eig_min_kept": 2.3427792015396816e-06,
+        "eig_max": 0.21628158928542832
+      },
+      "rcond1e-12": {
+        "rcond": 1e-12,
+        "support_rank": 2187,
+        "petz_rate": 0.03641486854804643,
+        "eig_min_kept": 2.3427792015396816e-06,
+        "eig_max": 0.21628158928542832
+      },
+      "rcond1e-13": {
+        "rcond": 1e-13,
+        "support_rank": 2187,
+        "petz_rate": 0.03641486854804643,
+        "eig_min_kept": 2.3427792015396816e-06,
+        "eig_max": 0.21628158928542832
+      },
+      "committed_petz_rate": 0.03641486854804643
+    }
+  },
+  "mechanism": {
+    "gate_steps_per_n": {
+      "5": 10,
+      "6": 15,
+      "7": 21,
+      "8": 28,
+      "9": 36
+    },
+    "per_s": {
+      "s0.125": {
+        "deep16L_n5_petz": 0.01230546587083814,
+        "headline_L2_n5_petz": 0.00700198130679297,
+        "depth_penalty_deep_over_L2": 1.7574262671766911,
+        "n6_petz": 0.008114738151438594,
+        "n7_petz": 0.009623025165035992,
+        "deep_n5_above_n6": true,
+        "deep_n5_above_n7": true,
+        "L2_n5_below_n6": true
+      },
+      "s0.250": {
+        "deep16L_n5_petz": 0.03579468588743051,
+        "headline_L2_n5_petz": 0.020527256988173148,
+        "depth_penalty_deep_over_L2": 1.7437637141705657,
+        "n6_petz": 0.027063108321656926,
+        "n7_petz": 0.03641486854804643,
+        "deep_n5_above_n6": true,
+        "deep_n5_above_n7": false,
+        "L2_n5_below_n6": true
+      },
+      "s0.500": {
+        "deep16L_n5_petz": 0.09286086598385779,
+        "headline_L2_n5_petz": 0.06031888776396266,
+        "depth_penalty_deep_over_L2": 1.5394989766263103,
+        "n6_petz": 0.08698761451144277,
+        "n7_petz": 0.1243892237230968,
+        "deep_n5_above_n6": true,
+        "deep_n5_above_n7": false,
+        "L2_n5_below_n6": true
+      },
+      "s1.000": {
+        "deep16L_n5_petz": 0.20588352258464682,
+        "headline_L2_n5_petz": 0.1622292450521723,
+        "depth_penalty_deep_over_L2": 1.2690900615264251,
+        "n6_petz": 0.23515756873821836,
+        "n7_petz": 0.3188449699256022,
+        "deep_n5_above_n6": false,
+        "deep_n5_above_n7": false,
+        "L2_n5_below_n6": true
+      },
+      "s1.500": {
+        "deep16L_n5_petz": 0.3003872605311474,
+        "headline_L2_n5_petz": 0.2632260388214259,
+        "depth_penalty_deep_over_L2": 1.1411760852995696,
+        "n6_petz": 0.35989274283613637,
+        "n7_petz": 0.4460317559761773,
+        "deep_n5_above_n6": false,
+        "deep_n5_above_n7": false,
+        "L2_n5_below_n6": true
+      }
+    },
+    "n8plus_projective_margins": {
+      "s0.125": {
+        "gap_n7_n8": 0.05975144861666859,
+        "gap_n8_n9": 0.08570215379501167,
+        "se_n8": 0.0008046514157854516,
+        "se_n9": 0.0010616872646595761
+      },
+      "s0.250": {
+        "gap_n7_n8": 0.11003918827463421,
+        "gap_n8_n9": 0.11563037192558212,
+        "se_n8": 0.0012870711404457062,
+        "se_n9": 0.0013323819658257244
+      },
+      "s0.500": {
+        "gap_n7_n8": 0.12045797612049758,
+        "gap_n8_n9": 0.09531893041996375,
+        "se_n8": 0.0012549120864594919,
+        "se_n9": 0.0009404659624174681
+      },
+      "s1.000": {
+        "gap_n7_n8": 0.0779827803813593,
+        "gap_n8_n9": 0.04162410050727483,
+        "se_n8": 0.0007336489261853377,
+        "se_n9": 0.0004072546106878533
+      },
+      "s1.500": {
+        "gap_n7_n8": 0.04921558962685024,
+        "gap_n8_n9": 0.023138438711015175,
+        "se_n8": 0.00046326595837671276,
+        "se_n9": 0.0002253875618493057
+      }
+    }
+  },
+  "family_L2_booleans": {
+    "s0.125": {
+      "proj_monotone_rising_from_n5": true,
+      "petz_monotone_rising_from_n5_(n<=7)": true
+    },
+    "s0.250": {
+      "proj_monotone_rising_from_n5": true,
+      "petz_monotone_rising_from_n5_(n<=7)": true
+    },
+    "s0.500": {
+      "proj_monotone_rising_from_n5": true,
+      "petz_monotone_rising_from_n5_(n<=7)": true
+    },
+    "s1.000": {
+      "proj_monotone_rising_from_n5": true,
+      "petz_monotone_rising_from_n5_(n<=7)": true
+    },
+    "s1.500": {
+      "proj_monotone_rising_from_n5": true,
+      "petz_monotone_rising_from_n5_(n<=7)": true
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "d3_n9_dist3_16L": {
+    "best_full_loss": 0.017196831287539197,
+    "seed": 1,
+    "wall_s": 33429.8,
+    "frac": 1.0,
+    "sampler": "importance",
+    "npz": "d3_n9_dist3_16L.npz"
+  }
+}

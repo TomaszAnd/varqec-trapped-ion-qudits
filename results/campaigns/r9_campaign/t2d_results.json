@@ -1,0 +1,333 @@
+{
+  "meta": {
+    "n": 5,
+    "gate_steps": 10,
+    "s_grid": [
+      0.125,
+      0.25,
+      0.5,
+      1.0,
+      1.5
+    ],
+    "convention": "eta(s)=e^{-s*0.073}, sigma_a2(s)=s*0.047",
+    "axis": "I_q(s) = role dephasing avg gate infidelity at eta(s), r7_t3_axis convention, target tier canonical",
+    "metric": "rate = 1 - F_avg (channel infidelity)"
+  },
+  "cells": {
+    "q4_L2_s100@s0.125": {
+      "code": "q4_L2_s100",
+      "q": 4,
+      "s": 0.125,
+      "eta": 0.9909165064677175,
+      "sigma_a2": 0.005875,
+      "projective_rate": 0.19170104244300779,
+      "petz_rate": 0.0036626157758575806,
+      "petz_leak_max": 5.551115123125783e-15,
+      "n_sectors": 342,
+      "claimed_dim_R": 1024,
+      "hilbert_dim": 1024,
+      "I_q_axis": {
+        "control": 0.009005613474175833,
+        "target": 0.004982527724356367,
+        "spectator": 0.009005613474175833,
+        "canonical": "target"
+      },
+      "peak_rss_gb": 0.69,
+      "wall_s": 41.7
+    },
+    "q4_L2_s100@s0.250": {
+      "code": "q4_L2_s100",
+      "q": 4,
+      "s": 0.25,
+      "eta": 0.9819155227901859,
+      "sigma_a2": 0.01175,
+      "projective_rate": 0.3196280495434325,
+      "petz_rate": 0.011487552318458438,
+      "petz_leak_max": -1.3100631690576847e-14,
+      "n_sectors": 342,
+      "claimed_dim_R": 1024,
+      "hilbert_dim": 1024,
+      "I_q_axis": {
+        "control": 0.01777774859055492,
+        "target": 0.009893429280419808,
+        "spectator": 0.01777774859055492,
+        "canonical": "target"
+      },
+      "peak_rss_gb": 0.69,
+      "wall_s": 58.4
+    },
+    "q4_L2_s100@s0.500": {
+      "code": "q4_L2_s100",
+      "q": 4,
+      "s": 0.5,
+      "eta": 0.964158093896324,
+      "sigma_a2": 0.0235,
+      "projective_rate": 0.46907088178909484,
+      "petz_rate": 0.03705895332891107,
+      "petz_leak_max": 7.771561172376096e-16,
+      "n_sectors": 342,
+      "claimed_dim_R": 1024,
+      "hilbert_dim": 1024,
+      "I_q_axis": {
+        "control": 0.03465219086821403,
+        "target": 0.019505177157785658,
+        "spectator": 0.03465219086821403,
+        "canonical": "target"
+      },
+      "peak_rss_gb": 0.69,
+      "wall_s": 48.0
+    },
+    "q4_L2_s100@s1.000": {
+      "code": "q4_L2_s100",
+      "q": 4,
+      "s": 1.0,
+      "eta": 0.9296008300257927,
+      "sigma_a2": 0.047,
+      "projective_rate": 0.5749633627039534,
+      "petz_rate": 0.11390867800890803,
+      "petz_leak_max": 8.881784197001252e-16,
+      "n_sectors": 342,
+      "claimed_dim_R": 1024,
+      "hilbert_dim": 1024,
+      "I_q_axis": {
+        "control": 0.06592073837161094,
+        "target": 0.037921031194249055,
+        "spectator": 0.06592073837161094,
+        "canonical": "target"
+      },
+      "peak_rss_gb": 0.69,
+      "wall_s": 39.4
+    },
+    "q4_L2_s100@s1.500": {
+      "code": "q4_L2_s100",
+      "q": 4,
+      "s": 1.5,
+      "eta": 0.896282164362109,
+      "sigma_a2": 0.07050000000000001,
+      "projective_rate": 0.628094826004916,
+      "petz_rate": 0.20216315323628697,
+      "petz_leak_max": 2.3314683517128287e-15,
+      "n_sectors": 342,
+      "claimed_dim_R": 1024,
+      "hilbert_dim": 1024,
+      "I_q_axis": {
+        "control": 0.09422471812859912,
+        "target": 0.05531911673382728,
+        "spectator": 0.09422471812859912,
+        "canonical": "target"
+      },
+      "peak_rss_gb": 0.69,
+      "wall_s": 34.9
+    },
+    "q5_L2_s100@s0.125": {
+      "code": "q5_L2_s100",
+      "q": 5,
+      "s": 0.125,
+      "eta": 0.9909165064677175,
+      "sigma_a2": 0.005875,
+      "projective_rate": 0.27636053173837094,
+      "petz_rate": 0.002551423988511825,
+      "petz_leak_max": -6.372680161348399e-14,
+      "n_sectors": 731,
+      "claimed_dim_R": 2193,
+      "hilbert_dim": 3125,
+      "I_q_axis": {
+        "control": 0.014888183135463695,
+        "target": 0.0048307908040902126,
+        "spectator": 0.014888183135463695,
+        "canonical": "target"
+      },
+      "peak_rss_gb": 1.39,
+      "wall_s": 654.8
+    },
+    "q5_L2_s100@s0.250": {
+      "code": "q5_L2_s100",
+      "q": 5,
+      "s": 0.25,
+      "eta": 0.9819155227901859,
+      "sigma_a2": 0.01175,
+      "projective_rate": 0.4207669317011169,
+      "petz_rate": 0.008103317801519183,
+      "petz_leak_max": 3.6637359812630166e-14,
+      "n_sectors": 731,
+      "claimed_dim_R": 2193,
+      "hilbert_dim": 3125,
+      "I_q_axis": {
+        "control": 0.029159225030547464,
+        "target": 0.009590646162676908,
+        "spectator": 0.029159225030547464,
+        "canonical": "target"
+      },
+      "peak_rss_gb": 1.45,
+      "wall_s": 760.0
+    },
+    "q5_L2_s100@s0.500": {
+      "code": "q5_L2_s100",
+      "q": 5,
+      "s": 0.5,
+      "eta": 0.964158093896324,
+      "sigma_a2": 0.0235,
+      "projective_rate": 0.5566606799613503,
+      "petz_rate": 0.027010364688254795,
+      "petz_leak_max": 5.551115123125783e-15,
+      "n_sectors": 731,
+      "claimed_dim_R": 2193,
+      "hilbert_dim": 3125,
+      "I_q_axis": {
+        "control": 0.05598047713314214,
+        "target": 0.01890236125079192,
+        "spectator": 0.05598047713314214,
+        "canonical": "target"
+      },
+      "peak_rss_gb": 2.11,
+      "wall_s": 678.7
+    },
+    "q5_L2_s100@s1.000": {
+      "code": "q5_L2_s100",
+      "q": 5,
+      "s": 1.0,
+      "eta": 0.9296008300257927,
+      "sigma_a2": 0.047,
+      "projective_rate": 0.646327290515754,
+      "petz_rate": 0.08968201725381819,
+      "petz_leak_max": 2.9976021664879227e-15,
+      "n_sectors": 731,
+      "claimed_dim_R": 2193,
+      "hilbert_dim": 3125,
+      "I_q_axis": {
+        "control": 0.1035483608204617,
+        "target": 0.036726300990830185,
+        "spectator": 0.1035483608204617,
+        "canonical": "target"
+      },
+      "peak_rss_gb": 2.12,
+      "wall_s": 724.4
+    },
+    "q5_L2_s100@s1.500": {
+      "code": "q5_L2_s100",
+      "q": 5,
+      "s": 1.5,
+      "eta": 0.896282164362109,
+      "sigma_a2": 0.07050000000000001,
+      "projective_rate": 0.6795453580085202,
+      "petz_rate": 0.16941749972092113,
+      "petz_leak_max": 5.440092820663267e-15,
+      "n_sectors": 731,
+      "claimed_dim_R": 2193,
+      "hilbert_dim": 3125,
+      "I_q_axis": {
+        "control": 0.14432095581280946,
+        "target": 0.05354317669984476,
+        "spectator": 0.14432095581280946,
+        "canonical": "target"
+      },
+      "peak_rss_gb": 2.93,
+      "wall_s": 380.7
+    },
+    "q3_headline_A_L2_s100@s0.125": {
+      "code": "q3_headline_A_L2_s100",
+      "q": 3,
+      "s": 0.125,
+      "eta": 0.9909165064677175,
+      "sigma_a2": 0.005875,
+      "projective_rate": 0.056598163835576476,
+      "petz_rate": 0.00700198130679297,
+      "petz_leak_max": 1.8318679906315083e-14,
+      "n_sectors": 81,
+      "claimed_dim_R": 243,
+      "hilbert_dim": 243,
+      "I_q_axis": {
+        "control": 0.004531448737628785,
+        "target": 0.004531448737628341,
+        "spectator": 0.004531448737628785,
+        "canonical": "target"
+      },
+      "peak_rss_gb": 2.93,
+      "wall_s": 1.1
+    },
+    "q3_headline_A_L2_s100@s0.250": {
+      "code": "q3_headline_A_L2_s100",
+      "q": 3,
+      "s": 0.25,
+      "eta": 0.9819155227901859,
+      "sigma_a2": 0.01175,
+      "projective_rate": 0.11775639975735974,
+      "petz_rate": 0.020527256988173148,
+      "petz_leak_max": 8.215650382226158e-15,
+      "n_sectors": 81,
+      "claimed_dim_R": 243,
+      "hilbert_dim": 243,
+      "I_q_axis": {
+        "control": 0.009001482194706423,
+        "target": 0.009001482194706756,
+        "spectator": 0.009001482194706423,
+        "canonical": "target"
+      },
+      "peak_rss_gb": 2.93,
+      "wall_s": 1.0
+    },
+    "q3_headline_A_L2_s100@s0.500": {
+      "code": "q3_headline_A_L2_s100",
+      "q": 3,
+      "s": 0.5,
+      "eta": 0.964158093896324,
+      "sigma_a2": 0.0235,
+      "projective_rate": 0.2316949917708251,
+      "petz_rate": 0.06031888776396266,
+      "petz_leak_max": 6.106226635438361e-15,
+      "n_sectors": 81,
+      "claimed_dim_R": 243,
+      "hilbert_dim": 243,
+      "I_q_axis": {
+        "control": 0.017761354065638835,
+        "target": 0.017761354065639168,
+        "spectator": 0.017761354065638835,
+        "canonical": "target"
+      },
+      "peak_rss_gb": 2.93,
+      "wall_s": 1.1
+    },
+    "q3_headline_A_L2_s100@s1.000": {
+      "code": "q3_headline_A_L2_s100",
+      "q": 3,
+      "s": 1.0,
+      "eta": 0.9296008300257927,
+      "sigma_a2": 0.047,
+      "projective_rate": 0.3962175072250742,
+      "petz_rate": 0.1622292450521723,
+      "petz_leak_max": 5.995204332975845e-15,
+      "n_sectors": 81,
+      "claimed_dim_R": 243,
+      "hilbert_dim": 243,
+      "I_q_axis": {
+        "control": 0.03458768483711838,
+        "target": 0.03458768483714936,
+        "spectator": 0.03458768483711838,
+        "canonical": "target"
+      },
+      "peak_rss_gb": 2.93,
+      "wall_s": 1.1
+    },
+    "q3_headline_A_L2_s100@s1.500": {
+      "code": "q3_headline_A_L2_s100",
+      "q": 3,
+      "s": 1.5,
+      "eta": 0.896282164362109,
+      "sigma_a2": 0.07050000000000001,
+      "projective_rate": 0.4935952239382434,
+      "petz_rate": 0.2632260388214259,
+      "petz_leak_max": 5.551115123125783e-15,
+      "n_sectors": 81,
+      "claimed_dim_R": 243,
+      "hilbert_dim": 243,
+      "I_q_axis": {
+        "control": 0.05053911403419653,
+        "target": 0.050539114038697264,
+        "spectator": 0.05053911403419653,
+        "canonical": "target"
+      },
+      "peak_rss_gb": 2.93,
+      "wall_s": 1.1
+    }
+  }
+}

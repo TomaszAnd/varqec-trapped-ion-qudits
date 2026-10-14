@@ -1,0 +1,112 @@
+{
+  "gate_form": {
+    "max_dev_closed_vs_exp": 4.0029660424867215e-16,
+    "V_theta_indep_dev": 2.2591401799415137e-16,
+    "V_vs_exp_dev": 1.249000902703301e-16
+  },
+  "G_eigenvalues": [
+    0.0,
+    0.25,
+    1.0
+  ],
+  "coherence_multipliers": [
+    0.976774,
+    0.986868,
+    0.998532,
+    1.0
+  ],
+  "kraus_completeness_dev": 8.881784197001252e-16,
+  "channel_vs_multiplier_dev": 1.4304896245381992e-17,
+  "jitter_avg_infid_full": 0.005822718735906118,
+  "twirl_phi0": {
+    "II": 0.9883869873344215,
+    "XX": 0.011613012665578015
+  },
+  "twirl_p_notI_phi0": 0.01161301266557846,
+  "twirl_phi_scan": {
+    "0.0": {
+      "p_notI": 0.01161301266557846,
+      "max_abs_diff_vs_phi0": 0.0
+    },
+    "0.4": {
+      "p_notI": 0.011613012665578015,
+      "max_abs_diff_vs_phi0": 0.003255087798854507
+    },
+    "1.0472": {
+      "p_notI": 0.01161301266557857,
+      "max_abs_diff_vs_phi0": 0.01088719937397939
+    },
+    "1.9": {
+      "p_notI": 0.011613012665577127,
+      "max_abs_diff_vs_phi0": 0.01148615647746657
+    },
+    "1.5708": {
+      "p_notI": 0.01161301266557846,
+      "max_abs_diff_vs_phi0": 0.011613012665578015
+    }
+  },
+  "twirl_min_prob": 0.0,
+  "subspace_depol_cptp": true,
+  "per_qudit_p_match": 0.0058234626916497945,
+  "product_vs_derived_L1": 0.02321848917166309,
+  "derived_two_body_weight": 0.011613012665578015,
+  "product_two_body_weight": 3.3912717721037065e-05,
+  "modeB_perqudit_cptp": {
+    "ok": false,
+    "dev": 5.916154730889467e-06
+  },
+  "modeB_twoqudit_cptp_dev": 5.9439847148734515e-06,
+  "headline_angles": {
+    "npz": "r1_campaign/t1_codes/A_L2_s100.npz",
+    "n_ms": 40,
+    "theta_raw_min_max": [
+      -0.3783148616352291,
+      6.467355612726465
+    ],
+    "theta_mod4pi_min_max": [
+      0.4207174469058664,
+      12.188055752723944
+    ],
+    "phi_raw_min_max": [
+      -0.24532111935879003,
+      6.939879986960906
+    ]
+  },
+  "p_notI_over_trained_phis_first10": {
+    "min": 0.01161301266557746,
+    "max": 0.01161301266557846
+  },
+  "damping": {
+    "t_pi_125us": {
+      "t_gate_s": 0.000125,
+      "gamma": 0.00011362990726937472,
+      "avg_gate_infid": 8.522081648243418e-05,
+      "ratio_dephasing_3.46e-2_over_this": 406.00408947186975
+    },
+    "crot_5pulses_625us": {
+      "t_gate_s": 0.000625,
+      "gamma": 0.0005680204334592709,
+      "avg_gate_infid": 0.0004259749941929458,
+      "ratio_dephasing_3.46e-2_over_this": 81.22542513452771
+    }
+  },
+  "target_deph_avg_infid": 0.03458768483711816,
+  "modeA_pilot": {
+    "n5": {
+      "npz": "results/campaigns/r1_campaign/t1_codes/A_L2_s100.npz",
+      "shots": 10000,
+      "wall_s": 4.26,
+      "us_per_encoder_eval": 425.6612777709961,
+      "est_s_per_1e6_evals": 425.6612777709961,
+      "note": "one logical-state prep per eval; x3 for all codewords"
+    },
+    "n7": {
+      "npz": "results/campaigns/r3_campaign/t2c_codes/d3_L2_s100.npz",
+      "shots": 10000,
+      "wall_s": 60.83,
+      "us_per_encoder_eval": 6083.230710029602,
+      "est_s_per_1e6_evals": 6083.230710029602,
+      "note": "one logical-state prep per eval; x3 for all codewords"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "config": "hw-basis retrain, best-of-8, 3000 steps, a2a, MS, full batch uniform, target 1e-9",
+  "per_L": [
+    {
+      "L": 16,
+      "hw_basis_loss": 0.007259716107161272,
+      "full_basis_loss": 2.9044869023158673,
+      "seed": 1,
+      "ler_1M_p05": 0.000497,
+      "k": 497,
+      "wilson95": [
+        0.00045519244887073625,
+        0.0005426453178356992
+      ],
+      "wall_s": 816.0,
+      "npz": "results/campaigns/loss_ler_diag/n5_hw_L16.npz"
+    },
+    {
+      "L": 24,
+      "hw_basis_loss": 0.0018251471999498965,
+      "full_basis_loss": 2.621024757636767,
+      "seed": 5,
+      "ler_1M_p05": 0.000519,
+      "k": 519,
+      "wilson95": [
+        0.0004762373736548969,
+        0.0005656002240217878
+      ],
+      "wall_s": 1039.8,
+      "npz": "results/campaigns/loss_ler_diag/n5_hw_L24.npz"
+    }
+  ]
+}

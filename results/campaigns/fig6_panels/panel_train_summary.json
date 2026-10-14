@@ -1,0 +1,30 @@
+{
+  "K2_d3_n5_dist3_16L": {
+    "best_full_loss": 0.0067597850670327655,
+    "seed": 2,
+    "wall_s": 151.1,
+    "npz": "K2_d3_n5_dist3_16L.npz",
+    "protocol": "best-of-3 x 2000 full-batch, L=16 a2a MS, noise=full"
+  },
+  "d3_n5_dist2_16L": {
+    "best_full_loss": 3.519114207519976e-30,
+    "seed": 0,
+    "wall_s": 151.8,
+    "npz": "d3_n5_dist2_16L.npz",
+    "protocol": "best-of-3 x 2000 full-batch, L=16 a2a MS, noise=full"
+  },
+  "d4K3_n5_dist3_16L": {
+    "best_full_loss": 0.1722317127717406,
+    "seed": 1,
+    "wall_s": 1532.1,
+    "npz": "d4K3_n5_dist3_16L.npz",
+    "protocol": "best-of-3 x 2000 full-batch, L=16 a2a MS, noise=full"
+  },
+  "d5K3_n5_dist3_16L": {
+    "best_full_loss": 0.09102977531481828,
+    "seed": 0,
+    "wall_s": 9280.6,
+    "npz": "d5K3_n5_dist3_16L.npz",
+    "protocol": "best-of-3 x 2000 full-batch, L=16 a2a MS, noise=full"
+  }
+}

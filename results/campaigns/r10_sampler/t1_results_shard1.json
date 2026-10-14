@@ -1,0 +1,596 @@
+{
+  "protocol": "Sampler frontier with certified stop (Figs. 10-11): sampler-frontier\nvariance pilot.\n\nSystem: ((9,3,3))_3, all-to-all MS, L=2, channel-weighted objective\n(build_race weighted=True: v1 Meth prior eta=0.9296, 685-op closure).\nStopping (all cells incl. full batch): certified rule \u2014 sampled\nloss < TAU for 5 CONSECUTIVE steps, >= 50 steps between full-batch\nconfirmations, stop on confirmed full-batch < TAU; backstop 3000 steps\n(uncertified -> best monitored theta, stated). TAU = 1e-4 (the paper's\nconvention; measured L=2 weighted floor 4.2-5.3e-5).\nAccounting: realized op-EVs (nonzero weight entries) = train; 685 per\nconfirmation = confirm; every-25-step monitor evals logged for traces,\nEXCLUDED from budgets (paper convention).\n\nScoring per code:\n  (a) w1@2e5 / w2@1e5 conditioned probes + iid LER p=0.05 (3e5 shots\n      doubling to >= 30 errors, cap 2.4e6, Wilson 95%);\n  (b) channel-v2 projective sampled rate at s=0.5 (eta=e^{-0.0365},\n      sigma_a2=0.0235), MODE A, 1000 traj/ensemble, SE stated.\n\nShards:\n  0: score the five committed L=2 strategy codes (r3_campaign/t3_sampler_L2)\n  1: even pilot units   2: odd pilot units\nPilot units = {full_batch, importance@0.05, importance@0.4,\nfull_basis_is@0.05, full_basis_is@0.4} x seeds {100..103}.\n\nWrites t1_results_shard{K}.json (resumable per unit).\nLaunch (one per shard):\n  cd results/campaigns/r10_sampler\n  nohup nice -n 19 python3 t1_pilot.py --shard K >> t1_shard{K}.log 2>&1 &\n",
+  "tau": 0.0001,
+  "units": {
+    "full_batch_s100": {
+      "kind": "pilot",
+      "sampler": "full_batch",
+      "frac": 1.0,
+      "seed": 100,
+      "npz": "results/campaigns/r10_sampler/t1_codes/full_batch_s100.npz",
+      "certified": true,
+      "stop_step": 49,
+      "full_loss": 9.733627396225241e-05,
+      "train_op_evs": 34250,
+      "confirm_op_evs": 0,
+      "monitor_op_evs": 1370,
+      "budget_op_evs": 34250,
+      "n_confirms": 0,
+      "n_premature": 0,
+      "train_wall_s": 188.9,
+      "ler_w1": {
+        "k": 0,
+        "n": 200000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          1.92076310598226e-05
+        ],
+        "wall_s": 356.5
+      },
+      "ler_w2": {
+        "k": 0,
+        "n": 100000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          3.8414524267635735e-05
+        ],
+        "wall_s": 195.4
+      },
+      "ler_iid_p05": {
+        "k": 10,
+        "n": 2400000,
+        "ler": 4.166666666666667e-06,
+        "wilson95": [
+          2.263304438477089e-06,
+          7.670679660525694e-06
+        ],
+        "resolved": false,
+        "wall_s": 3789.2
+      },
+      "corr_v2_s05_proj": {
+        "s": 0.5,
+        "eta": 0.964158093896324,
+        "sigma_a2": 0.0235,
+        "rate_1mFavg": 0.6557483549158396,
+        "F_avg_se": 0.0009526576162276353,
+        "n_traj_per_ensemble": 1000,
+        "n_sectors": 649,
+        "wall_s": 965.4
+      },
+      "wall_s": 8873.8
+    },
+    "full_batch_s102": {
+      "kind": "pilot",
+      "sampler": "full_batch",
+      "frac": 1.0,
+      "seed": 102,
+      "npz": "results/campaigns/r10_sampler/t1_codes/full_batch_s102.npz",
+      "certified": true,
+      "stop_step": 45,
+      "full_loss": 9.726228526256379e-05,
+      "train_op_evs": 31510,
+      "confirm_op_evs": 0,
+      "monitor_op_evs": 1370,
+      "budget_op_evs": 31510,
+      "n_confirms": 0,
+      "n_premature": 0,
+      "train_wall_s": 131.1,
+      "ler_w1": {
+        "k": 0,
+        "n": 200000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          1.92076310598226e-05
+        ],
+        "wall_s": 350.1
+      },
+      "ler_w2": {
+        "k": 0,
+        "n": 100000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          3.8414524267635735e-05
+        ],
+        "wall_s": 196.7
+      },
+      "ler_iid_p05": {
+        "k": 13,
+        "n": 2400000,
+        "ler": 5.416666666666667e-06,
+        "wilson95": [
+          3.165640437199449e-06,
+          9.268339660143073e-06
+        ],
+        "resolved": false,
+        "wall_s": 3767.9
+      },
+      "corr_v2_s05_proj": {
+        "s": 0.5,
+        "eta": 0.964158093896324,
+        "sigma_a2": 0.0235,
+        "rate_1mFavg": 0.6560110667937863,
+        "F_avg_se": 0.0009513158505507896,
+        "n_traj_per_ensemble": 1000,
+        "n_sectors": 649,
+        "wall_s": 936.5
+      },
+      "wall_s": 8670.4
+    },
+    "importance_0.05_s100": {
+      "kind": "pilot",
+      "sampler": "importance",
+      "frac": 0.05,
+      "seed": 100,
+      "npz": "results/campaigns/r10_sampler/t1_codes/importance_0.05_s100.npz",
+      "certified": true,
+      "stop_step": 157,
+      "full_loss": 9.464811782950576e-05,
+      "train_op_evs": 7268,
+      "confirm_op_evs": 685,
+      "monitor_op_evs": 4795,
+      "budget_op_evs": 7953,
+      "n_confirms": 1,
+      "n_premature": 0,
+      "train_wall_s": 258.6,
+      "ler_w1": {
+        "k": 0,
+        "n": 200000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          1.92076310598226e-05
+        ],
+        "wall_s": 390.5
+      },
+      "ler_w2": {
+        "k": 0,
+        "n": 100000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          3.8414524267635735e-05
+        ],
+        "wall_s": 187.6
+      },
+      "ler_iid_p05": {
+        "k": 13,
+        "n": 2400000,
+        "ler": 5.416666666666667e-06,
+        "wilson95": [
+          3.165640437199449e-06,
+          9.268339660143073e-06
+        ],
+        "resolved": false,
+        "wall_s": 3721.3
+      },
+      "corr_v2_s05_proj": {
+        "s": 0.5,
+        "eta": 0.964158093896324,
+        "sigma_a2": 0.0235,
+        "rate_1mFavg": 0.6557537286500084,
+        "F_avg_se": 0.0009530236671791298,
+        "n_traj_per_ensemble": 1000,
+        "n_sectors": 649,
+        "wall_s": 846.1
+      },
+      "wall_s": 8638.7
+    },
+    "importance_0.05_s102": {
+      "kind": "pilot",
+      "sampler": "importance",
+      "frac": 0.05,
+      "seed": 102,
+      "npz": "results/campaigns/r10_sampler/t1_codes/importance_0.05_s102.npz",
+      "certified": true,
+      "stop_step": 124,
+      "full_loss": 9.414339633297425e-05,
+      "train_op_evs": 5750,
+      "confirm_op_evs": 685,
+      "monitor_op_evs": 3425,
+      "budget_op_evs": 6435,
+      "n_confirms": 1,
+      "n_premature": 0,
+      "train_wall_s": 219.2,
+      "ler_w1": {
+        "k": 0,
+        "n": 200000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          1.92076310598226e-05
+        ],
+        "wall_s": 312.4
+      },
+      "ler_w2": {
+        "k": 0,
+        "n": 100000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          3.8414524267635735e-05
+        ],
+        "wall_s": 262.9
+      },
+      "ler_iid_p05": {
+        "k": 15,
+        "n": 2400000,
+        "ler": 6.25e-06,
+        "wilson95": [
+          3.7877151903861073e-06,
+          1.0312928905849576e-05
+        ],
+        "resolved": false,
+        "wall_s": 3750.2
+      },
+      "corr_v2_s05_proj": {
+        "s": 0.5,
+        "eta": 0.964158093896324,
+        "sigma_a2": 0.0235,
+        "rate_1mFavg": 0.6560280405275589,
+        "F_avg_se": 0.0009507377518165178,
+        "n_traj_per_ensemble": 1000,
+        "n_sectors": 649,
+        "wall_s": 859.0
+      },
+      "wall_s": 8707.0
+    },
+    "importance_0.4_s100": {
+      "kind": "pilot",
+      "sampler": "importance",
+      "frac": 0.4,
+      "seed": 100,
+      "npz": "results/campaigns/r10_sampler/t1_codes/importance_0.4_s100.npz",
+      "certified": true,
+      "stop_step": 72,
+      "full_loss": 9.493430598394345e-05,
+      "train_op_evs": 14506,
+      "confirm_op_evs": 685,
+      "monitor_op_evs": 2055,
+      "budget_op_evs": 15191,
+      "n_confirms": 1,
+      "n_premature": 0,
+      "train_wall_s": 175.3,
+      "ler_w1": {
+        "k": 0,
+        "n": 200000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          1.92076310598226e-05
+        ],
+        "wall_s": 331.1
+      },
+      "ler_w2": {
+        "k": 0,
+        "n": 100000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          3.8414524267635735e-05
+        ],
+        "wall_s": 192.7
+      },
+      "ler_iid_p05": {
+        "k": 18,
+        "n": 2400000,
+        "ler": 7.5e-06,
+        "wilson95": [
+          4.744282515882544e-06,
+          1.1856357578692877e-05
+        ],
+        "resolved": false,
+        "wall_s": 4279.3
+      },
+      "corr_v2_s05_proj": {
+        "s": 0.5,
+        "eta": 0.964158093896324,
+        "sigma_a2": 0.0235,
+        "rate_1mFavg": 0.6558567130404452,
+        "F_avg_se": 0.0009524344140130639,
+        "n_traj_per_ensemble": 1000,
+        "n_sectors": 649,
+        "wall_s": 858.5
+      },
+      "wall_s": 5847.9
+    },
+    "importance_0.4_s102": {
+      "kind": "pilot",
+      "sampler": "importance",
+      "frac": 0.4,
+      "seed": 102,
+      "npz": "results/campaigns/r10_sampler/t1_codes/importance_0.4_s102.npz",
+      "certified": true,
+      "stop_step": 80,
+      "full_loss": 9.499757801169146e-05,
+      "train_op_evs": 16151,
+      "confirm_op_evs": 685,
+      "monitor_op_evs": 2740,
+      "budget_op_evs": 16836,
+      "n_confirms": 1,
+      "n_premature": 0,
+      "train_wall_s": 168.0,
+      "ler_w1": {
+        "k": 0,
+        "n": 200000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          1.92076310598226e-05
+        ],
+        "wall_s": 246.8
+      },
+      "ler_w2": {
+        "k": 0,
+        "n": 100000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          3.8414524267635735e-05
+        ],
+        "wall_s": 146.4
+      },
+      "ler_iid_p05": {
+        "k": 20,
+        "n": 2400000,
+        "ler": 8.333333333333334e-06,
+        "wilson95": [
+          5.394766327218578e-06,
+          1.2872537766250003e-05
+        ],
+        "resolved": false,
+        "wall_s": 2742.5
+      },
+      "corr_v2_s05_proj": {
+        "s": 0.5,
+        "eta": 0.964158093896324,
+        "sigma_a2": 0.0235,
+        "rate_1mFavg": 0.6560170430514409,
+        "F_avg_se": 0.0009519174122904717,
+        "n_traj_per_ensemble": 1000,
+        "n_sectors": 649,
+        "wall_s": 726.5
+      },
+      "wall_s": 4039.1
+    },
+    "full_basis_is_0.05_s100": {
+      "kind": "pilot",
+      "sampler": "full_basis_is",
+      "frac": 0.05,
+      "seed": 100,
+      "npz": "results/campaigns/r10_sampler/t1_codes/full_basis_is_0.05_s100.npz",
+      "certified": true,
+      "stop_step": 123,
+      "full_loss": 9.717702283558818e-05,
+      "train_op_evs": 8156,
+      "confirm_op_evs": 685,
+      "monitor_op_evs": 3425,
+      "budget_op_evs": 8841,
+      "n_confirms": 1,
+      "n_premature": 0,
+      "train_wall_s": 189.4,
+      "ler_w1": {
+        "k": 0,
+        "n": 200000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          1.92076310598226e-05
+        ],
+        "wall_s": 247.8
+      },
+      "ler_w2": {
+        "k": 0,
+        "n": 100000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          3.8414524267635735e-05
+        ],
+        "wall_s": 137.5
+      },
+      "ler_iid_p05": {
+        "k": 18,
+        "n": 2400000,
+        "ler": 7.5e-06,
+        "wilson95": [
+          4.744282515882544e-06,
+          1.1856357578692877e-05
+        ],
+        "resolved": false,
+        "wall_s": 2852.6
+      },
+      "corr_v2_s05_proj": {
+        "s": 0.5,
+        "eta": 0.964158093896324,
+        "sigma_a2": 0.0235,
+        "rate_1mFavg": 0.6557344933396682,
+        "F_avg_se": 0.0009524197351302715,
+        "n_traj_per_ensemble": 1000,
+        "n_sectors": 649,
+        "wall_s": 689.5
+      },
+      "wall_s": 4125.8
+    },
+    "full_basis_is_0.05_s102": {
+      "kind": "pilot",
+      "sampler": "full_basis_is",
+      "frac": 0.05,
+      "seed": 102,
+      "npz": "results/campaigns/r10_sampler/t1_codes/full_basis_is_0.05_s102.npz",
+      "certified": true,
+      "stop_step": 108,
+      "full_loss": 9.406873097499407e-05,
+      "train_op_evs": 7154,
+      "confirm_op_evs": 685,
+      "monitor_op_evs": 3425,
+      "budget_op_evs": 7839,
+      "n_confirms": 1,
+      "n_premature": 0,
+      "train_wall_s": 179.0,
+      "ler_w1": {
+        "k": 0,
+        "n": 200000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          1.92076310598226e-05
+        ],
+        "wall_s": 245.8
+      },
+      "ler_w2": {
+        "k": 0,
+        "n": 100000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          3.8414524267635735e-05
+        ],
+        "wall_s": 137.9
+      },
+      "ler_iid_p05": {
+        "k": 15,
+        "n": 2400000,
+        "ler": 6.25e-06,
+        "wilson95": [
+          3.7877151903861073e-06,
+          1.0312928905849576e-05
+        ],
+        "resolved": false,
+        "wall_s": 2754.6
+      },
+      "corr_v2_s05_proj": {
+        "s": 0.5,
+        "eta": 0.964158093896324,
+        "sigma_a2": 0.0235,
+        "rate_1mFavg": 0.655929386995836,
+        "F_avg_se": 0.0009516103476494,
+        "n_traj_per_ensemble": 1000,
+        "n_sectors": 649,
+        "wall_s": 714.3
+      },
+      "wall_s": 4041.4
+    },
+    "full_basis_is_0.4_s100": {
+      "kind": "pilot",
+      "sampler": "full_basis_is",
+      "frac": 0.4,
+      "seed": 100,
+      "npz": "results/campaigns/r10_sampler/t1_codes/full_basis_is_0.4_s100.npz",
+      "certified": true,
+      "stop_step": 118,
+      "full_loss": 9.822064625861762e-05,
+      "train_op_evs": 11345,
+      "confirm_op_evs": 685,
+      "monitor_op_evs": 3425,
+      "budget_op_evs": 12030,
+      "n_confirms": 1,
+      "n_premature": 0,
+      "train_wall_s": 189.1,
+      "ler_w1": {
+        "k": 0,
+        "n": 200000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          1.92076310598226e-05
+        ],
+        "wall_s": 249.6
+      },
+      "ler_w2": {
+        "k": 0,
+        "n": 100000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          3.8414524267635735e-05
+        ],
+        "wall_s": 139.4
+      },
+      "ler_iid_p05": {
+        "k": 12,
+        "n": 2400000,
+        "ler": 5e-06,
+        "wilson95": [
+          2.860290190400284e-06,
+          8.740357907495661e-06
+        ],
+        "resolved": false,
+        "wall_s": 2781.6
+      },
+      "corr_v2_s05_proj": {
+        "s": 0.5,
+        "eta": 0.964158093896324,
+        "sigma_a2": 0.0235,
+        "rate_1mFavg": 0.6557902387635933,
+        "F_avg_se": 0.0009532268000212001,
+        "n_traj_per_ensemble": 1000,
+        "n_sectors": 649,
+        "wall_s": 675.8
+      },
+      "wall_s": 4044.1
+    },
+    "full_basis_is_0.4_s102": {
+      "kind": "pilot",
+      "sampler": "full_basis_is",
+      "frac": 0.4,
+      "seed": 102,
+      "npz": "results/campaigns/r10_sampler/t1_codes/full_basis_is_0.4_s102.npz",
+      "certified": true,
+      "stop_step": 142,
+      "full_loss": 9.724143689890106e-05,
+      "train_op_evs": 13622,
+      "confirm_op_evs": 685,
+      "monitor_op_evs": 4110,
+      "budget_op_evs": 14307,
+      "n_confirms": 1,
+      "n_premature": 0,
+      "train_wall_s": 222.8,
+      "ler_w1": {
+        "k": 0,
+        "n": 200000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          1.92076310598226e-05
+        ],
+        "wall_s": 262.3
+      },
+      "ler_w2": {
+        "k": 0,
+        "n": 100000,
+        "ler": 0.0,
+        "wilson95": [
+          0.0,
+          3.8414524267635735e-05
+        ],
+        "wall_s": 153.1
+      },
+      "ler_iid_p05": {
+        "k": 15,
+        "n": 2400000,
+        "ler": 6.25e-06,
+        "wilson95": [
+          3.7877151903861073e-06,
+          1.0312928905849576e-05
+        ],
+        "resolved": false,
+        "wall_s": 3140.5
+      },
+      "corr_v2_s05_proj": {
+        "s": 0.5,
+        "eta": 0.964158093896324,
+        "sigma_a2": 0.0235,
+        "rate_1mFavg": 0.6559269568953521,
+        "F_avg_se": 0.000951408104908842,
+        "n_traj_per_ensemble": 1000,
+        "n_sectors": 649,
+        "wall_s": 781.3
+      },
+      "wall_s": 4570.0
+    }
+  }
+}
